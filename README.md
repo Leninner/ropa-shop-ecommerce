@@ -4,3 +4,8 @@
 
 1. React
 2. TailwindCSS
+3. Node
+4. Git
+5. Html
+6. Babel
+7. Webpack
