@@ -1,0 +1,36 @@
+@import '../Vars';
+
+.header {
+  padding: 0px 30px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $borderColor;
+
+  .nav-categories {
+    img {
+      width: 30px;
+    }
+  }
+
+  section {
+    img {
+      width: 100px;
+    }
+  }
+
+  .nav-main {
+    display: flex;
+    img {
+      margin: 10px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 0px 15px;
+    height: 40px;
+  }
+}
