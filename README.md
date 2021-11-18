@@ -1,5 +1,25 @@
 # React Shop
 
+## Para ejecutar el entorno de desarrollo
+
+1. Clonar el repositorio con:
+
+```bash
+git clone git@github.com:Leninner/e-anime-shop.git
+```
+
+2. Instalar dependencias con npm:
+
+```bash
+npm install
+```
+
+3. Ejecutar en la terminal:
+
+```bash
+npm run start
+```
+
 ## Tecnologías usadas
 
 1. React
