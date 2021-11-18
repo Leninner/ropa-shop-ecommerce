@@ -7,6 +7,11 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid $borderColor;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: white;
 
   .nav-categories {
     img {
