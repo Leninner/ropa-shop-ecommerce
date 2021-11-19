@@ -8,10 +8,8 @@
   &:before {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    height: calc(100vh + 200px);
     background-color: rgba(0, 0, 0, 0.055);
   }
 
@@ -29,9 +27,10 @@
     align-items: left;
     z-index: 1;
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
+    h2 {
+      font-size: 33px;
+      font-weight: 600;
+      color: white;
       margin-bottom: 1rem;
     }
 
@@ -40,9 +39,10 @@
       display: flex;
 
       button {
+        color: rgb(61, 60, 60);
         background-color: #f47026;
-        font-size: 15px;
-        font-weight: bold;
+        font-size: 18px;
+        font-weight: 500;
         padding: 14px 28px;
         margin: 20px 20px 0 0;
         border: none;
