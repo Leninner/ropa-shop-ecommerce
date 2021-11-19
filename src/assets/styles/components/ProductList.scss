@@ -1,1 +1,19 @@
+.product-list {
+  width: 100%;
+  height: 560px;
+  background-color: red;
+  .product-list__container {
+    display: flex;
+  }
 
+  button {
+    width: 260px;
+    height: 47px;
+    background-color: #282828;
+    color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

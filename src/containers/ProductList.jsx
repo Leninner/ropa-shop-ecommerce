@@ -4,14 +4,17 @@ import '../assets/styles/components/ProductList.scss';
 
 const ProductList = () => {
   return (
-    <div className='product-list'>
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
+    <section className='product-list'>
+      <div className='product-list__container'>
+        <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
+      </div>
+
       <button>View All Products</button>
-    </div>
+    </section>
   );
 };
 

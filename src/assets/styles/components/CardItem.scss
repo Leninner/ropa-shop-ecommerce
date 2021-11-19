@@ -1,4 +1,16 @@
 .card-item {
-  width: 150px;
-  background-color: red;
+  width: 250px;
+  height: 380px;
+  color: #979696;
+
+  img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 19px;
+    font-weight: 400;
+  }
 }
