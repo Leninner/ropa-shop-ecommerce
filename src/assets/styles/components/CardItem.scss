@@ -2,6 +2,14 @@
   width: 250px;
   height: 380px;
   color: #979696;
+  margin: 0 25px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  text-align: center;
 
   img {
     width: 100%;
@@ -10,6 +18,7 @@
   }
 
   h2 {
+    margin: 0 0 4px;
     font-size: 19px;
     font-weight: 400;
   }

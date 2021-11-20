@@ -9,7 +9,7 @@ const CardItem = () => {
         alt='imagenes'
       />
       <h2>Ropa 1</h2>
-      <p>descripción</p>
+      <p>Descripción</p>
     </div>
   );
 };

@@ -11,9 +11,13 @@ const ProductList = () => {
         <CardItem />
         <CardItem />
         <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
       </div>
 
-      <button>View All Products</button>
+      <button className='seeMore'>View All Products</button>
     </section>
   );
 };
