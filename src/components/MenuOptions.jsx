@@ -1,11 +1,11 @@
 import React from 'react';
 import '../assets/styles/components/MenuOptions.scss';
 
-const MenuOptions = () => {
+const MenuOptions = ({ handleClick }) => {
   return (
     <section className='menu-options'>
       <div className='menu-options__container'>
-        <img src='https://img.icons8.com/ultraviolet/40/000000/delete-sign.png' alt='imagen' />
+        <img src='https://img.icons8.com/ultraviolet/40/000000/delete-sign.png' alt='imagen' onClick={handleClick} />
         <nav>
           <div className='menu-options__container--item main'>
             <a href='/'>
