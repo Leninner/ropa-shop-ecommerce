@@ -22,10 +22,10 @@
     }
 
     img {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       position: absolute;
-      top: 10px;
+      top: 20px;
       left: 35px;
       cursor: pointer;
     }
@@ -54,5 +54,20 @@
         line-height: 50px;
       }
     }
+  }
+}
+
+.menu-options__container {
+  animation-duration: 0.3s;
+  animation-name: moveToRight;
+}
+
+@keyframes moveToRight {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
