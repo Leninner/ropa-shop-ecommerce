@@ -7,6 +7,32 @@ import { reducer } from './reducers';
 
 const initialState = {
   cart: [],
+  bestSellers: [
+    {
+      id: 1,
+      name: 'Product 1',
+      price: 100,
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
+      image: 'https://picsum.photos/200/200/?random',
+    },
+    {
+      id: 2,
+      name: 'Product 1',
+      price: 100,
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
+      image: 'https://picsum.photos/200/200/?random',
+    },
+    {
+      id: 3,
+      name: 'Product 1',
+      price: 100,
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
+      image: 'https://picsum.photos/200/200/?random',
+    },
+  ],
   womens: [
     {
       id: 1,
