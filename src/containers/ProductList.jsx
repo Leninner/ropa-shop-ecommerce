@@ -1,15 +1,15 @@
 import React from 'react';
 import { CardItem } from '../components/CardItem';
-import '../assets/styles/components/ProductList.scss';
 import classNames from 'classnames';
+import '../assets/styles/containers/ProductList.scss';
 
-const ProductList = ({ isLogin, setModal, modal }) => {
-  const productList = classNames('product-list', {
-    isLogin,
+const ProductList = ({ allItems, setModal, modal }) => {
+  const productListClass = classNames('product-list', {
+    allItems,
   });
 
   return (
-    <section className={productList}>
+    <section className={productListClass}>
       <div>
         <CardItem />
         <CardItem />

@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <MainModal />
       <ProductList setModal={handleModal} modal />
-      {modal && <ProductList isLogin />}
+      {modal && <ProductList allItems />}
     </div>
   );
 };
