@@ -18,8 +18,26 @@
   }
 
   h2 {
-    margin: 0 0 4px;
+    cursor: default;
+    margin: 10px 0 4px;
     font-size: 19px;
     font-weight: 400;
+  }
+
+  button {
+    border: none;
+    margin: 0px 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: white;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 }

@@ -17,7 +17,11 @@ const ProductList = ({ allItems, setModal, modal, products }) => {
         })}
       </div>
 
-      {modal && <button onClick={setModal}>View All Products</button>}
+      {modal && (
+        <button className='product-list_button' onClick={setModal}>
+          View All Products
+        </button>
+      )}
     </section>
   );
 };
