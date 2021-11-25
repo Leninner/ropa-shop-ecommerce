@@ -1,11 +1,12 @@
 import React from 'react';
 import '../assets/styles/components/MenuOptions.scss';
+import close from '../assets/images/icons/icon_close.png';
 
 const MenuOptions = ({ handleClick }) => {
   return (
     <section className='menu-options'>
       <div className='menu-options__container'>
-        <img src='https://img.icons8.com/ultraviolet/40/000000/delete-sign.png' alt='imagen' onClick={handleClick} />
+        <img src={close} alt='imagen' onClick={handleClick} />
         <nav>
           <div className='menu-options__container--item main'>
             <a href='https://www.facebook.com/Ropa-Shop-105112035254774' target='_blank' rel='noreferrer'>

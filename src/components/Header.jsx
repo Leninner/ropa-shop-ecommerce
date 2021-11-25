@@ -1,13 +1,15 @@
-import React from 'react';
-import logo from '../assets/images/logo.png';
+import React, { useState } from 'react';
+import logo from '../assets/images/logos/logo.png';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
 import MenuOptions from '../components/MenuOptions';
 import MyOrders from '../containers/MyOrders';
+import modal from '../assets/images/icons/icon_menu.svg';
+import cart from '../assets/images/icons/icon_shopping_cart.svg';
 
 const Header = () => {
-  const [menu, setMenu] = React.useState(false);
-  const [menuOptions, setMenuOptions] = React.useState(false);
+  const [menu, setMenu] = useState(false);
+  const [menuOptions, setMenuOptions] = useState(false);
 
   const handleClickMenuOptions = () => {
     setMenuOptions(!menuOptions);
@@ -20,7 +22,7 @@ const Header = () => {
   return (
     <header className='header'>
       <nav className='nav-categories' onClick={handleClickMenuOptions}>
-        <img src='https://img.icons8.com/material/48/000000/menu--v4.png' alt='modal' />
+        <img src={modal} alt='modal' />
       </nav>
       <section>
         <Link to='/'>
@@ -29,11 +31,7 @@ const Header = () => {
       </section>
       <nav className='nav-main'>
         <img src='https://img.icons8.com/material/24/000000/search-for-love.png' alt='search' />
-        <img
-          src='https://img.icons8.com/material/24/000000/shopping-cart--v1.png'
-          alt='cart'
-          onClick={handleClickMenu}
-        />
+        <img src={cart} alt='cart' onClick={handleClickMenu} />
       </nav>
       {menu && <MyOrders />}
       {menuOptions && <MenuOptions handleClick={handleClickMenuOptions} />}

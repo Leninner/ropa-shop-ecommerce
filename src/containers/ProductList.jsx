@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardItem } from '../components/CardItem';
+import CardItem from '../components/CardItem';
 import classNames from 'classnames';
 import '../assets/styles/containers/ProductList.scss';
 import { connect } from 'react-redux';
