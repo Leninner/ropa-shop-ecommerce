@@ -4,9 +4,14 @@ import addToCart from '../assets/images/icons/bt_add_to_cart.svg';
 import addedToCart from '../assets/images/icons/bt_added_to_cart.svg';
 import { connect } from 'react-redux';
 import { addItemToCart, deleteItemsFromCart } from '../actions';
+import classNames from 'classnames';
 
 const CardItem = (props) => {
-  const { id, name, price, description, image } = props;
+  const { id, name, price, description, image, bestSellers } = props;
+
+  const cardItem = classNames('card-item', {
+    bestSellers,
+  });
 
   const [added, setAdded] = useState(false);
 
@@ -20,7 +25,7 @@ const CardItem = (props) => {
   };
 
   return (
-    <div className='card-item'>
+    <div className={cardItem}>
       <img src={image} alt={name} />
       <h2>{name}</h2>
       <button>
