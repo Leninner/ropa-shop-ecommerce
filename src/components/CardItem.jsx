@@ -30,11 +30,11 @@ const CardItem = (props) => {
   );
 };
 
-// FIXME: Arreglar la vista de productlist y carditem
-
 const mapDispatchToProps = {
   addItemToCart,
   deleteItemsFromCart,
 };
 
 export default connect(null, mapDispatchToProps)(CardItem);
+
+// FIXME: Pasar el estado de added para la vista de todos los productos
