@@ -4,7 +4,7 @@
   position: relative;
   text-align: center;
 
-  .product-list__container {
+  div {
     white-space: nowrap;
     margin: 70px 0px;
     overflow: scroll;
@@ -13,7 +13,7 @@
     overflow-y: hidden;
   }
 
-  .seeMore {
+  button {
     width: 260px;
     height: 47px;
     background-color: #282828;

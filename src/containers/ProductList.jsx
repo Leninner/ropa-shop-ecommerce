@@ -11,7 +11,7 @@ const ProductList = ({ isLogin, isRegister }) => {
 
   return (
     <section className={productList}>
-      <div className='product-list__container'>
+      <div>
         <CardItem />
         <CardItem />
         <CardItem />
@@ -23,7 +23,7 @@ const ProductList = ({ isLogin, isRegister }) => {
         <CardItem />
       </div>
 
-      <button className='seeMore'>View All Products</button>
+      <button>View All Products</button>
     </section>
   );
 };
