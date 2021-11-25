@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MainModal } from '../components/MainModal';
 import { ProductList } from '../containers/ProductList';
 
 const Home = () => {
+  const [modal, setModal] = useState(false);
+
+  const handleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <div>
       <MainModal />
-      <ProductList />
+      <ProductList setModal={handleModal} modal />
+      {modal && <ProductList isLogin />}
     </div>
   );
 };

@@ -3,10 +3,9 @@ import { CardItem } from '../components/CardItem';
 import '../assets/styles/components/ProductList.scss';
 import classNames from 'classnames';
 
-const ProductList = ({ isLogin, isRegister }) => {
+const ProductList = ({ isLogin, setModal, modal }) => {
   const productList = classNames('product-list', {
     isLogin,
-    isRegister,
   });
 
   return (
@@ -23,7 +22,7 @@ const ProductList = ({ isLogin, isRegister }) => {
         <CardItem />
       </div>
 
-      <button>View All Products</button>
+      {modal && <button onClick={setModal}>View All Products</button>}
     </section>
   );
 };
