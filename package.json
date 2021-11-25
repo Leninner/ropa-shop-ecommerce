@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "preupdate": "git commit -a -m '[UPDATE] [.name]'",
+    "preupdate": "git commit -a -m '[UPDATE] files'",
     "update": "git push"
   },
   "eslintConfig": {
