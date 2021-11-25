@@ -2,8 +2,9 @@ import React from 'react';
 import { CardItem } from '../components/CardItem';
 import classNames from 'classnames';
 import '../assets/styles/containers/ProductList.scss';
+import { connect } from 'react-redux';
 
-const ProductList = ({ allItems, setModal, modal }) => {
+const ProductList = ({ allItems, setModal, modal, products }) => {
   const productListClass = classNames('product-list', {
     allItems,
   });
@@ -11,15 +12,9 @@ const ProductList = ({ allItems, setModal, modal }) => {
   return (
     <section className={productListClass}>
       <div>
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
+        {products.map((product) => {
+          return <CardItem key={product.id} {...product} />;
+        })}
       </div>
 
       {modal && <button onClick={setModal}>View All Products</button>}
@@ -27,4 +22,10 @@ const ProductList = ({ allItems, setModal, modal }) => {
   );
 };
 
-export { ProductList };
+const mapStateToProps = (state) => {
+  return {
+    products: state.products,
+  };
+};
+
+export default connect(mapStateToProps, null)(ProductList);
