@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import { WhatsappButton } from '../components/WhatsappButton';
+import WhatsappButton from '../components/WhatsappButton';
 
 const Layout = ({ children }) => {
   return (
