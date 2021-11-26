@@ -5,7 +5,7 @@ import { deleteItemsFromCart } from '../actions';
 import { connect } from 'react-redux';
 
 const OrderItem = (props) => {
-  const { image, title, price } = props;
+  const { image, name, price } = props;
 
   const handleDelete = () => {
     props.deleteItemsFromCart(props.id);
@@ -14,9 +14,9 @@ const OrderItem = (props) => {
   return (
     <div className='OrderItem'>
       <figure>
-        <img src={image} alt={title} />
+        <img src={image} alt={name} />
       </figure>
-      <p>{title}</p>
+      <p>{name}</p>
       <p>${price}</p>
       <img
         src={close}
