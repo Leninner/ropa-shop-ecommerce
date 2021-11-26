@@ -4,167 +4,149 @@ import { App } from './routes/App';
 import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import { reducer } from './reducers';
+import hoddie from './assets/images/products/hoodie-newyork.jpeg';
 
 const initialState = {
   cart: [],
   bestSellers: [
     {
       id: 1,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 2,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 3,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
   ],
   womens: [
     {
       id: 1,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 2,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 3,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
   ],
   mens: [
     {
       id: 1,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 2,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 3,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
   ],
   products: [
     {
       id: 1,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 2,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 3,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/200/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 4,
-      name: 'Product 1',
-      price: 100,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/300/?random',
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 5,
-      name: 'Product 1',
+      name: 'Sudadera New York',
       price: 10,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/300/?random',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 6,
-      name: 'Product 1',
+      name: 'Sudadera New York',
       price: 10,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/300/?random',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 7,
-      name: 'Product 1',
+      name: 'Sudadera New York',
       price: 10,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/300/?random',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 8,
-      name: 'Product 1',
+      name: 'Sudadera New York',
       price: 10,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/300/?random',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 9,
-      name: 'Product 1',
+      name: 'Sudadera New York',
       price: 10,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/300/?random',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
     {
       id: 10,
-      name: 'Product 1',
+      name: 'Sudadera New York',
       price: 10,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisi nisl aliquam eros, eget tincidunt nisl nisl eget.',
-      image: 'https://picsum.photos/200/300/?random',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      image: hoddie,
     },
   ],
 };
