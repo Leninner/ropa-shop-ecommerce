@@ -5,9 +5,10 @@ import '../assets/styles/components/Header.scss';
 import MenuOptions from '../components/MenuOptions';
 import MyOrders from '../containers/MyOrders';
 import modal from '../assets/images/icons/icon_menu.svg';
-import cart from '../assets/images/icons/icon_shopping_cart.svg';
+import carrito from '../assets/images/icons/icon_shopping_cart.svg';
+import { connect } from 'react-redux';
 
-const Header = () => {
+const Header = ({ cart }) => {
   const [menu, setMenu] = useState(false);
   const [menuOptions, setMenuOptions] = useState(false);
 
@@ -30,8 +31,8 @@ const Header = () => {
         </Link>
       </section>
       <nav className='nav-main'>
-        <img src='https://img.icons8.com/material/24/000000/search-for-love.png' alt='search' />
-        <img src={cart} alt='cart' onClick={handleClickMenu} />
+        <img src={carrito} alt='shopping cart' onClick={handleClickMenu} />
+        {cart.length > 0 ? <div>{cart.length}</div> : null}
       </nav>
       {menu && <MyOrders />}
       {menuOptions && <MenuOptions handleClick={handleClickMenuOptions} />}
@@ -39,4 +40,10 @@ const Header = () => {
   );
 };
 
-export { Header };
+const mapStateToProps = (state) => {
+  return {
+    cart: state.cart,
+  };
+};
+
+export default connect(mapStateToProps, null)(Header);
