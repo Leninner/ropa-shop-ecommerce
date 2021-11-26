@@ -2,6 +2,7 @@ import React from 'react';
 import OrderItem from '../components/OrderItem';
 import '../assets/styles/containers/MyOrders.scss';
 import { connect } from 'react-redux';
+import Checkout from '../components/Checkout';
 
 const MyOrders = ({ cart }) => {
   let sumaTotal = 0;
@@ -17,13 +18,7 @@ const MyOrders = ({ cart }) => {
             })
           : 'No hay productos en el carrito'}
       </div>
-      <div className='checkout'>
-        <div className='checkout-total'>
-          <h4>Total</h4>
-          <p className='checkout__price'>${sumaTotal}</p>
-        </div>
-        <button className='checkout__button'>Iniciar proceso de Pago</button>
-      </div>
+      <Checkout sumaTotal={sumaTotal} />
     </aside>
   );
 };
