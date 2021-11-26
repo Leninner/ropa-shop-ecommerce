@@ -18,7 +18,14 @@ const OrderItem = (props) => {
       </figure>
       <p>{title}</p>
       <p>${price}</p>
-      <img src={close} alt='X' className='close' onClick={handleDelete} />
+      <img
+        src={close}
+        alt='X'
+        className='close'
+        onClick={() => {
+          handleDelete();
+        }}
+      />
     </div>
   );
 };

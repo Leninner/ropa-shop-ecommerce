@@ -15,7 +15,7 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
         <>
           <div>
             {bestSellers.map((product) => {
-              return <CardItem key={product.id} {...product} bestSellers />;
+              return <CardItem key={product.id} product={product} bestSellers />;
             })}
           </div>
           <button className='product-list_button' onClick={setModal}>
@@ -25,7 +25,7 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
       ) : (
         <div>
           {products.map((product) => {
-            return <CardItem key={product.id} {...product} />;
+            return <CardItem key={product.id} product={product} />;
           })}
         </div>
       )}

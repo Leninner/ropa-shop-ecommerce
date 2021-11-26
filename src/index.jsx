@@ -10,21 +10,21 @@ const initialState = {
   cart: [],
   bestSellers: [
     {
-      id: 1,
+      id: 546,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       image: hoddie,
     },
     {
-      id: 2,
+      id: 78,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       image: hoddie,
     },
     {
-      id: 3,
+      id: 98,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
