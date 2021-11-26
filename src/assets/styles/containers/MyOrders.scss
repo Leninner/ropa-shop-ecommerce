@@ -22,10 +22,12 @@
 
   .orders-container {
     width: 100%;
+    min-height: 320px;
     max-height: 320px;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 10px;
+    text-align: center;
   }
 
   .checkout {
