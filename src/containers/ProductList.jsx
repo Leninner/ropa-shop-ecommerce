@@ -13,7 +13,7 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
     <section className={productListClass}>
       {modal ? (
         <>
-          <div>
+          <div className='container__productList'>
             {bestSellers.map((product) => {
               return <CardItem key={product.id} product={product} bestSellers />;
             })}
@@ -23,7 +23,7 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
           </button>
         </>
       ) : (
-        <div>
+        <div className='container__allProducts'>
           {products.map((product) => {
             return <CardItem key={product.id} product={product} />;
           })}

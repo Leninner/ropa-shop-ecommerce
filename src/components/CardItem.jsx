@@ -25,11 +25,17 @@ const CardItem = (props) => {
     <div className={cardItem}>
       <img src={product.image} alt={product.name} />
       <h2>{product.name}</h2>
-      <button>
-        <figure onClick={() => toggleCart(product)}>
-          <img src={cart.includes(product) ? addedToCart : addToCart} alt='carrito' />
-        </figure>
-      </button>
+      <div className='contenedor'>
+        <div className='contenedor__price'>
+          <h5>Precio</h5>
+          <p>$ {product.price}</p>
+        </div>
+        <button>
+          <figure onClick={() => toggleCart(product)}>
+            <img src={cart.includes(product) ? addedToCart : addToCart} alt='carrito' />
+          </figure>
+        </button>
+      </div>
     </div>
   );
 };

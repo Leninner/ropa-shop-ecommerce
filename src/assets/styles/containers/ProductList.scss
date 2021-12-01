@@ -4,7 +4,7 @@
   position: relative;
   text-align: center;
 
-  div {
+  .container__productList {
     white-space: nowrap;
     margin: 70px 0px;
     overflow: scroll;
@@ -29,11 +29,12 @@
   width: 100%;
   padding: 30px;
   text-align: center;
+  word-wrap: prewrap;
 
-  div {
-    white-space: pre-wrap;
-    margin: 20px 0px;
-    padding-bottom: 10px;
+  .container__allProducts {
+    margin: 70px 0px;
+    padding-bottom: 70px;
     margin-left: 50px;
+    overflow-y: hidden;
   }
 }

@@ -1,7 +1,7 @@
 .card-item {
-  width: 250px;
+  width: 260px;
   height: 380px;
-  color: #979696;
+  border-radius: 25px;
   margin: 0 25px;
   overflow: hidden;
   margin-right: 10px;
@@ -10,18 +10,43 @@
   transition: 450ms all;
   transform-origin: center left;
   text-align: center;
+  border: 1px solid rgb(201, 193, 193);
 
   img {
     width: 100%;
-    height: 80%;
+    height: 75%;
     object-fit: cover;
   }
 
   h2 {
+    color: black;
     cursor: default;
     margin: 10px 0 4px;
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 600;
+  }
+
+  .contenedor {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contenedor__price {
+      color: black;
+
+      h5 {
+        font-size: 12px;
+        font-weight: normal;
+        color: #979696;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
   }
 
   button {
@@ -43,7 +68,7 @@
 }
 
 .bestSellers {
-  border: 5px solid black;
+  border: 1px solid rgb(73, 72, 72);
 }
 
 // TODO: Add a hover effect to the card item
