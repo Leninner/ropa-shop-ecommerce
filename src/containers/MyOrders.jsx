@@ -18,7 +18,7 @@ const MyOrders = ({ cart }) => {
             })
           : 'No hay productos en el carrito'}
       </div>
-      <Checkout sumaTotal={sumaTotal} />
+      {cart.length > 0 && <Checkout sumaTotal={sumaTotal} />}
     </aside>
   );
 };
