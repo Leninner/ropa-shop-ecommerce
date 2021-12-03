@@ -1,7 +1,5 @@
 import React from 'react';
 import '../assets/styles/components/CardItem.scss';
-import addToCart from '../assets/images/icons/bt_add_to_cart.svg';
-import addedToCart from '../assets/images/icons/bt_added_to_cart.svg';
 import { connect } from 'react-redux';
 import { addItemToCart, deleteItemsFromCart } from '../actions';
 import classNames from 'classnames';
@@ -32,7 +30,14 @@ const CardItem = (props) => {
         </div>
         <button>
           <figure onClick={() => toggleCart(product)}>
-            <img src={cart.includes(product) ? addedToCart : addToCart} alt='carrito' />
+            <img
+              src={
+                cart.includes(product)
+                  ? 'https://img.icons8.com/ios-glyphs/50/000000/minus.png'
+                  : 'https://img.icons8.com/material-rounded/24/000000/plus--v2.png'
+              }
+              alt='carrito'
+            />
           </figure>
         </button>
       </div>

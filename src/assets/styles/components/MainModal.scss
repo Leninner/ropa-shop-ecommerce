@@ -2,17 +2,17 @@
 
 .mainModal {
   background: var(--image) no-repeat;
+  background-size: cover;
   width: 100%;
   height: calc(100vh + 200px);
-  background-size: cover;
 
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: calc(100vh + 200px);
-    background-color: rgba(0, 0, 0, 0.055);
-  }
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   height: calc(100vh + 200px);
+  //   background-color: rgba(5, 5, 5, 0.068);
+  // }
 
   .mainModal__container {
     position: absolute;
@@ -31,7 +31,7 @@
     h2 {
       font-size: 33px;
       font-weight: 600;
-      color: white;
+      color: $textColor;
       margin-bottom: 1rem;
     }
 
@@ -40,7 +40,7 @@
       display: flex;
 
       button {
-        color: rgb(61, 60, 60);
+        color: $textColor;
         background-color: #f47026;
         font-size: 18px;
         font-weight: 500;
