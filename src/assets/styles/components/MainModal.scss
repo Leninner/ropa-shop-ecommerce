@@ -5,6 +5,9 @@
   background-size: cover;
   width: 100%;
   height: calc(100vh + 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   // &:before {
   //   content: '';
@@ -14,44 +17,20 @@
   //   background-color: rgba(5, 5, 5, 0.068);
   // }
 
-  .mainModal__container {
-    position: absolute;
-    top: 75%;
-    margin-left: 70px;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    z-index: 1;
+  button {
+    margin-top: 17%;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 0 35px;
+    font-size: 1rem;
 
-    h2 {
-      font-size: 33px;
-      font-weight: 600;
-      color: $textColor;
-      margin-bottom: 1rem;
-    }
-
-    .buttons {
-      width: 400px;
-      display: flex;
-
-      button {
-        color: $textColor;
-        background-color: #f47026;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 14px 28px;
-        margin: 20px 20px 0 0;
-        border: none;
-        cursor: pointer;
-        z-index: 2;
-        width: 130px;
-        height: 50px;
-      }
+    a {
+      color: rgb(14, 13, 13);
+      text-decoration: none;
     }
   }
 }
@@ -65,10 +44,6 @@
     align-items: center;
     justify-content: center;
 
-    .mainModal__container {
-      display: none;
-    }
-
     button {
       margin-top: 110%;
       width: 50%;
@@ -76,6 +51,9 @@
       border-radius: 50px;
       background-color: rgb(255, 255, 255);
       border: none;
+      padding: 0;
+      font-size: 15px;
+
       a {
         color: black;
         text-decoration: none;
