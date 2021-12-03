@@ -10,7 +10,7 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
   });
 
   return (
-    <section className={productListClass}>
+    <section className={productListClass} id='allProducts'>
       {modal ? (
         <>
           <div className='container__productList'>
