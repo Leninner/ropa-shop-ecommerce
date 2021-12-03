@@ -31,3 +31,8 @@ npm run start
 7. Webpack
 8. Redux
 9. React Router
+
+## Branches
+
+1. Main => Rama principal
+2. feature-one => Añadir cantidad X de algún producto al carrito
