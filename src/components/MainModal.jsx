@@ -1,11 +1,10 @@
 import React from 'react';
 import '../assets/styles/components/MainModal.scss';
-import { Link } from 'react-router-dom';
 
 const MainModal = () => (
   <section className='mainModal'>
     <button>
-      <Link to='#allProducts'>Ver los productos</Link>
+      <a href='#allProducts'>Ver los productos</a>
     </button>
 
     <div className='mainModal__container'>
