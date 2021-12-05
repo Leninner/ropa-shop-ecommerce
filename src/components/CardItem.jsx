@@ -23,6 +23,16 @@ const CardItem = (props) => {
     <div className={cardItem}>
       <img src={product.image} alt={product.name} />
       <h2>{product.name}</h2>
+      <div className='options'>
+        <select name='tallas' id='tallas'>
+          <option value='S'>S</option>
+          <option value='M'>M</option>
+          <option value='L'>L</option>
+        </select>
+        <div className='contenedor__cantidad'>
+          <input type='number' min='1' max='100' placeholder='1' />
+        </div>
+      </div>
       <div className='contenedor'>
         <div className='contenedor__price'>
           <h5>Precio</h5>
@@ -40,16 +50,6 @@ const CardItem = (props) => {
             />
           </figure>
         </button>
-        <select name='' id=''>
-          <option value=''>Talla</option>
-          <option value=''>S</option>
-          <option value=''>M</option>
-          <option value=''>L</option>
-        </select>
-        <div className='contenedor__cantidad'>
-          <h5>Cantidad</h5>
-          <input type='number' />
-        </div>
       </div>
     </div>
   );
