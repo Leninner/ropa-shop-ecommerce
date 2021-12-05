@@ -42,7 +42,7 @@ const CardItem = (props) => {
               min='1'
               max='100'
               placeholder={product.cantidad}
-              onChange={(e) => handleCantidad({ ...product, cantidad: e.target.value })}
+              onChange={(e) => handleCantidad({ ...product, cantidad: parseInt(e.target.value) })}
             />
           </div>
         </div>
