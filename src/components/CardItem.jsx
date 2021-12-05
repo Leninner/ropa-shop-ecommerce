@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/components/CardItem.scss';
 import { connect } from 'react-redux';
-import { addItemToCart, deleteItemsFromCart } from '../actions';
+import { addItemToCart, deleteItemsFromCart, aumentarCantidad } from '../actions';
 import classNames from 'classnames';
 
 const CardItem = (props) => {
@@ -10,6 +10,10 @@ const CardItem = (props) => {
   const cardItem = classNames('card-item', {
     bestSellers,
   });
+
+  const handleCantidad = (product, e) => {
+    props.aumentarCantidad(product);
+  };
 
   const toggleCart = (item) => {
     if (!cart.includes(item)) {
@@ -23,21 +27,33 @@ const CardItem = (props) => {
     <div className={cardItem}>
       <img src={product.image} alt={product.name} />
       <h2>{product.name}</h2>
-      <div className='options'>
-        <select name='tallas' id='tallas'>
-          <option value='S'>S</option>
-          <option value='M'>M</option>
-          <option value='L'>L</option>
-        </select>
-        <div className='contenedor__cantidad'>
-          <input type='number' min='1' max='100' placeholder='1' />
+
+      {!cart.includes(product) && (
+        <div className='options'>
+          <select name='tallas' id='tallas'>
+            <option value='S'>S</option>
+            <option value='M'>M</option>
+            <option value='L'>L</option>
+          </select>
+
+          <div className='contenedor__cantidad'>
+            <input
+              type='number'
+              min='1'
+              max='100'
+              placeholder={product.cantidad}
+              onChange={(e) => handleCantidad({ ...product, cantidad: e.target.value })}
+            />
+          </div>
         </div>
-      </div>
+      )}
+
       <div className='contenedor'>
         <div className='contenedor__price'>
           <h5>Precio</h5>
           <p>$ {product.price}</p>
         </div>
+
         <button>
           <figure onClick={() => toggleCart(product)}>
             <img
@@ -58,6 +74,7 @@ const CardItem = (props) => {
 const mapDispatchToProps = {
   addItemToCart,
   deleteItemsFromCart,
+  aumentarCantidad,
 };
 
 const mapStateToProps = (state) => {
