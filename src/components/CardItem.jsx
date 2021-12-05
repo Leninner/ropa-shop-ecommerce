@@ -40,6 +40,16 @@ const CardItem = (props) => {
             />
           </figure>
         </button>
+        <select name='' id=''>
+          <option value=''>Talla</option>
+          <option value=''>S</option>
+          <option value=''>M</option>
+          <option value=''>L</option>
+        </select>
+        <div className='contenedor__cantidad'>
+          <h5>Cantidad</h5>
+          <input type='number' />
+        </div>
       </div>
     </div>
   );
