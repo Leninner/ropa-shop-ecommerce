@@ -1,20 +1,21 @@
+@import '../Vars.scss';
+
 .card-item {
   width: 260px;
-  height: 380px;
+  height: 400px;
   border-radius: 25px;
   margin: 0 25px;
   overflow: hidden;
   margin-right: 10px;
   display: inline-block;
   cursor: pointer;
-  transition: 450ms all;
-  transform-origin: center left;
   text-align: center;
-  border: 1px solid rgb(201, 193, 193);
+  -webkit-box-shadow: 2px 6px 40px -4px #000000;
+  box-shadow: 2px 6px 20px -4px #000000;
 
   img {
     width: 100%;
-    height: 75%;
+    height: 70%;
     object-fit: cover;
   }
 
@@ -29,7 +30,7 @@
   .contenedor {
     margin: 0 auto;
     width: 100%;
-    height: 50px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,15 +54,42 @@
     border: none;
     margin: 0px 5px;
     cursor: pointer;
-    padding: 5px 10px;
     background-color: white;
 
     img {
       width: 30px;
       height: 30px;
       margin-right: 5px;
-      &:hover {
-        opacity: 0.5;
+    }
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 35px;
+
+    select {
+      outline: none;
+      width: 50px;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      padding: 5px;
+      background-color: $textColor;
+    }
+
+    .contenedor__cantidad {
+      input {
+        outline: none;
+        width: 50px;
+        text-align: center;
+        border: none;
+        border: 2px solid rgb(14, 199, 14);
+        border-radius: 10px;
+        padding: 5px;
       }
     }
   }
