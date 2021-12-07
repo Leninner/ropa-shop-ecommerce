@@ -4,8 +4,9 @@ import '../assets/styles/containers/MyOrders.scss';
 import { connect } from 'react-redux';
 import Checkout from '../components/Checkout';
 
-const MyOrders = ({ cart }) => {
-  let sumaTotal = 0;
+const MyOrders = (props) => {
+  const { cart } = props;
+  let totalPrice = 0;
 
   return (
     <aside className='MyOrder'>
@@ -13,12 +14,12 @@ const MyOrders = ({ cart }) => {
       <div className='orders-container'>
         {cart.length > 0
           ? cart.map((item) => {
-              sumaTotal += item.price;
+              totalPrice += item.price * item.cantidad;
               return <OrderItem key={item.id} {...item} />;
             })
           : 'No hay productos en el carrito'}
       </div>
-      {cart.length > 0 && <Checkout sumaTotal={sumaTotal} />}
+      {cart.length > 0 && <Checkout sumaTotal={totalPrice} />}
     </aside>
   );
 };
