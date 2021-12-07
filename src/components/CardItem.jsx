@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/components/CardItem.scss';
 import { connect } from 'react-redux';
-import { addItemToCart, deleteItemsFromCart, aumentarCantidad } from '../actions';
+import { addItemToCart, deleteItemsFromCart, aumentarCantidad, añadirTalla } from '../actions';
 import classNames from 'classnames';
 
 const CardItem = (props) => {
@@ -13,6 +13,10 @@ const CardItem = (props) => {
 
   const handleCantidad = (product, e) => {
     props.aumentarCantidad(product);
+  };
+
+  const handleAddTalla = (product, e) => {
+    props.añadirTalla(product);
   };
 
   const toggleCart = (item) => {
@@ -30,7 +34,7 @@ const CardItem = (props) => {
 
       {!cart.includes(product) && (
         <div className='options'>
-          <select name='tallas' id='tallas'>
+          <select name='tallas' id='tallas' onChange={(e) => handleAddTalla({ ...product, talla: e.target.value })}>
             <option value='S'>S</option>
             <option value='M'>M</option>
             <option value='L'>L</option>
@@ -75,6 +79,7 @@ const mapDispatchToProps = {
   addItemToCart,
   deleteItemsFromCart,
   aumentarCantidad,
+  añadirTalla,
 };
 
 const mapStateToProps = (state) => {
