@@ -1,9 +1,32 @@
 .OrderItem {
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  gap: 16px;
-  margin-bottom: 24px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(199, 197, 197);
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+
+  .resumen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    div {
+      display: flex;
+      p {
+        font-weight: normal;
+        margin: 8px 15px;
+        font-size: 13px;
+      }
+    }
+  }
 }
 .OrderItem figure {
   margin: 0;
@@ -14,17 +37,12 @@
   height: 70px;
   border-radius: 20px;
   object-fit: cover;
+  border: 1px solid rgb(199, 194, 194);
 }
 .OrderItem p {
   cursor: default;
 }
-.OrderItem p:nth-child(2) {
-  color: var(--very-light-pink);
-}
-.OrderItem p:nth-child(3) {
-  font-size: var(--md);
-  font-weight: bold;
-}
-.close {
+.delete {
   cursor: pointer;
+  border-radius: 50%;
 }

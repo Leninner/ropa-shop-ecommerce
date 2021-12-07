@@ -1,11 +1,11 @@
 import React from 'react';
 import '../assets/styles/components/OrderItem.scss';
-import close from '../assets/images/icons/icon_close.png';
 import { deleteItemsFromCart } from '../actions';
 import { connect } from 'react-redux';
+import { MdOutlineRemoveShoppingCart } from 'react-icons/md';
 
 const OrderItem = (props) => {
-  const { image, name, price } = props;
+  const { image, name, price, cantidad, talla } = props;
 
   const handleDelete = () => {
     props.deleteItemsFromCart(props.id);
@@ -16,12 +16,17 @@ const OrderItem = (props) => {
       <figure>
         <img src={image} alt={name} />
       </figure>
-      <p>{name}</p>
-      <p>${price}</p>
-      <img
-        src={close}
-        alt='X'
-        className='close'
+      <div className='resumen'>
+        <p>{name}</p>
+        <div>
+          <p>${price}</p>
+          <p>{cantidad}</p>
+          <p>{talla}</p>
+        </div>
+      </div>
+      <MdOutlineRemoveShoppingCart
+        className='delete'
+        size={25}
         onClick={() => {
           handleDelete();
         }}
