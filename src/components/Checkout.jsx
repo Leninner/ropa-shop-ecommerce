@@ -1,8 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import '../assets/styles/components/Checkout.scss';
+import { AppContext } from '../context';
 
 const Checkout = ({ sumaTotal, cart }) => {
+  const { total, setTotal } = React.useContext(AppContext);
+
+  React.useEffect(() => {
+    setTotal(sumaTotal);
+    // eslint-disable-next-line
+  }, [sumaTotal]);
+
   let encodeText = 'Hola mi pedido es: \n';
 
   cart.map((value) => (encodeText += ` - ${value.name} ${value.price}\n`));
@@ -13,7 +21,7 @@ const Checkout = ({ sumaTotal, cart }) => {
     <div className='checkout'>
       <div className='checkout-total'>
         <h4>Total</h4>
-        <p className='checkout__price'>${sumaTotal}</p>
+        <p className='checkout__price'>${total}</p>
       </div>
       <button className='checkout__button'>
         <a href={link} target='_blank' rel='noreferrer'>
