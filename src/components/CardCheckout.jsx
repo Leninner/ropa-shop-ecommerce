@@ -13,15 +13,14 @@ const CardCheckout = (props) => {
 
   return (
     <>
-      <section className='checkout-main'>
-        <h1>Carrito de Compras</h1>
-        <div className='card-checkout'>
-          <div className='card-checkout-img'>
-            <img src={image} alt='img' />
-          </div>
-          <div className='card-checkout-info'>
-            <h3>{name}</h3>
-            <p>{description}</p>
+      <div className='card-checkout'>
+        <div className='card-checkout-img'>
+          <img src={image} alt='img' />
+        </div>
+        <div className='card-checkout-info'>
+          <h3>{name}</h3>
+          <p>{description}</p>
+          <div className='prices'>
             <p>
               <span>Talla: </span>
               {talla}
@@ -31,17 +30,16 @@ const CardCheckout = (props) => {
               {cantidad}
             </p>
             <p>
-              <span>Precio Unitario: </span>
-              {price}
+              <span>Precio Unitario: </span>${price}
             </p>
           </div>
-          <div className='resume'>
-            <p>{price * cantidad}</p>
-            <MdRemoveShoppingCart size='35' onClick={() => handleDelete(id)} />
-          </div>
         </div>
-        <div className='form-checkout'></div>
-      </section>
+        <div className='resume'>
+          <p>${price * cantidad}</p>
+          <p>|</p>
+          <MdRemoveShoppingCart size='30' onClick={() => handleDelete(id)} />
+        </div>
+      </div>
     </>
   );
 };
