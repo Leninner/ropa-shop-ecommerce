@@ -5,7 +5,11 @@ import { AppContext } from '../context';
 import { Link } from 'react-router-dom';
 
 const Checkout = ({ sumaTotal, cart }) => {
-  const { total, setTotal } = useContext(AppContext);
+  const { total, setTotal, toggleMenu, setToggleMenu } = useContext(AppContext);
+
+  const handleMenu = () => {
+    setToggleMenu(!toggleMenu);
+  };
 
   useEffect(() => {
     setTotal(sumaTotal);
@@ -23,7 +27,9 @@ const Checkout = ({ sumaTotal, cart }) => {
         <p className='checkout__price'>${total}</p>
       </div>
       <button className='checkout__button'>
-        <Link to='/checkout'>Checkout</Link>
+        <Link to='/checkout' onClick={handleMenu}>
+          Checkout
+        </Link>
       </button>
     </div>
   );

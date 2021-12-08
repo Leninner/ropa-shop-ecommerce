@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import logo from '../assets/images/logos/logo.png';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
@@ -7,9 +7,10 @@ import MyOrders from '../containers/MyOrders';
 import modal from '../assets/images/icons/icon_menu.svg';
 import carrito from '../assets/images/icons/icon_shopping_cart.svg';
 import { connect } from 'react-redux';
+import { AppContext } from '../context';
 
 const Header = ({ cart }) => {
-  const [menu, setMenu] = useState(false);
+  const { toggleMenu, setToggleMenu } = useContext(AppContext);
   const [menuOptions, setMenuOptions] = useState(false);
 
   const handleClickMenuOptions = () => {
@@ -17,7 +18,7 @@ const Header = ({ cart }) => {
   };
 
   const handleClickMenu = () => {
-    setMenu(!menu);
+    setToggleMenu(!toggleMenu);
   };
 
   return (
@@ -34,7 +35,7 @@ const Header = ({ cart }) => {
         <img src={carrito} alt='shopping cart' onClick={handleClickMenu} />
         {cart.length > 0 ? <div>{cart.length}</div> : null}
       </nav>
-      {menu && <MyOrders />}
+      {toggleMenu && <MyOrders />}
       {menuOptions && <MenuOptions handleClick={handleClickMenuOptions} />}
     </header>
   );
