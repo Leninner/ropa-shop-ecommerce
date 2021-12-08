@@ -1,9 +1,16 @@
 import React from 'react';
 import '../assets/styles/components/CardCheckout.scss';
 import { MdRemoveShoppingCart } from 'react-icons/md';
+import { connect } from 'react-redux';
+import { deleteItemsFromCart } from '../actions';
 
 const CardCheckout = (props) => {
-  const { name, description, price, cantidad, talla, image } = props;
+  const { name, description, price, cantidad, talla, image, id } = props;
+
+  const handleDelete = (id) => {
+    props.deleteItemsFromCart(id);
+  };
+
   return (
     <>
       <section className='checkout-main'>
@@ -30,7 +37,7 @@ const CardCheckout = (props) => {
           </div>
           <div className='resume'>
             <p>{price * cantidad}</p>
-            <MdRemoveShoppingCart size='35' />
+            <MdRemoveShoppingCart size='35' onClick={() => handleDelete(id)} />
           </div>
         </div>
         <div className='form-checkout'></div>
@@ -39,4 +46,8 @@ const CardCheckout = (props) => {
   );
 };
 
-export default CardCheckout;
+const mapDispatchToProps = {
+  deleteItemsFromCart,
+};
+
+export default connect(null, mapDispatchToProps)(CardCheckout);

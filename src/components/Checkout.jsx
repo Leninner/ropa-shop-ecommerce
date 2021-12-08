@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { connect } from 'react-redux';
 import '../assets/styles/components/Checkout.scss';
 import { AppContext } from '../context';
 import { Link } from 'react-router-dom';
 
 const Checkout = ({ sumaTotal, cart }) => {
-  const { total, setTotal } = React.useContext(AppContext);
+  const { total, setTotal } = useContext(AppContext);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTotal(sumaTotal);
     // eslint-disable-next-line
   }, [sumaTotal]);
