@@ -1,23 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import '../assets/styles/components/Form.scss';
 import { Formik } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { AppContext } from '../context';
 
 const Form = (props) => {
+  const { total } = useContext(AppContext);
   const [submitForm, setSubmitForm] = useState(false);
   const navigate = useNavigate();
   const { cart } = props;
 
-  let encodeText = 'Hola mi pedido es: \n';
+  let encodeText = '¡Hola! Mi pedido es el siguiente: \n\n';
 
-  cart.map((value) => (encodeText += ` - ${value.name} ${value.price}\n`));
+  cart.map(
+    (value) =>
+      (encodeText += `- ${value.name.toUpperCase()} \n   *Cantidad:* ${value.cantidad} \n   *Precio Unitario:* $${
+        value.price
+      } \n   *Precio Total:* $${value.price * value.cantidad}\n   *Talla:* ${value.talla}\n\n`)
+  );
 
-  const link = `https://wa.me/593987223910?text=${encodeURIComponent(encodeText)}`;
+  encodeText += `\n*Total a pagar: $${total}*\n\n---------------\nInformación de Contacto:\n\n`;
 
   return (
     <Formik
       onSubmit={(values, { resetForm }) => {
+        encodeText += `*Nombre:* ${values.nombre}\n*Email:* ${values.email}\n*Ciudad:* ${values.ciudad}\n\n`;
         resetForm();
         setSubmitForm(true);
 
@@ -25,10 +33,9 @@ const Form = (props) => {
         setTimeout(() => {
           setSubmitForm(false);
           navigate('/');
+          const link = `https://wa.me/593987223910?text=${encodeURIComponent(encodeText)}`;
           window.open(link, '_blank');
         }, 500);
-
-        console.log('submit', values);
       }}
       validate={(values) => {
         let errors = {};
