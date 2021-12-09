@@ -89,5 +89,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CardItem);
-
-// FIXME: Pasar el estado de added para la vista de todos los productos
