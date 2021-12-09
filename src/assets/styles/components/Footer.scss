@@ -1,0 +1,26 @@
+@import '../Vars.scss';
+
+.footer {
+  padding: 1rem 0;
+  background-color: $black;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgb(173, 169, 169);
+  .container {
+    p {
+      text-align: center;
+      a {
+        color: rgb(173, 169, 169);
+        &:hover {
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+    width: 50%;
+    margin: 0 auto;
+  }
+}

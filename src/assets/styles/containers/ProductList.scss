@@ -1,3 +1,5 @@
+@import '../Vars.scss';
+
 .product-list {
   width: 100%;
   padding: 30px;
@@ -15,7 +17,7 @@
   .product-list_button {
     width: 260px;
     height: 47px;
-    background-color: #282828;
+    background-color: $black;
     color: white;
     text-align: center;
     border: none;
