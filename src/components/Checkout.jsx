@@ -1,10 +1,9 @@
 import React, { useContext, useEffect } from 'react';
-import { connect } from 'react-redux';
 import '../assets/styles/components/Checkout.scss';
 import { AppContext } from '../context';
 import { Link } from 'react-router-dom';
 
-const Checkout = ({ sumaTotal, cart }) => {
+const Checkout = ({ sumaTotal }) => {
   const { total, setTotal, toggleMenu, setToggleMenu } = useContext(AppContext);
 
   const handleMenu = () => {
@@ -31,10 +30,4 @@ const Checkout = ({ sumaTotal, cart }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    cart: state.cart,
-  };
-};
-
-export default connect(mapStateToProps, null)(Checkout);
+export default Checkout;
