@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { deleteItemsFromCart } from '../actions';
 
 const CardCheckout = (props) => {
-  const { name, description, price, cantidad, talla, image, id } = props;
+  const { name, description, price, cantidad, talla, images, id } = props;
 
   const handleDelete = (id) => {
     props.deleteItemsFromCart(id);
@@ -15,7 +15,7 @@ const CardCheckout = (props) => {
     <>
       <div className='card-checkout'>
         <div className='card-checkout-img'>
-          <img src={image} alt='img' />
+          <img src={images[0]} alt='img' />
         </div>
         <div className='card-checkout-info'>
           <h3>{name}</h3>

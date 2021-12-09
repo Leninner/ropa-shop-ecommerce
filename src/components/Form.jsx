@@ -15,7 +15,7 @@ const Form = (props) => {
 
   cart.map(
     (value) =>
-      (encodeText += `👉 *${value.name.toUpperCase()}* \n   *Cantidad:* ${value.cantidad} \n   *Precio Unitario:* $${
+      (encodeText += `- *${value.name.toUpperCase()}* \n   *Cantidad:* ${value.cantidad} \n   *Precio Unitario:* $${
         value.price
       } \n   *Precio Total:* $${value.price * value.cantidad}\n   *Talla:* ${value.talla}\n\n`)
   );

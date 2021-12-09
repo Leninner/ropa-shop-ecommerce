@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { MdOutlineRemoveShoppingCart } from 'react-icons/md';
 
 const OrderItem = (props) => {
-  const { image, name, price, cantidad, talla } = props;
+  const { images, name, price, cantidad, talla } = props;
 
   const handleDelete = () => {
     props.deleteItemsFromCart(props.id);
@@ -14,7 +14,7 @@ const OrderItem = (props) => {
   return (
     <div className='OrderItem'>
       <figure>
-        <img src={image} alt={name} />
+        <img src={images[0]} alt={name} />
       </figure>
       <div className='resumen'>
         <p>{name}</p>

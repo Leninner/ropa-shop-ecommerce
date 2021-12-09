@@ -14,7 +14,17 @@ const CardItem = (props) => {
 
   return (
     <div className={cardItem}>
-      <img src={product.image} alt={product.name} />
+      <div className='slider'>
+        <ul>
+          {product.images.map((image, index) => {
+            return (
+              <li key={index}>
+                <img src={image} alt='product' />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
       <h2>{product.name}</h2>
 
       <Options product={product} />
