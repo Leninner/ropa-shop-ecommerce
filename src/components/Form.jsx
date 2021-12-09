@@ -2,10 +2,18 @@ import React, { useState } from 'react';
 import '../assets/styles/components/Form.scss';
 import { Formik } from 'formik';
 import { useNavigate } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-export const Form = () => {
+const Form = (props) => {
   const [submitForm, setSubmitForm] = useState(false);
   const navigate = useNavigate();
+  const { cart } = props;
+
+  let encodeText = 'Hola mi pedido es: \n';
+
+  cart.map((value) => (encodeText += ` - ${value.name} ${value.price}\n`));
+
+  const link = `https://wa.me/593987223910?text=${encodeURIComponent(encodeText)}`;
 
   return (
     <Formik
@@ -17,27 +25,28 @@ export const Form = () => {
         setTimeout(() => {
           setSubmitForm(false);
           navigate('/');
-        }, 1000);
+          window.open(link, '_blank');
+        }, 500);
 
         console.log('submit', values);
       }}
       validate={(values) => {
         let errors = {};
         if (!values.nombre) {
-          errors.nombre = 'Ingresa tu nombre';
+          errors.nombre = 'Se requiere tu nombre';
           // regex for letters and spaces
         } else if (!/^[a-zA-Z ]*$/.test(values.nombre)) {
           errors.nombre = 'Solo letras y espacios';
         }
 
         if (!values.email) {
-          errors.email = 'El email está requerido';
+          errors.email = 'Se requiere tu email';
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
           errors.email = 'El email no es válido';
         }
 
         if (!values.ciudad) {
-          errors.ciudad = 'Ingresa tu ciudad';
+          errors.ciudad = 'Se requiere tu ciudad';
         } else if (!/^[a-zA-Z ]*$/.test(values.ciudad)) {
           errors.ciudad = 'Solo se aceptan letras y espacios';
         }
@@ -91,7 +100,7 @@ export const Form = () => {
             {errors.ciudad && touched.ciudad && <div className='error'>{errors.ciudad}</div>}
           </div>
 
-          <button type='submit'>Enviar</button>
+          <button type='submit'>Iniciar Proceso de Pago</button>
 
           {submitForm && <p className='exito'>Formulario enviado con éxito</p>}
         </form>
@@ -99,3 +108,11 @@ export const Form = () => {
     </Formik>
   );
 };
+
+const mapStateToProps = (state) => {
+  return {
+    cart: state.cart,
+  };
+};
+
+export default connect(mapStateToProps, null)(Form);

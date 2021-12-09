@@ -2,7 +2,7 @@ import React from 'react';
 import CardCheckout from '../components/CardCheckout';
 import { connect } from 'react-redux';
 import '../assets/styles/containers/CheckoutList.scss';
-import { Form } from '../components/Form';
+import Form from '../components/Form';
 
 const CheckoutList = ({ cart }) => {
   return (
@@ -11,7 +11,7 @@ const CheckoutList = ({ cart }) => {
       <div className='mm'>
         <div className='overflow--checkout'>
           {cart.map((value) => (
-            <CardCheckout key={value} {...value} />
+            <CardCheckout key={value.id} {...value} />
           ))}
         </div>
         <Form />

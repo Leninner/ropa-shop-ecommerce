@@ -16,10 +16,6 @@ const Checkout = ({ sumaTotal, cart }) => {
     // eslint-disable-next-line
   }, [sumaTotal]);
 
-  let encodeText = 'Hola mi pedido es: \n';
-
-  cart.map((value) => (encodeText += ` - ${value.name} ${value.price}\n`));
-
   return (
     <div className='checkout'>
       <div className='checkout-total'>
@@ -42,9 +38,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, null)(Checkout);
-
-// <a href={link} target='_blank' rel='noreferrer'>
-
-//           </a>
-
-// const link = `https://wa.me/593987223910?text=${encodeURIComponent(encodeText)}`;
