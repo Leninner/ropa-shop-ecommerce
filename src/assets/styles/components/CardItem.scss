@@ -122,6 +122,34 @@
     margin-right: 15px;
     margin-left: 15px;
     margin-top: 25px;
+
+    .slider {
+      overflow: hidden;
+      height: 75%;
+      ul {
+        display: flex;
+        width: 300%;
+        animation: cambio 10s infinite alternate linear;
+
+        li {
+          width: 100%;
+          list-style: none;
+          img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    h2 {
+      color: black;
+      cursor: default;
+      margin: 5px 0;
+      font-size: 19px;
+      font-weight: 600;
+    }
   }
 }
 
