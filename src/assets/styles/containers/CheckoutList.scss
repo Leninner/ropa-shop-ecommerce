@@ -23,3 +23,24 @@
 h1 {
   margin: 65px 0 25px;
 }
+
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 0;
+    .mm {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .overflow--checkout {
+        width: auto;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}

@@ -12,13 +12,13 @@ const CheckoutList = ({ cart }) => {
     <div className='checkout-container'>
       <h1>Este es tu Carrito de Compras</h1>
       <div className='mm'>
+        <Form />
         <div className='overflow--checkout'>
           {cart.map((value) => (
             <CardCheckout key={value.id} {...value} />
           ))}
           {!cart.length && navigate('/')}
         </div>
-        <Form />
       </div>
     </div>
   );
