@@ -9,14 +9,6 @@
   align-items: center;
   justify-content: center;
 
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   width: 100%;
-  //   height: calc(100vh + 200px);
-  //   background-color: rgba(5, 5, 5, 0.068);
-  // }
-
   button {
     margin-top: 17%;
     outline: none;
@@ -45,14 +37,15 @@
     justify-content: center;
 
     button {
+      width: auto;
       margin-top: 110%;
-      width: 50%;
       height: 50px;
       border-radius: 50px;
       background-color: rgb(255, 255, 255);
       border: none;
-      padding: 0;
-      font-size: 15px;
+      padding: 0 30px;
+      font-size: 18px;
+      font-weight: bold;
 
       a {
         color: black;
