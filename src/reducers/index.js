@@ -1,4 +1,4 @@
-import { ADD_TO_CART, DELETE_ITEMS_FROM_CART, AUMENTAR_CANTIDAD, AÑADIR_TALLA } from '../types';
+import { ADD_TO_CART, DELETE_ITEMS_FROM_CART, AUMENTAR_CANTIDAD, AÑADIR_TALLA, GET_CATEGORY } from '../types';
 
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -80,6 +80,12 @@ export const reducer = (state, action) => {
 
           return item;
         }),
+      };
+
+    case GET_CATEGORY:
+      return {
+        ...state,
+        byCategory: state.products.filter((item) => item.categorie === action.payload),
       };
 
     default:

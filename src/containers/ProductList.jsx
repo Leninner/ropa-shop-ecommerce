@@ -3,6 +3,7 @@ import CardItem from '../components/CardItem';
 import classNames from 'classnames';
 import '../assets/styles/containers/ProductList.scss';
 import { connect } from 'react-redux';
+import Categories from '../components/Categories';
 
 const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
   const productListClass = classNames('product-list', {
@@ -23,11 +24,14 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
           </button>
         </>
       ) : (
-        <div className='container__allProducts'>
-          {products.map((product) => {
-            return <CardItem key={product.id} product={product} />;
-          })}
-        </div>
+        <>
+          <Categories />
+          <div className='container__allProducts'>
+            {products.map((product) => {
+              return <CardItem key={product.id} product={product} />;
+            })}
+          </div>
+        </>
       )}
     </section>
   );
