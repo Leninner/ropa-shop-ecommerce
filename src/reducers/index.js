@@ -83,6 +83,13 @@ export const reducer = (state, action) => {
       };
 
     case GET_CATEGORY:
+      if (action.payload === 'todos') {
+        return {
+          ...state,
+          byCategory: state.products,
+        };
+      }
+
       return {
         ...state,
         byCategory: state.products.filter((item) => item.categorie === action.payload),

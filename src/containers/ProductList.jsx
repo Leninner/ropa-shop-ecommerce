@@ -5,7 +5,15 @@ import '../assets/styles/containers/ProductList.scss';
 import { connect } from 'react-redux';
 import Categories from '../components/Categories';
 
-const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
+const ProductList = ({ allItems, setModal, modal, products, bestSellers, byCategory }) => {
+  const [category, setCategory] = React.useState(false);
+
+  console.log(category);
+
+  const handleCategory = () => {
+    setCategory(true);
+  };
+
   const productListClass = classNames('product-list', {
     allItems,
   });
@@ -25,12 +33,20 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers }) => {
         </>
       ) : (
         <>
-          <Categories />
-          <div className='container__allProducts'>
-            {products.map((product) => {
-              return <CardItem key={product.id} product={product} />;
-            })}
-          </div>
+          <Categories onClick={handleCategory} />
+          {category ? (
+            <div className='container__allProducts'>
+              {byCategory.map((product) => {
+                return <CardItem key={product.id} product={product} />;
+              })}
+            </div>
+          ) : (
+            <div className='container__allProducts'>
+              {products.map((product) => {
+                return <CardItem key={product.id} product={product} />;
+              })}
+            </div>
+          )}
         </>
       )}
     </section>
@@ -41,6 +57,7 @@ const mapStateToProps = (state) => {
   return {
     products: state.products,
     bestSellers: state.bestSellers,
+    byCategory: state.byCategory,
   };
 };
 

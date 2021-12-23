@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getCategory } from '../actions';
 
 const Categories = (props) => {
-  const { byCategory } = props;
+  const { byCategory, onClick } = props;
 
   console.log(byCategory);
 
@@ -11,22 +11,26 @@ const Categories = (props) => {
     const category = e.target.outerText;
     console.log(category);
     props.getCategory(category.toLowerCase());
+    onClick();
   };
 
   return (
     <>
       <h2 className='categories__title'>Categorías</h2>
       <div className='categories__container'>
-        <div className='categories__container--item'>
-          <span onClick={handleCategorie}>Sudaderas</span>
+        <div className='categories__container--item' onClick={handleCategorie}>
+          <span>Todos</span>
         </div>
-        <div className='categories__container--item'>
+        <div className='categories__container--item' onClick={handleCategorie}>
+          <span>Sudaderas</span>
+        </div>
+        <div className='categories__container--item' onClick={handleCategorie}>
           <span>Pantalones</span>
         </div>
-        <div className='categories__container--item'>
+        <div className='categories__container--item' onClick={handleCategorie}>
           <span>Camisetas</span>
         </div>
-        <div className='categories__container--item'>
+        <div className='categories__container--item' onClick={handleCategorie}>
           <span>Gorras</span>
         </div>
       </div>
