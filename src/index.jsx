@@ -17,6 +17,7 @@ const initialState = {
       images: [hoddie, 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 78,
@@ -30,6 +31,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 98,
@@ -43,6 +45,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
   ],
   products: [
@@ -58,6 +61,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 2,
@@ -71,6 +75,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 3,
@@ -84,6 +89,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 4,
@@ -97,6 +103,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 5,
@@ -110,6 +117,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 6,
@@ -123,6 +131,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 7,
@@ -136,6 +145,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 8,
@@ -149,6 +159,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 9,
@@ -162,6 +173,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
     {
       id: 10,
@@ -175,6 +187,7 @@ const initialState = {
       ],
       cantidad: 1,
       talla: 'S',
+      categorie: 'sudaderas',
     },
   ],
 };

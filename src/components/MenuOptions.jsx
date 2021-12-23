@@ -15,12 +15,12 @@ const MenuOptions = ({ handleClick }) => {
           </div>
           <div className='menu-options__container--item'>
             <a href='/' target='_blank' rel='noreferrer'>
-              <span>Sudaderas Anime</span>
+              <span>Sudaderas</span>
             </a>
           </div>
           <div className='menu-options__container--item'>
             <a href='/' target='_blank' rel='noreferrer'>
-              <span>Sudaderas Universidades</span>
+              <span>Camisetas</span>
             </a>
           </div>
         </nav>
