@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getCategory } from '../actions';
 
 const Categories = (props) => {
-  const { byCategory, onClick } = props;
+  const { byCategory } = props;
 
   console.log(byCategory);
 
@@ -11,7 +11,6 @@ const Categories = (props) => {
     const category = e.target.outerText;
     console.log(category);
     props.getCategory(category.toLowerCase());
-    onClick();
   };
 
   return (
