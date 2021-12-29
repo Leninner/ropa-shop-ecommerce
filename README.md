@@ -1,6 +1,6 @@
 # React Shop
 
-Tienda de ropa
+Tienda de ropa muy cool
 
 ## Tecnologías usadas
 
