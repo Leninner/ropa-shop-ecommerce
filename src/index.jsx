@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import { reducer } from './reducers';
 import hoddie from './assets/images/products/hoodie-newyork.jpeg';
+import hoddiePrueba from './assets/images/products/hoodie-prueba.jpeg';
 
 const initialState = {
   cart: [],
@@ -14,7 +15,7 @@ const initialState = {
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+      images: [hoddie, hoddiePrueba, 'https://picsum.photos/200/300'],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
