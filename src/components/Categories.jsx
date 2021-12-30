@@ -9,7 +9,6 @@ const Categories = (props) => {
 
   const handleCategorie = (e) => {
     const category = e.target.outerText;
-    console.log(category);
     props.getCategory(category.toLowerCase());
   };
 

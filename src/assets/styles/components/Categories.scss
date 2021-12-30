@@ -39,3 +39,19 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .categories__title {
+    font-size: 30px;
+    margin: 0 0 15px 0;
+  }
+
+  .categories__container {
+    overflow-x: scroll;
+    justify-content: flex-start;
+
+    .categories__container--item {
+      margin: 0 5px;
+    }
+  }
+}
