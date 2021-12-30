@@ -1,4 +1,4 @@
-import { ADD_TO_CART, DELETE_ITEMS_FROM_CART, AUMENTAR_CANTIDAD, AÑADIR_TALLA } from '../types';
+import { ADD_TO_CART, DELETE_ITEMS_FROM_CART, AUMENTAR_CANTIDAD, AÑADIR_TALLA, GET_CATEGORY } from '../types';
 
 export const addItemToCart = (payload) => {
   return {
@@ -24,6 +24,13 @@ export const aumentarCantidad = (payload) => {
 export const añadirTalla = (payload) => {
   return {
     type: AÑADIR_TALLA,
+    payload,
+  };
+};
+
+export const getCategory = (payload) => {
+  return {
+    type: GET_CATEGORY,
     payload,
   };
 };
