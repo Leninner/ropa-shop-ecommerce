@@ -20,6 +20,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: false,
     },
     {
       id: 78,
@@ -34,6 +35,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 98,
@@ -48,6 +50,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
   ],
   products: [
@@ -64,6 +67,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: false,
     },
     {
       id: 2,
@@ -78,6 +82,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: false,
     },
     {
       id: 3,
@@ -92,6 +97,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: false,
     },
     {
       id: 4,
@@ -106,6 +112,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 5,
@@ -120,6 +127,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 6,
@@ -134,6 +142,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 7,
@@ -148,6 +157,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 8,
@@ -162,6 +172,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 9,
@@ -176,6 +187,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 10,
@@ -190,6 +202,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
+      stock: true,
     },
     {
       id: 11,
@@ -204,6 +217,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 12,
@@ -218,6 +232,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 13,
@@ -232,6 +247,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 14,
@@ -246,6 +262,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 15,
@@ -260,6 +277,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 16,
@@ -274,6 +292,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 17,
@@ -288,6 +307,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 18,
@@ -302,6 +322,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'pantalones',
+      stock: true,
     },
     {
       id: 19,
@@ -316,6 +337,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
     {
       id: 20,
@@ -330,6 +352,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
     {
       id: 21,
@@ -344,6 +367,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
     {
       id: 22,
@@ -358,6 +382,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
     {
       id: 23,
@@ -372,6 +397,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
     {
       id: 24,
@@ -386,6 +412,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
     {
       id: 25,
@@ -400,6 +427,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
     {
       id: 26,
@@ -414,6 +442,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
+      stock: true,
     },
   ],
 };

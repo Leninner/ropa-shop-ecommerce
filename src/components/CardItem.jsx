@@ -7,9 +7,11 @@ import ToggleCart from './ToggleCart';
 
 const CardItem = (props) => {
   const { product, bestSellers } = props;
+  const { stock } = product;
 
   const cardItem = classNames('card-item', {
     bestSellers,
+    stock: !stock,
   });
 
   return (
@@ -27,9 +29,14 @@ const CardItem = (props) => {
       </div>
       <h2>{product.name}</h2>
 
-      <Options product={product} />
-
-      <ToggleCart product={product} />
+      {stock ? (
+        <>
+          <Options product={product} />
+          <ToggleCart product={product} />
+        </>
+      ) : (
+        <span className='isStock'>No disponible</span>
+      )}
     </div>
   );
 };

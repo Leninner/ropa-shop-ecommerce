@@ -113,6 +113,25 @@
   border: 1px solid rgb(158, 158, 158);
 }
 
+.stock {
+  border: 1px solid rgb(121, 8, 8);
+  box-shadow: none;
+
+  .slider {
+    ul {
+      li {
+        img {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+}
+
+.isStock {
+  color: rgb(158, 158, 158);
+}
+
 @media (max-width: 768px) {
   .card-item {
     width: 95%;
