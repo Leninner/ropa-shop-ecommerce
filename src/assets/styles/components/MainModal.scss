@@ -9,21 +9,21 @@
   align-items: center;
   justify-content: center;
 
-  button {
+  a {
     margin-top: 17%;
     outline: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
     height: 50px;
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
     border: none;
     padding: 0 35px;
     font-size: 1rem;
-
-    a {
-      color: rgb(14, 13, 13);
-      text-decoration: none;
-    }
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    font-weight: bold;
   }
 }
 
