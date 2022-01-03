@@ -14,46 +14,23 @@ const MenuOptions = (props) => {
   };
 
   return (
-    <section className='menu-options'>
+    <section className='menu-options' onClick={handleClick}>
       <div className='menu-options__container'>
-        <img src={close} alt='imagen' onClick={handleClick} />
+        <img src={close} alt='imagen' />
         <nav>
-          <div className='menu-options__container--item main' onClick={handleClick}>
+          <div className='menu-options__container--item main'>
             <a href='https://www.facebook.com/Ropa-Shop-105112035254774' target='_blank' rel='noreferrer'>
               <span>Facebook</span>
             </a>
           </div>
-          <div
-            className='menu-options__container--item'
-            onClick={(e) => {
-              handleCategorie(e);
-              handleClick();
-            }}>
+          <div className='menu-options__container--item' onClick={handleCategorie}>
             <span>Sudaderas</span>
           </div>
-          <div
-            className='menu-options__container--item'
-            onClick={(e) => {
-              handleCategorie(e);
-              handleClick();
-            }}>
+          <div className='menu-options__container--item' onClick={handleCategorie}>
             <span>Camisetas</span>
           </div>
-          <div
-            className='menu-options__container--item'
-            onClick={(e) => {
-              handleCategorie(e);
-              handleClick();
-            }}>
+          <div className='menu-options__container--item' onClick={handleCategorie}>
             <span>Pantalones</span>
-          </div>
-          <div
-            className='menu-options__container--item'
-            onClick={(e) => {
-              handleCategorie(e);
-              handleClick();
-            }}>
-            <span>Gorras</span>
           </div>
         </nav>
       </div>
