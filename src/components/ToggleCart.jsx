@@ -6,10 +6,14 @@ const ToggleCart = (props) => {
   const { product, cart } = props;
 
   const toggleCart = (item) => {
-    if (!cart.includes(item)) {
-      props.addItemToCart(item);
+    if (product.cantidad > 0) {
+      if (!cart.includes(item)) {
+        props.addItemToCart(item);
+      } else {
+        props.deleteItemsFromCart(item.id);
+      }
     } else {
-      props.deleteItemsFromCart(item.id);
+      alert('Elije una cantidad de productos mayor a 0 antes de continuar');
     }
   };
 
