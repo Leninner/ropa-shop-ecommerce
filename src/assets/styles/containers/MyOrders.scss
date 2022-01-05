@@ -1,6 +1,6 @@
 .MyOrder {
   width: 340px;
-  height: calc(100vh - 150px);
+  height: 100vh;
   position: fixed;
   top: 50px;
   background-color: white;
@@ -22,8 +22,8 @@
 
   .orders-container {
     width: 100%;
-    min-height: 320px;
-    max-height: 320px;
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 10px;

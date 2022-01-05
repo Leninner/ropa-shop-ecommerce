@@ -7,9 +7,6 @@ import { reducer } from './reducers';
 import hoddie from './assets/images/products/12.png';
 import akatsuki from './assets/images/products/2.1.png';
 import hoddie from './assets/images/products/01.jpeg';
-import hoddie from './assets/images/products/01.jpeg';
-import hoddie from './assets/images/products/01.jpeg';
-import hoddie from './assets/images/products/01.jpeg';
 import hoddie2 from './assets/images/products/hoodie-prueba.jpeg';
 
 const initialState = {
@@ -17,7 +14,7 @@ const initialState = {
   cart: [],
   bestSellers: [
     {
-      id: 01,
+      id: 510,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
