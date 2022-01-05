@@ -4,8 +4,8 @@ import { App } from './routes/App';
 import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import { reducer } from './reducers';
-import hoddie from './assets/images/products/01.jpeg';
-import hoddie from './assets/images/products/01.jpeg';
+import hoddie from './assets/images/products/12.png';
+import akatsuki from './assets/images/products/2.1.png';
 import hoddie from './assets/images/products/01.jpeg';
 import hoddie from './assets/images/products/01.jpeg';
 import hoddie from './assets/images/products/01.jpeg';
@@ -21,21 +21,19 @@ const initialState = {
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddiePrueba, 'https://picsum.photos/200/300'],
+      images: [hoddie, hoddie, hoddie],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
-      stock: false,
+      stock: true,
     },
     {
-      id: 78,
-      name: 'Crop Top',
-      price: 105,
+      id: 2,
+      name: 'Akatsuki',
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
+        akatsuki,akatsuki,akatsuki,
       ],
       cantidad: 1,
       talla: 'S',
