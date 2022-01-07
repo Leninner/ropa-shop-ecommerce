@@ -1,6 +1,6 @@
 # React Shop
 
-Tienda de ropa muy cool hecha con React
+Tienda de ropa muy cool hecha con React, Redux, React Lazy, sass y muchas cosas increíbles.
 
 ## Tecnologías usadas
 
