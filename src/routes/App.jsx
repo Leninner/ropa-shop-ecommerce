@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from '../containers/Layout';
 import { Home } from '../pages/Home';
 import { PageNotFound } from '../pages/PageNotFound';
 import '../assets/styles/Global.scss';
@@ -13,13 +12,11 @@ const App = () => {
   return (
     <AppContext.Provider value={initialState}>
       <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/checkout' element={<CheckoutList />} />
-            <Route path='*' element={<PageNotFound />} />
-          </Routes>
-        </Layout>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/checkout' element={<CheckoutList />} />
+          <Route path='*' element={<PageNotFound />} />
+        </Routes>
       </BrowserRouter>
     </AppContext.Provider>
   );
