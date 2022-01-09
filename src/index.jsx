@@ -8,13 +8,10 @@ import hoddie from './assets/images/products/12.png';
 import NW2 from './assets/images/products/12.1.png';
 import akatsuki from './assets/images/products/2.1.png';
 import akatsuki2 from './assets/images/products/2.2.png';
-import akatsuki1 from './assets/images/products/2.png';
+import akatsuki1 from './assets/images/products/2.jpg';
 import nasa from './assets/images/products/15.png';
 import nasa2 from './assets/images/products/15.8.png';
 import nasa3 from './assets/images/products/15.6.png';
-
-
-
 
 const initialState = {
   byCategory: [],
@@ -47,7 +44,7 @@ const initialState = {
       name: 'Sudadera Nasa',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [nasa,nasa2,nasa3],
+      images: [nasa, nasa2, nasa3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
