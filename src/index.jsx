@@ -59,7 +59,7 @@ const initialState = {
   products: [
     {
       id: 1,
-      name: 'Sudadera tommy azul',
+      name: 'Sudadera Tommy Hilfiger azul',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
