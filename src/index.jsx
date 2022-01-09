@@ -5,13 +5,18 @@ import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import { reducer } from './reducers';
 import hoddie from './assets/images/products/12.png';
-import NW2 from './assets/images/products/12.1.png';
+import nw2 from './assets/images/products/12.1.png';
 import akatsuki from './assets/images/products/2.1.png';
 import akatsuki2 from './assets/images/products/2.2.png';
 import akatsuki1 from './assets/images/products/2.png';
 import nasa from './assets/images/products/15.png';
 import nasa2 from './assets/images/products/15.8.png';
 import nasa3 from './assets/images/products/15.6.png';
+import tommyazul from './assets/images/products/1.1.jpeg';
+import tommyazul2 from './assets/images/products/1.jpg';
+
+
+
 
 
 
@@ -21,18 +26,18 @@ const initialState = {
   cart: [],
   bestSellers: [
     {
-      id: 510,
+      id: 01,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, NW2, hoddie],
+      images: [hoddie, nw2, hoddie],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
       stock: true,
     },
     {
-      id: 2,
+      id: 02,
       name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -43,7 +48,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 98,
+      id: 03,
       name: 'Sudadera Nasa',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -57,14 +62,11 @@ const initialState = {
   products: [
     {
       id: 1,
-      name: 'Sudadera',
+      name: 'Sudadera tommy azul',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        tommyazul,tommyazul2,tommyazul ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
