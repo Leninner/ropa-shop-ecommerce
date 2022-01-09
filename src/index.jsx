@@ -5,7 +5,16 @@ import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import { reducer } from './reducers';
 import hoddie from './assets/images/products/12.png';
+import NW2 from './assets/images/products/12.1.png';
 import akatsuki from './assets/images/products/2.1.png';
+import akatsuki2 from './assets/images/products/2.2.png';
+import akatsuki1 from './assets/images/products/2.png';
+import nasa from './assets/images/products/15.png';
+import nasa2 from './assets/images/products/15.8.png';
+import nasa3 from './assets/images/products/15.6.png';
+
+
+
 
 const initialState = {
   byCategory: [],
@@ -16,7 +25,7 @@ const initialState = {
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [hoddie, NW2, hoddie],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -24,10 +33,10 @@ const initialState = {
     },
     {
       id: 2,
-      name: 'Akatsuki',
+      name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [akatsuki, akatsuki, akatsuki],
+      images: [akatsuki, akatsuki2, akatsuki1],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -35,14 +44,10 @@ const initialState = {
     },
     {
       id: 98,
-      name: 'Anime Shop',
+      name: 'Sudadera Nasa',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [nasa,nasa2,nasa3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
