@@ -89,8 +89,7 @@ const initialState = {
       name: 'Sudadera Hollister',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, COLOR CONCHEVINO',
-      images: [
-        holi1,holi2,holi3 ],
+      images: [holi1, holi2, holi3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -101,8 +100,7 @@ const initialState = {
       name: 'Sudadera de Kakashi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        ka1,ka2,ka3],
+      images: [ka1, ka2, ka3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -113,8 +111,7 @@ const initialState = {
       name: 'Sudadera De Pain',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        pa,pa2,pa3 ],
+      images: [pa, pa2, pa3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
