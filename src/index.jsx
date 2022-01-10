@@ -63,7 +63,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
-      stock: true,
+      stock: false,
     },
     {
       id: 2,
