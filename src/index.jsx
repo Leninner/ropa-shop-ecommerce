@@ -228,6 +228,28 @@ const initialState = {
       categorie: 'Sudadera',
       stock: true,
     },
+    {
+      id: 14,
+      name: 'Sudadera Calvin Klein',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [hoddie, hoddie, hoddie],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'Sudadera',
+      stock: true,
+    },
+    {
+      id: 15,
+      name: 'Sudadera Calvin Klein',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [hoddie, hoddie, hoddie],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'Sudadera',
+      stock: true,
+    },
     //pantalon//
     {
       id: 14,
