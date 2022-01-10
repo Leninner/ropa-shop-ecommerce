@@ -23,7 +23,7 @@ const initialState = {
   cart: [],
   bestSellers: [
     {
-      id: 01,
+      id: 510,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -34,7 +34,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 02,
+      id: 520,
       name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -45,7 +45,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 03,
+      id: 530,
       name: 'Sudadera Nasa',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -59,7 +59,7 @@ const initialState = {
   products: [
     {
       id: 1,
-      name: 'Sudadera Tommy Hilfiger azul',
+      name: 'Tommy Hilfiger azul',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
