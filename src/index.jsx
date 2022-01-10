@@ -254,7 +254,7 @@ const initialState = {
     },
     {
       id: 15,
-      name: 'Sudadera Calvin Klein',
+      name: 'Sudadera Levi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [le,le2,le3],
