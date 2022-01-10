@@ -15,15 +15,12 @@ import nasa3 from './assets/images/products/15.6.png';
 import tommyazul from './assets/images/products/1.1.jpeg';
 import tommyazul2 from './assets/images/products/1.jpg';
 
-
-
-
 const initialState = {
   byCategory: [],
   cart: [],
   bestSellers: [
     {
-      id: 01,
+      id: 510,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -34,7 +31,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 02,
+      id: 512,
       name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -45,7 +42,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 03,
+      id: 513,
       name: 'Sudadera Nasa',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -59,15 +56,14 @@ const initialState = {
   products: [
     {
       id: 1,
-      name: 'Sudadera Tommy Hilfiger azul',
+      name: 'Tommy Hilfiger azul',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        tommyazul,tommyazul2,tommyazul ],
+      images: [tommyazul, tommyazul2, tommyazul],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
-      stock: false,
+      stock: true,
     },
     {
       id: 2,
