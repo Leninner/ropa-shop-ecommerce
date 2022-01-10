@@ -4,60 +4,47 @@ import { App } from './routes/App';
 import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import { reducer } from './reducers';
-import hoddie from './assets/images/products/12.png';
-import nw2 from './assets/images/products/12.1.png';
-import akatsuki from './assets/images/products/2.1.png';
-import akatsuki2 from './assets/images/products/2.2.png';
-import akatsuki1 from './assets/images/products/2.jpg';
-import nasa from './assets/images/products/15.png';
-import nasa2 from './assets/images/products/15.8.png';
-import nasa3 from './assets/images/products/15.6.png';
-import tommyazul from './assets/images/products/1.1.jpeg';
-import tommyazul2 from './assets/images/products/1.jpg';
-import holi1 from './assets/images/products/3.png';
-import holi2 from './assets/images/products/3.2.jpg';
-import holi3 from './assets/images/products/3.1.png';
-import ka1 from './assets/images/products/4.1.png';
-import ka2 from './assets/images/products/4.jpg';
-import ka3 from './assets/images/products/4.2.png';
-import pa from './assets/images/products/5.png';
-import pa2 from './assets/images/products/5.1.jpg';
-import pa3 from './assets/images/products/5.2.png';
-import snk from './assets/images/products/6.png';
-import snk2 from './assets/images/products/6.1.png';
-import snk3 from './assets/images/products/6.3.jpg';
-import pu from './assets/images/products/7.png';
-import pu2 from './assets/images/products/7.1.jpg';
-import pu3 from './assets/images/products/7.2.jpg';
-import it2 from './assets/images/products/8.1.jpg';
-import it from './assets/images/products/8.png';
-import ita from './assets/images/products/9.png';
-import ita2 from './assets/images/products/9.2.jpg';
-import itac from './assets/images/products/11.png';
-import itac2 from './assets/images/products/11.1.jpg';
-import tomr from './assets/images/products/10.png';
-import tomr2 from './assets/images/products/10.1.jpg';
-import mon from './assets/images/products/13.png';
-import mon2 from './assets/images/products/13.1.jpg';
-import mon3 from './assets/images/products/13.2.jpg';
-import co from './assets/images/products/14.png';
-import co2 from './assets/images/products/14.1.png';
-import co3 from './assets/images/products/14.2.png';
-import sp from './assets/images/products/16.png';
-import sp2 from './assets/images/products/16.1.jpg';
-import ck from './assets/images/products/17.png';
-import ck2 from './assets/images/products/17.1.jpg';
-import le from './assets/images/products/18.png';
-import le2 from './assets/images/products/18.2.png';
-import le3 from './assets/images/products/18.1.png';
-
-
-
-
-
-
-
-
+import hoddie from './assets/images/products/15.6-min.png';
+import nw2 from './assets/images/products/15.6-min.png';
+import akatsuki from './assets/images/products/2.1-min.png';
+import akatsuki2 from './assets/images/products/2.2-min.png';
+import akatsuki1 from './assets/images/products/2-min.jpg';
+import nasa from './assets/images/products/15-min.png';
+import nasa2 from './assets/images/products/15.8-min.png';
+import nasa3 from './assets/images/products/15.6-min.png';
+import tommyazul from './assets/images/products/1.1-min.jpeg';
+import tommyazul2 from './assets/images/products/1-min.jpg';
+import holi1 from './assets/images/products/3-min.png';
+import holi2 from './assets/images/products/3.2-min.jpg';
+import holi3 from './assets/images/products/3.1-min.png';
+import ka1 from './assets/images/products/4.1-min.png';
+import ka2 from './assets/images/products/4-min.jpg';
+import ka3 from './assets/images/products/4.2-min.png';
+import pa from './assets/images/products/5-min.png';
+import pa2 from './assets/images/products/5.1-min.jpg';
+import pa3 from './assets/images/products/5.2-min.png';
+import snk from './assets/images/products/6-min.png';
+import snk2 from './assets/images/products/6.1-min.png';
+import snk3 from './assets/images/products/6.3-min.jpg';
+import pu from './assets/images/products/15.6-min.png';
+import pu2 from './assets/images/products/7.1-min.jpg';
+import pu3 from './assets/images/products/7.2-min.jpg';
+import it2 from './assets/images/products/15.6-min.png';
+import it from './assets/images/products/15.6-min.png';
+import ita from './assets/images/products/15.6-min.png';
+import ita2 from './assets/images/products/15.6-min.png';
+import itac from './assets/images/products/15.6-min.png';
+import itac2 from './assets/images/products/15.6-min.png';
+import tomr from './assets/images/products/15.6-min.png';
+import tomr2 from './assets/images/products/15.6-min.png';
+import mon from './assets/images/products/15.6-min.png';
+import mon2 from './assets/images/products/15.6-min.png';
+import mon3 from './assets/images/products/15.6-min.png';
+import co from './assets/images/products/15.6-min.png';
+import co2 from './assets/images/products/15.6-min.png';
+import co3 from './assets/images/products/15.6-min.png';
+import sp from './assets/images/products/16-min.png';
+import sp2 from './assets/images/products/16.1-min.jpg';
 
 const initialState = {
   byCategory: [],
@@ -246,7 +233,7 @@ const initialState = {
       name: 'Sudadera Calvin Klein',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ck,ck2,ck],
+      images: [hoddie, hoddie, hoddie],
       cantidad: 1,
       talla: 'S',
       categorie: 'Sudadera',
@@ -257,7 +244,7 @@ const initialState = {
       name: 'Sudadera Levi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [le,le2,le3],
+      images: [hoddie, hoddie, hoddie],
       cantidad: 1,
       talla: 'S',
       categorie: 'Sudadera',
@@ -283,7 +270,7 @@ const initialState = {
     //camiseta//
 
     {
-      id: 15 ,
+      id: 15,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
