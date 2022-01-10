@@ -151,7 +151,7 @@ const initialState = {
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        it,it2,it   ],
+        it,it2,it],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -159,7 +159,7 @@ const initialState = {
     },
     {
       id: 8,
-      name: 'Sudadera De Itachi ',
+      name: 'Sudadera De Itachi 2',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
@@ -171,14 +171,10 @@ const initialState = {
     },
     {
       id: 9,
-      name: 'Sudadera New York',
+      name: 'Sudadera Itachi 3',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [ itac,itac2,itac],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
