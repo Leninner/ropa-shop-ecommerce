@@ -23,6 +23,40 @@ import ka3 from './assets/images/products/4.2.png';
 import pa from './assets/images/products/5.png';
 import pa2 from './assets/images/products/5.1.jpg';
 import pa3 from './assets/images/products/5.2.png';
+import snk from './assets/images/products/6.png';
+import snk2 from './assets/images/products/6.1.png';
+import snk3 from './assets/images/products/6.3.jpg';
+import pu from './assets/images/products/7.png';
+import pu2 from './assets/images/products/7.1.jpg';
+import pu3 from './assets/images/products/7.2.jpg';
+import it2 from './assets/images/products/8.1.jpg';
+import it from './assets/images/products/8.png';
+import ita from './assets/images/products/9.png';
+import ita2 from './assets/images/products/9.2.jpg';
+import itac from './assets/images/products/11.png';
+import itac2 from './assets/images/products/11.1.jpg';
+import tomr from './assets/images/products/10.png';
+import tomr2 from './assets/images/products/10.1.jpg';
+import mon from './assets/images/products/13.png';
+import mon2 from './assets/images/products/13.1.jpg';
+import mon3 from './assets/images/products/13.2.jpg';
+import co from './assets/images/products/14.png';
+import co2 from './assets/images/products/14.1.png';
+import co3 from './assets/images/products/14.2.png';
+import sp from './assets/images/products/16.png';
+import sp2 from './assets/images/products/16.1.jpg';
+
+
+
+
+
+
+
+
+
+
+
+
 
 const initialState = {
   byCategory: [],
@@ -44,7 +78,7 @@ const initialState = {
       name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [akatsuki, akatsuki2, akatsuki1],
+      images: [akatsuki, akatsuki1, akatsuki2],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -65,7 +99,7 @@ const initialState = {
   products: [
     {
       id: 1,
-      name: 'Tommy Hilfiger azul',
+      name: 'Tommy Hilfiger Azul',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [tommyazul, tommyazul2, tommyazul],
@@ -109,14 +143,11 @@ const initialState = {
     },
     {
       id: 5,
-      name: 'Sudadera',
+      name: 'Sudadera De SNK',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        snk,snk3,snk2 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -124,29 +155,23 @@ const initialState = {
     },
     {
       id: 6,
-      name: 'Sudadera',
+      name: 'Sudadera Puma',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Mostaza',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        pu,pu2,pu3 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
-      stock: true,
+      stock: false,
     },
     {
       id: 7,
-      name: 'Sudadera New York',
+      name: 'Sudadera De Itachi ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        it,it2,it],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -154,14 +179,11 @@ const initialState = {
     },
     {
       id: 8,
-      name: 'Sudadera New York',
+      name: 'Sudadera De Itachi 2',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        ita,ita2,ita],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -169,14 +191,10 @@ const initialState = {
     },
     {
       id: 9,
-      name: 'Sudadera New York',
+      name: 'Sudadera Itachi 3',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [ itac,itac2,itac],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -184,67 +202,52 @@ const initialState = {
     },
     {
       id: 10,
-      name: 'Sudadera New York',
+      name: 'Tommy Hilfiger Roja',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [ tomr,tomr2,tomr ],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: false,
+    },
+    {
+      id: 11,
+      name: 'Sudadera Monster',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [ mon,mon2,mon3 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
       stock: true,
     },
     {
-      id: 11,
-      name: 'Pantalones',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'pantalones',
-      stock: true,
-    },
-    {
       id: 12,
-      name: 'Pantalones',
+      name: 'Sudadera Cobra Cai',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [ co,co2,co3 ],
       cantidad: 1,
       talla: 'S',
-      categorie: 'pantalones',
+      categorie: 'Sudadera',
       stock: true,
     },
     {
       id: 13,
-      name: 'Pantalones',
+      name: 'Sudadera Spiderman',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [sp,sp2,sp  ],
       cantidad: 1,
       talla: 'S',
-      categorie: 'pantalones',
+      categorie: 'Sudadera',
       stock: true,
     },
+    //pantalon//
     {
       id: 14,
-      name: 'Pantalones',
+      name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
@@ -257,186 +260,43 @@ const initialState = {
       categorie: 'pantalones',
       stock: true,
     },
+
+    //camiseta//
+
     {
       id: 15,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
         'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
         'https://picsum.photos/200/300',
       ],
       cantidad: 1,
       talla: 'S',
-      categorie: 'pantalones',
+      categorie: 'camisetas',
       stock: true,
     },
+
+    //Chompas//
+    
     {
       id: 16,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'pantalones',
-      stock: true,
-    },
-    {
-      id: 17,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'pantalones',
-      stock: true,
-    },
-    {
-      id: 18,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'pantalones',
-      stock: true,
-    },
-    {
-      id: 19,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
         'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
         'https://picsum.photos/200/300',
       ],
       cantidad: 1,
       talla: 'S',
-      categorie: 'camisetas',
+      categorie: 'chompas',
       stock: true,
     },
-    {
-      id: 20,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
-    },
-    {
-      id: 21,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
-    },
-    {
-      id: 22,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
-    },
-    {
-      id: 23,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
-    },
-    {
-      id: 24,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
-    },
-    {
-      id: 25,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
-    },
-    {
-      id: 26,
-      name: 'Sudadera New York',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
-    },
+    
   ],
 };
 
