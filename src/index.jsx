@@ -46,18 +46,6 @@ import co3 from './assets/images/products/14.2.png';
 import sp from './assets/images/products/16.png';
 import sp2 from './assets/images/products/16.1.jpg';
 
-
-
-
-
-
-
-
-
-
-
-
-
 const initialState = {
   byCategory: [],
   cart: [],
@@ -146,8 +134,7 @@ const initialState = {
       name: 'Sudadera De SNK',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
-      images: [
-        snk,snk3,snk2 ],
+      images: [snk, snk3, snk2],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -158,8 +145,7 @@ const initialState = {
       name: 'Sudadera Puma',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Mostaza',
-      images: [
-        pu,pu2,pu3 ],
+      images: [pu, pu2, pu3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -170,8 +156,7 @@ const initialState = {
       name: 'Sudadera De Itachi ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        it,it2,it],
+      images: [it, it2, it],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -182,8 +167,7 @@ const initialState = {
       name: 'Sudadera De Itachi 2',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        ita,ita2,ita],
+      images: [ita, ita2, ita],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -194,7 +178,7 @@ const initialState = {
       name: 'Sudadera Itachi 3',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ itac,itac2,itac],
+      images: [itac, itac2, itac],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -205,7 +189,7 @@ const initialState = {
       name: 'Tommy Hilfiger Roja',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ tomr,tomr2,tomr ],
+      images: [tomr, tomr2, tomr],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -216,7 +200,7 @@ const initialState = {
       name: 'Sudadera Monster',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ mon,mon2,mon3 ],
+      images: [mon, mon2, mon3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -227,7 +211,7 @@ const initialState = {
       name: 'Sudadera Cobra Cai',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ co,co2,co3 ],
+      images: [co, co2, co3],
       cantidad: 1,
       talla: 'S',
       categorie: 'Sudadera',
@@ -238,7 +222,7 @@ const initialState = {
       name: 'Sudadera Spiderman',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [sp,sp2,sp  ],
+      images: [sp, sp2, sp],
       cantidad: 1,
       talla: 'S',
       categorie: 'Sudadera',
@@ -280,7 +264,7 @@ const initialState = {
     },
 
     //Chompas//
-    
+
     {
       id: 16,
       name: 'Sudadera New York',
@@ -296,7 +280,6 @@ const initialState = {
       categorie: 'chompas',
       stock: true,
     },
-    
   ],
 };
 
