@@ -112,7 +112,7 @@ const initialState = {
     {
       id: 4,
       name: 'Sudadera De Pain',
-      price: 25,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         pa,pa2,pa3 ],
@@ -124,7 +124,7 @@ const initialState = {
     {
       id: 5,
       name: 'Sudadera',
-      price: 100,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         hoddie,
@@ -139,7 +139,7 @@ const initialState = {
     {
       id: 6,
       name: 'Sudadera',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         hoddie,
@@ -154,7 +154,7 @@ const initialState = {
     {
       id: 7,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         hoddie,
@@ -169,7 +169,7 @@ const initialState = {
     {
       id: 8,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         hoddie,
@@ -184,7 +184,7 @@ const initialState = {
     {
       id: 9,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         hoddie,
@@ -199,7 +199,7 @@ const initialState = {
     {
       id: 10,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         hoddie,
@@ -214,7 +214,7 @@ const initialState = {
     {
       id: 11,
       name: 'Pantalones',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -229,7 +229,7 @@ const initialState = {
     {
       id: 12,
       name: 'Pantalones',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -244,7 +244,7 @@ const initialState = {
     {
       id: 13,
       name: 'Pantalones',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -259,7 +259,7 @@ const initialState = {
     {
       id: 14,
       name: 'Pantalones',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -274,7 +274,7 @@ const initialState = {
     {
       id: 15,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -289,7 +289,7 @@ const initialState = {
     {
       id: 16,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -304,7 +304,7 @@ const initialState = {
     {
       id: 17,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -319,7 +319,7 @@ const initialState = {
     {
       id: 18,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -334,7 +334,7 @@ const initialState = {
     {
       id: 19,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -349,7 +349,7 @@ const initialState = {
     {
       id: 20,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -364,7 +364,7 @@ const initialState = {
     {
       id: 21,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -379,7 +379,7 @@ const initialState = {
     {
       id: 22,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -394,7 +394,7 @@ const initialState = {
     {
       id: 23,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -409,7 +409,7 @@ const initialState = {
     {
       id: 24,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -424,7 +424,7 @@ const initialState = {
     {
       id: 25,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
@@ -439,7 +439,7 @@ const initialState = {
     {
       id: 26,
       name: 'Sudadera New York',
-      price: 10,
+      price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
         'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
