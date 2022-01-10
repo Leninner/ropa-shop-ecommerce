@@ -31,11 +31,7 @@ const initialState = {
       stock: true,
     },
     {
-<<<<<<< HEAD
       id: 502,
-=======
-      id: 512,
->>>>>>> 3baab250ba74a431bb184333aa3f965298bdf84d
       name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -46,11 +42,7 @@ const initialState = {
       stock: true,
     },
     {
-<<<<<<< HEAD
       id: 503,
-=======
-      id: 513,
->>>>>>> 3baab250ba74a431bb184333aa3f965298bdf84d
       name: 'Sudadera Nasa',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
