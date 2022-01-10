@@ -20,6 +20,12 @@ import holi3 from './assets/images/products/3.1.png';
 import ka1 from './assets/images/products/4.1.png';
 import ka2 from './assets/images/products/4.jpg';
 import ka3 from './assets/images/products/4.2.png';
+import pa from './assets/images/products/5.png';
+import pa2 from './assets/images/products/5.1.jpg';
+import pa3 from './assets/images/products/5.2.png';
+
+
+
 
 
 
@@ -101,18 +107,15 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
-      stock: false,
+      stock: true,
     },
     {
       id: 4,
-      name: 'Sudadera',
+      name: 'Sudadera De Pain',
       price: 25,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        pa,pa2,pa3 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
