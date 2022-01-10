@@ -45,10 +45,11 @@ import co2 from './assets/images/products/14.1.png';
 import co3 from './assets/images/products/14.2.png';
 import sp from './assets/images/products/16.png';
 import sp2 from './assets/images/products/16.1.jpg';
-
-
-
-
+import ck from './assets/images/products/17.png';
+import ck2 from './assets/images/products/17.1.jpg';
+import le from './assets/images/products/18.png';
+import le2 from './assets/images/products/18.2.png';
+import le3 from './assets/images/products/18.1.png';
 
 
 
@@ -244,6 +245,28 @@ const initialState = {
       categorie: 'Sudadera',
       stock: true,
     },
+    {
+      id: 14,
+      name: 'Sudadera Calvin Klein',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [ck,ck2,ck],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'Sudadera',
+      stock: true,
+    },
+    {
+      id: 15,
+      name: 'Sudadera Calvin Klein',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [le,le2,le3],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'Sudadera',
+      stock: true,
+    },
     //pantalon//
     {
       id: 14,
@@ -264,7 +287,7 @@ const initialState = {
     //camiseta//
 
     {
-      id: 15,
+      id: 15 ,
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
