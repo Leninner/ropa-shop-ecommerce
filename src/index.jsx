@@ -23,13 +23,12 @@ import ka3 from './assets/images/products/4.2.png';
 import pa from './assets/images/products/5.png';
 import pa2 from './assets/images/products/5.1.jpg';
 import pa3 from './assets/images/products/5.2.png';
-
-
-
-
-
-
-
+import snk from './assets/images/products/6.png';
+import snk2 from './assets/images/products/6.1.png';
+import snk3 from './assets/images/products/6.3.jpg';
+import pu from './assets/images/products/7.png';
+import pu2 from './assets/images/products/7.1.jpg';
+import pu3 from './assets/images/products/7.2.jpg';
 
 
 
@@ -55,7 +54,7 @@ const initialState = {
       name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [akatsuki, akatsuki2, akatsuki1],
+      images: [akatsuki, akatsuki1, akatsuki2],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -123,14 +122,11 @@ const initialState = {
     },
     {
       id: 5,
-      name: 'Sudadera',
+      name: 'Sudadera De SNK',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        snk,snk2,snk3 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -138,14 +134,11 @@ const initialState = {
     },
     {
       id: 6,
-      name: 'Sudadera',
+      name: 'Sudadera Puma',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Mostaza',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        pu,pu2,pu3 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
