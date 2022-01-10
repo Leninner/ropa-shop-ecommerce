@@ -3,10 +3,6 @@ import { connect } from 'react-redux';
 import { getCategory } from '../actions';
 
 const Categories = (props) => {
-  const { byCategory } = props;
-
-  console.log(byCategory);
-
   const handleCategorie = (e) => {
     const category = e.target.outerText;
     props.getCategory(category.toLowerCase());
