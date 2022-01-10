@@ -29,8 +29,12 @@ import snk3 from './assets/images/products/6.3.jpg';
 import pu from './assets/images/products/7.png';
 import pu2 from './assets/images/products/7.1.jpg';
 import pu3 from './assets/images/products/7.2.jpg';
-
-
+import it2 from './assets/images/products/8.1.jpg';
+import it from './assets/images/products/8.png';
+import ita from './assets/images/products/9.png';
+import ita2 from './assets/images/products/9.2.jpg';
+import itac from './assets/images/products/11.png';
+import itac2 from './assets/images/products/11.1.jpg';
 
 
 
@@ -123,7 +127,7 @@ const initialState = {
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
       images: [
-        snk,snk2,snk3 ],
+        snk,snk3,snk2 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -139,18 +143,15 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
-      stock: true,
+      stock: false,
     },
     {
       id: 7,
-      name: 'Sudadera New York',
+      name: 'Sudadera De Itachi ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        it,it2,it   ],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -158,14 +159,11 @@ const initialState = {
     },
     {
       id: 8,
-      name: 'Sudadera New York',
+      name: 'Sudadera De Itachi ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
-        hoddie,
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+        ita,ita2,ita],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
