@@ -19,7 +19,7 @@ import holi2 from './assets/images/products/3.2.jpg';
 import holi3 from './assets/images/products/3.1.png';
 import ka1 from './assets/images/products/4.1.png';
 import ka2 from './assets/images/products/4.jpg';
-import ka3 from './assets/images/products/4.1.png';
+import ka3 from './assets/images/products/4.2.png';
 
 
 
