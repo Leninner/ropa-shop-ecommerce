@@ -55,8 +55,6 @@ import lv3 from './assets/images/products/18.1.png';
 
 
 
-
-
 const initialState = {
   byCategory: [],
   cart: [],
