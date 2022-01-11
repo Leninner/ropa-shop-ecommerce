@@ -14,6 +14,7 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers, byCateg
     <section className={productListClass} id='allProducts'>
       {modal ? (
         <>
+          <p className='feedback'>Pasa el mouse por encima para ver más fotos</p>
           <div className='container__productList'>
             {bestSellers.map((product) => {
               return <CardItem key={product.id} product={product} bestSellers />;
@@ -26,6 +27,7 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers, byCateg
       ) : (
         <>
           <Categories />
+          <p className='feedback'>Pasa el mouse por encima para ver más fotos</p>
           {byCategory.length ? (
             <div className='container__allProducts'>
               {byCategory.map((product) => {

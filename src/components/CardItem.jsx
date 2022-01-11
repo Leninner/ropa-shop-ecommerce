@@ -14,7 +14,7 @@ const CardItem = (props) => {
   const [slideRun, setSlide] = useState(false);
 
   const handleSetSlide = () => {
-    setSlide(true);
+    setSlide(!slideRun);
   };
 
   const cardItem = classNames('card-item', {
@@ -30,7 +30,7 @@ const CardItem = (props) => {
     <div className={cardItem} ref={ref}>
       {show && (
         <>
-          <div className={cardItemSlide} onMouseEnter={handleSetSlide}>
+          <div className={cardItemSlide} onMouseEnter={handleSetSlide} onMouseLeave={handleSetSlide}>
             <ul>
               {product.images.map((image, index) => {
                 return (
