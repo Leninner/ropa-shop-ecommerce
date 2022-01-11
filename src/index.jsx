@@ -41,11 +41,12 @@ import mon from './assets/images/products/13.png';
 import mon2 from './assets/images/products/13.3.jpg';
 import mon3 from './assets/images/products/13.2.jpg';
 import co from './assets/images/products/14.png';
-import co2 from './assets/images/products/14.2.png';
+import co2 from './assets/images/products/14.1.png';
 import co3 from './assets/images/products/14.2.png';
 import sp from './assets/images/products/16.png';
 import sp2 from './assets/images/products/16.1.jpg';
 import ck from './assets/images/products/17.png';
+import ck2 from './assets/images/products/17.1.jpg';
 import lv from './assets/images/products/18.png';
 import lv2 from './assets/images/products/18.2.png';
 import lv3 from './assets/images/products/18.1.png';
@@ -237,7 +238,7 @@ const initialState = {
       name: 'Sudadera Calvin Klein',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ck, ck, ck],
+      images: [ck, ck, ck2],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
