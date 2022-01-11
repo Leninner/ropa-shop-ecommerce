@@ -377,10 +377,10 @@ const initialState = {
     },
     {
       id: 24,
-      name: 'Sudadera Levi a Color',
+      name: 'Tommy Hilfiger Gris',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [tommygris, tommygris, tommygris],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -430,17 +430,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 29,
-      name: 'Sudadera Levi a Color',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
+  
     //pantalon//
     {
       id: 30,
