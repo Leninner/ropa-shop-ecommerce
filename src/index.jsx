@@ -57,6 +57,15 @@ import rym from './assets/images/products/20.png';
 import ckn from './assets/images/products/21.png';
 import itach from './assets/images/products/22.png';
 import pum from './assets/images/products/23.png';
+import spd from './assets/images/products/24.png';
+import chom from './assets/images/products/25.png';
+import chom2 from './assets/images/products/26.png';
+import chom3 from './assets/images/products/26.1.png';
+import chom4 from './assets/images/products/27.png';
+
+
+
+
 
 
 
@@ -323,17 +332,17 @@ const initialState = {
       stock: true,
     },{
       id: 21,
-      name: 'Sudadera Levi',
+      name: 'Sudadera Spiderman 2',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [spd, spd, spd],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
       stock: true,
     },{
       id: 22,
-      name: 'Sudadera Levi',
+      name: 'Sudadera Levi a Color',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [hoddie, hoddie, hoddie],
@@ -381,14 +390,31 @@ const initialState = {
 
     {
       id: 25,
-      name: 'Chompas',
+      name: 'Chompas Colombiana de Mujer',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [chom,chom,chom ],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'chompas',
+      stock: true,
+    },
+    {
+      id: 26,
+      name: 'Chompas Colombiana de Mujer',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [chom2,chom2,chom3 ],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'chompas',
+      stock: true,
+    },{
+      id: 27,
+      name: 'Chompas Colombiana de Mujer',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [chom4,chom4,chom4 ],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
