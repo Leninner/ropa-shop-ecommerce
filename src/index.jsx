@@ -50,6 +50,11 @@ import lv from './assets/images/products/18.png';
 import lv2 from './assets/images/products/18.2.png';
 import lv3 from './assets/images/products/18.1.png';
 
+
+
+
+
+
 const initialState = {
   byCategory: [],
   cart: [],
@@ -94,7 +99,7 @@ const initialState = {
       name: 'Tommy Hilfiger Azul',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [tommyazul, tommyazul2, tommyazul],
+      images: [tommyazul, tommyazul, tommyazul2],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -237,7 +242,7 @@ const initialState = {
       name: 'Sudadera Calvin Klein',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ck, ck, ck],
+      images: [ck, ck, ck2],
       cantidad: 1,
       talla: 'S',
       categorie: 'Sudadera',
@@ -264,8 +269,7 @@ const initialState = {
       talla: 'S',
       categorie: 'Sudadera',
       stock: true,
-    },
-    {
+    }, {
       id: 17,
       name: 'Sudadera Levi',
       price: 15,
