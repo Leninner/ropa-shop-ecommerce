@@ -50,6 +50,12 @@ import ck2 from './assets/images/products/17.1.jpg';
 import lv from './assets/images/products/18.png';
 import lv2 from './assets/images/products/18.2.png';
 import lv3 from './assets/images/products/18.1.png';
+import ktm from './assets/images/products/19.png';
+import ktm2 from './assets/images/products/19.1.jpg';
+import ktm3 from './assets/images/products/19.2.jpg';
+
+
+
 
 const initialState = {
   byCategory: [],
@@ -139,7 +145,7 @@ const initialState = {
       name: 'Sudadera De SNK',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
-      images: [snk, snk3, snk2],
+      images: [snk, snk2, snk3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -257,10 +263,10 @@ const initialState = {
     },
     {
       id: 16,
-      name: 'Sudadera Levi',
+      name: 'Sudadera KTM',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [ktm, ktm2, ktm3],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
