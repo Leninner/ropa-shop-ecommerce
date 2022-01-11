@@ -42,7 +42,7 @@ import mon2 from './assets/images/products/13.3.jpg';
 import mon3 from './assets/images/products/13.2.jpg';
 import co from './assets/images/products/14.png';
 import co2 from './assets/images/products/14.2.png';
-import co3 from './assets/images/products/14.3.png';
+import co3 from './assets/images/products/14.2.png';
 import sp from './assets/images/products/16.png';
 import sp2 from './assets/images/products/16.1.jpg';
 import ck from './assets/images/products/17.png';
@@ -218,7 +218,7 @@ const initialState = {
       images: [co, co2, co3],
       cantidad: 1,
       talla: 'S',
-      categorie: 'Sudadera',
+      categorie: 'sudaderas',
       stock: true,
     },
     {
@@ -229,7 +229,7 @@ const initialState = {
       images: [sp, sp, sp2],
       cantidad: 1,
       talla: 'S',
-      categorie: 'Sudadera',
+      categorie: 'sudaderas',
       stock: true,
     },
     {
@@ -240,7 +240,7 @@ const initialState = {
       images: [ck, ck, ck],
       cantidad: 1,
       talla: 'S',
-      categorie: 'Sudadera',
+      categorie: 'sudaderas',
       stock: true,
     },
     {
@@ -251,7 +251,7 @@ const initialState = {
       images: [lv, lv2, lv3],
       cantidad: 1,
       talla: 'S',
-      categorie: 'Sudadera',
+      categorie: 'sudaderas',
       stock: true,
     },
     {
@@ -262,7 +262,7 @@ const initialState = {
       images: [hoddie, hoddie, hoddie],
       cantidad: 1,
       talla: 'S',
-      categorie: 'Sudadera',
+      categorie: 'sudaderas',
       stock: true,
     },
     {
@@ -273,13 +273,13 @@ const initialState = {
       images: [hoddie, hoddie, hoddie],
       cantidad: 1,
       talla: 'S',
-      categorie: 'Sudadera',
+      categorie: 'sudaderas',
       stock: true,
     },
     //pantalon//
     {
-      id: 14,
-      name: 'Sudadera New York',
+      id: 18,
+      name: 'Pantalones',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
@@ -296,8 +296,8 @@ const initialState = {
     //camiseta//
 
     {
-      id: 15,
-      name: 'Sudadera New York',
+      id: 19,
+      name: 'Camisetas',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [
@@ -314,8 +314,8 @@ const initialState = {
     //Chompas//
 
     {
-      id: 16,
-      name: 'Sudadera New York',
+      id: 20,
+      name: 'Chompas',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [

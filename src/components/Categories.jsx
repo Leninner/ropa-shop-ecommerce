@@ -25,7 +25,7 @@ const Categories = (props) => {
           <span>Camisetas</span>
         </div>
         <div className='categories__container--item' onClick={handleCategorie}>
-          <span>Gorras</span>
+          <span>Chompas</span>
         </div>
       </div>
     </>
