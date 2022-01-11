@@ -13,13 +13,13 @@
   -webkit-box-shadow: 2px 6px 40px -4px #000000;
   box-shadow: 2px 6px 20px -4px #000000;
 
-  .slider {
+  .slide {
     overflow: hidden;
     height: 70%;
+
     ul {
       display: flex;
       width: 300%;
-      animation: cambio 15s infinite linear;
 
       li {
         width: 100%;
@@ -30,6 +30,12 @@
           object-fit: cover;
         }
       }
+    }
+  }
+
+  .slideRun {
+    ul {
+      animation: cambio 15s infinite linear;
     }
   }
 
