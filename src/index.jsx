@@ -390,7 +390,7 @@ const initialState = {
 
     {
       id: 25,
-      name: 'Chompas Colombiana ',
+      name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom,chom,chom ],
