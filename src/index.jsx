@@ -53,6 +53,14 @@ import lv3 from './assets/images/products/18.1.png';
 import ktm from './assets/images/products/19.png';
 import ktm2 from './assets/images/products/19.1.jpg';
 import ktm3 from './assets/images/products/19.2.jpg';
+import rym from './assets/images/products/20.png';
+import ckn from './assets/images/products/21.png';
+import itach from './assets/images/products/22.png';
+import pum from './assets/images/products/23.png';
+
+
+
+
 
 
 
@@ -248,7 +256,7 @@ const initialState = {
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
-      stock: true,
+      stock: false,
     },
     {
       id: 15,
@@ -274,6 +282,57 @@ const initialState = {
     },
     {
       id: 17,
+      name: 'Sudadera Rick y Morty',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [rym, rym, rym],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 18,
+      name: 'Sudadera Calvin Klein',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [ckn, ckn, ckn],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },{
+      id: 19,
+      name: 'Sudadera Itachi 3',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [itach, itach, itach],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },{
+      id: 20,
+      name: 'Sudadera Puma Gris',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [pum, pum, pum],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },{
+      id: 21,
+      name: 'Sudadera Levi',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [hoddie, hoddie, hoddie],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },{
+      id: 22,
       name: 'Sudadera Levi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -285,7 +344,7 @@ const initialState = {
     },
     //pantalon//
     {
-      id: 18,
+      id: 23,
       name: 'Pantalones',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -303,7 +362,7 @@ const initialState = {
     //camiseta//
 
     {
-      id: 19,
+      id: 24,
       name: 'Camisetas',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -321,7 +380,7 @@ const initialState = {
     //Chompas//
 
     {
-      id: 20,
+      id: 25,
       name: 'Chompas',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
