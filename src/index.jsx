@@ -390,7 +390,7 @@ const initialState = {
 
     {
       id: 25,
-      name: 'Chompas Colombiana Mujer',
+      name: 'Chompas Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom,chom,chom ],
@@ -401,7 +401,7 @@ const initialState = {
     },
     {
       id: 26,
-      name: 'Chompa Colombiana Mujer',
+      name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom2,chom2,chom3 ],
@@ -411,7 +411,7 @@ const initialState = {
       stock: true,
     },{
       id: 27,
-      name: 'Chompa Colombiana Mujer',
+      name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom4,chom4,chom4 ],
