@@ -4,10 +4,12 @@ import { connect } from 'react-redux';
 import classNames from 'classnames';
 import Options from './Options';
 import ToggleCart from './ToggleCart';
+import { useNearScreen } from '../hooks/useNearScreen';
 
 const CardItem = (props) => {
   const { product, bestSellers } = props;
   const { stock } = product;
+  const [show, ref] = useNearScreen();
 
   const cardItem = classNames('card-item', {
     bestSellers,
@@ -15,30 +17,32 @@ const CardItem = (props) => {
   });
 
   return (
-    <div className={cardItem}>
-      <>
-        <div className='slider'>
-          <ul>
-            {product.images.map((image, index) => {
-              return (
-                <li key={index}>
-                  <img src={`https://9zkbkpvt.tinifycdn.com${image}`} alt='product' />
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <h2>{product.name}</h2>
+    <div className={cardItem} ref={ref}>
+      {show && (
+        <>
+          <div className='slider'>
+            <ul>
+              {product.images.map((image, index) => {
+                return (
+                  <li key={index}>
+                    <img src={`https://9zkbkpvt.tinifycdn.com${image}`} alt='product' />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <h2>{product.name}</h2>
 
-        {stock ? (
-          <>
-            <Options product={product} />
-            <ToggleCart product={product} />
-          </>
-        ) : (
-          <span className='isStock'>No disponible</span>
-        )}
-      </>
+          {stock ? (
+            <>
+              <Options product={product} />
+              <ToggleCart product={product} />
+            </>
+          ) : (
+            <span className='isStock'>No disponible</span>
+          )}
+        </>
+      )}
     </div>
   );
 };
