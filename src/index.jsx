@@ -51,11 +51,6 @@ import lv from './assets/images/products/18.png';
 import lv2 from './assets/images/products/18.2.png';
 import lv3 from './assets/images/products/18.1.png';
 
-
-
-
-
-
 const initialState = {
   byCategory: [],
   cart: [],
@@ -243,7 +238,7 @@ const initialState = {
       name: 'Sudadera Calvin Klein',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ck, ck, ck2],
+      images: [ck, ck, ck],
       cantidad: 1,
       talla: 'S',
       categorie: 'Sudadera',
@@ -270,7 +265,8 @@ const initialState = {
       talla: 'S',
       categorie: 'Sudadera',
       stock: true,
-    }, {
+    },
+    {
       id: 17,
       name: 'Sudadera Levi',
       price: 15,
