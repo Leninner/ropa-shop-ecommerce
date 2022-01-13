@@ -72,6 +72,23 @@ import nas from './assets/images/products/34.png';
 import nas2 from './assets/images/products/34.1.png';
 import nas3 from './assets/images/products/34.2.png';
 import tommygris from './assets/images/products/35.png';
+import tommyce from './assets/images/products/36.png';
+import ameri from './assets/images/products/37.png';
+import gap from './assets/images/products/38.png';
+import adia from './assets/images/products/39.png';
+import nike from './assets/images/products/40.png';
+import rojo from './assets/images/products/41.png';
+import rojo2 from './assets/images/products/41.1.png';
+import redbull from './assets/images/products/42.png';
+import tommyne from './assets/images/products/43.png';
+import chicag from './assets/images/products/100.png';
+
+
+
+
+
+
+
 
 
 
@@ -388,10 +405,10 @@ const initialState = {
     },
     {
       id: 25,
-      name: 'Sudadera Levi a Color',
+      name: 'Tommy Hilfiger Celeste',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [tommyce, tommyce, tommyce],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -399,10 +416,10 @@ const initialState = {
     },
     {
       id: 26,
-      name: 'Sudadera Levi a Color',
+      name: 'Sudadera American Eagle ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [ameri, ameri, ameri],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -410,10 +427,10 @@ const initialState = {
     },
     {
       id: 27,
-      name: 'Sudadera Levi a Color',
+      name: 'Sudadera GAP',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [gap, gap, gap],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -421,10 +438,54 @@ const initialState = {
     },
     {
       id: 28,
-      name: 'Sudadera Levi a Color',
+      name: 'Sudadera Adidas Amarilla',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
+      images: [adia, adia, adia],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 29,
+      name: 'Sudadera NIKE',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [nike, nike, nike],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 30,
+      name: 'Sudadera The Coutere Club ',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [rojo, rojo, rojo2],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 31,
+      name: 'Sudadera RedBull',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [redbull, redbull, redbull],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 32,
+      name: 'Tommy Hilfiger Negra',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [tommyne, tommyne, tommyne],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
@@ -433,7 +494,7 @@ const initialState = {
   
     //pantalon//
     {
-      id: 30,
+      id: 50,
       name: 'Pantalones',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -451,15 +512,11 @@ const initialState = {
     //camiseta//
 
     {
-      id: 31,
-      name: 'Camisetas',
+      id: 100,
+      name: 'Camiseta Chicago Bulls ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [
-        'https://images.unsplash.com/photo-1607773716753-b00093cb857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?b=1&k=20&m=1179420343&s=170667a&w=0&h=xBR4ZQbRC1Ub_5u_pZnG-omh0k-W8QDQgXxda5MCDT8=',
-        'https://picsum.photos/200/300',
-      ],
+      images: [chicag,chicag,chicag ],
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
@@ -469,7 +526,7 @@ const initialState = {
     //Chompas//
 
     {
-      id: 32,
+      id: 150,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -480,7 +537,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 33,
+      id: 151,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -491,7 +548,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 34,
+      id: 152,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -502,7 +559,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 35,
+      id: 152,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -513,7 +570,7 @@ const initialState = {
       stock: true,
     },
      {
-      id: 36,
+      id: 153,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -524,7 +581,7 @@ const initialState = {
       stock: true,
     }, 
     {
-      id: 37,
+      id: 154,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -535,7 +592,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 38,
+      id: 155,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -546,7 +603,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 39,
+      id: 155,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
