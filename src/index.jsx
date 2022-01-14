@@ -83,23 +83,6 @@ import redbull from './assets/images/products/42.png';
 import tommyne from './assets/images/products/43.png';
 import chicag from './assets/images/products/100.png';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const initialState = {
   byCategory: [],
   cart: [],
@@ -491,7 +474,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-  
+
     //pantalon//
     {
       id: 50,
@@ -516,7 +499,7 @@ const initialState = {
       name: 'Camiseta Chicago Bulls ',
       price: 7,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chicag,chicag,chicag ],
+      images: [chicag, chicag, chicag],
       cantidad: 1,
       talla: 'S',
       categorie: 'camisetas',
@@ -530,7 +513,7 @@ const initialState = {
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom,chom,chom ],
+      images: [chom, chom, chom],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
@@ -541,7 +524,7 @@ const initialState = {
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom2,chom2,chom3 ],
+      images: [chom2, chom2, chom3],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
@@ -552,7 +535,7 @@ const initialState = {
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom4,chom4,chom4 ],
+      images: [chom4, chom4, chom4],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
@@ -563,29 +546,29 @@ const initialState = {
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom5,chom5,chom5 ],
+      images: [chom5, chom5, chom5],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
       stock: true,
     },
-     {
+    {
       id: 153,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom6,chom6,chom6 ],
+      images: [chom6, chom6, chom6],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
       stock: true,
-    }, 
+    },
     {
       id: 154,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom7,chom7,chom7 ],
+      images: [chom7, chom7, chom7],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
@@ -596,7 +579,7 @@ const initialState = {
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom8,chom8,chom8 ],
+      images: [chom8, chom8, chom8],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
@@ -607,7 +590,7 @@ const initialState = {
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom9,chom9,chom9 ],
+      images: [chom9, chom9, chom9],
       cantidad: 1,
       talla: 'S',
       categorie: 'chompas',
