@@ -460,7 +460,7 @@ const initialState = {
     },
     {
       id: 30,
-      name: 'Sudadera The Coutere Club ',
+      name: 'Sudadera The Coutere',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [rojo, rojo, rojo2],
