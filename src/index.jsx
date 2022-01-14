@@ -514,7 +514,7 @@ const initialState = {
     {
       id: 100,
       name: 'Camiseta Chicago Bulls ',
-      price: 15,
+      price: 7,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chicag,chicag,chicag ],
       cantidad: 1,
