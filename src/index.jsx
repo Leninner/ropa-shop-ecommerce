@@ -586,7 +586,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 155,
+      id: 156,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
