@@ -542,7 +542,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 152,
+      id: 153,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -553,7 +553,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 153,
+      id: 154,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -564,7 +564,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 154,
+      id: 155,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -575,7 +575,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 155,
+      id: 156,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -586,7 +586,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 155,
+      id: 157,
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
