@@ -36,18 +36,21 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     padding: 15px 35px;
     border-radius: 25px;
     border: none;
-    background-color: rgb(0, 153, 255);
+    background-color: #25d366;
+    transition: 0.3s;
+
     a {
-      color: #fff;
+      color: white;
       text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

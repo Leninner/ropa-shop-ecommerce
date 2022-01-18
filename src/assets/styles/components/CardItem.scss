@@ -120,7 +120,7 @@
 }
 
 .stock {
-  border: 1px solid rgb(121, 8, 8);
+  border: 1px solid rgb(255, 0, 0);
   box-shadow: none;
 
   .slider {
@@ -136,6 +136,7 @@
 
 .isStock {
   color: rgb(158, 158, 158);
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

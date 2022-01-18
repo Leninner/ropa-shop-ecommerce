@@ -23,7 +23,7 @@ const Checkout = ({ sumaTotal }) => {
       </div>
       <button className='checkout__button'>
         <Link to='/checkout' onClick={handleMenu}>
-          Checkout
+          Compra por Whatsapp!
         </Link>
       </button>
     </div>

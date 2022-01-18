@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import logo from '../assets/images/logos/logo.png';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
@@ -10,8 +10,7 @@ import { connect } from 'react-redux';
 import { AppContext } from '../context';
 
 const Header = ({ cart }) => {
-  const { toggleMenu, setToggleMenu } = useContext(AppContext);
-  const [menuOptions, setMenuOptions] = useState(false);
+  const { toggleMenu, setToggleMenu, menuOptions, setMenuOptions } = useContext(AppContext);
 
   const handleClickMenuOptions = () => {
     setMenuOptions(!menuOptions);
@@ -36,7 +35,7 @@ const Header = ({ cart }) => {
         {cart.length > 0 ? <div>{cart.length}</div> : null}
       </nav>
       {toggleMenu && <MyOrders />}
-      {menuOptions && <MenuOptions handleClick={handleClickMenuOptions} />}
+      {menuOptions && <MenuOptions handleClick={handleClickMenuOptions} onClick={setMenuOptions} />}
     </header>
   );
 };

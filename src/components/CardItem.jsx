@@ -49,7 +49,7 @@ const CardItem = (props) => {
               <ToggleCart product={product} />
             </>
           ) : (
-            <span className='isStock'>No disponible</span>
+            <span className='isStock'>Agotado</span>
           )}
         </>
       )}
