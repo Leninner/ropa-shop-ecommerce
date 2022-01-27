@@ -35,7 +35,7 @@ const CardItem = (props) => {
               {product.images.map((image, index) => {
                 return (
                   <li key={index}>
-                    <img src={`https://9zkbkpvt.tinifycdn.com${image}`} alt='product' />
+                    <img src={image} alt='product' />
                   </li>
                 );
               })}
