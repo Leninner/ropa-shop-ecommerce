@@ -26,9 +26,6 @@ import pa3 from './assets/images/products/5.2.png';
 import snk from './assets/images/products/6.png';
 import snk2 from './assets/images/products/6.3.jpg';
 import snk3 from './assets/images/products/6.1.png';
-import pu from './assets/images/products/7.png';
-import pu2 from './assets/images/products/7.1.jpg';
-import pu3 from './assets/images/products/7.2.jpg';
 import it from './assets/images/products/8.png';
 import it2 from './assets/images/products/8.1.jpg';
 import ita from './assets/images/products/9.png';
@@ -122,28 +119,7 @@ const initialState = {
     },
   ],
   products: [
-    {
-      id: 1,
-      name: 'Tommy Hilfiger Azul',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [tommyazul, tommyazul, tommyazul2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: false,
-    },
-    {
-      id: 2,
-      name: 'Sudadera Hollister',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, COLOR CONCHEVINO',
-      images: [holi1, holi2, holi3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: false,
-    },
+
     {
       id: 3,
       name: 'Sudadera de Kakashi',
@@ -155,17 +131,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 4,
-      name: 'Sudadera De Pain',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [pa, pa2, pa3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
+
     {
       id: 5,
       name: 'Sudadera De SNK',
@@ -265,17 +231,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 14,
-      name: 'Sudadera Calvin Klein',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ck, ck, ck2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: false,
-    },
+    
     {
       id: 15,
       name: 'Sudadera Levi',
@@ -298,28 +254,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 17,
-      name: 'Sudadera Rick y Morty',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [rym, rym, rym],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
-    {
-      id: 18,
-      name: 'Sudadera Calvin Klein',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ckn, ckn, ckn],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
+
     {
       id: 19,
       name: 'Sudadera Itachi 3',
@@ -331,28 +266,8 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 20,
-      name: 'Sudadera Puma Gris',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [pum, pum, pum],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
-    {
-      id: 21,
-      name: 'Sudadera Spiderman 2',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [spd, spd, spd],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
+
+   
     {
       id: 22,
       name: 'Sudadera Levi a Color',
