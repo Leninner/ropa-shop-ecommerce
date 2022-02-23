@@ -12,17 +12,9 @@ import akatsuki2 from './assets/images/products/2.2.png';
 import nasa from './assets/images/products/15.png';
 import nasa2 from './assets/images/products/15.8.png';
 import nasa3 from './assets/images/products/15.6.png';
-import tommyazul from './assets/images/products/1.1.jpeg';
-import tommyazul2 from './assets/images/products/1.jpg';
-import holi1 from './assets/images/products/3.png';
-import holi2 from './assets/images/products/3.2.jpg';
-import holi3 from './assets/images/products/3.1.png';
 import ka1 from './assets/images/products/4.1.png';
 import ka2 from './assets/images/products/4.jpg';
 import ka3 from './assets/images/products/4.2.png';
-import pa from './assets/images/products/5.png';
-import pa2 from './assets/images/products/5.1.jpg';
-import pa3 from './assets/images/products/5.2.png';
 import snk from './assets/images/products/6.png';
 import snk2 from './assets/images/products/6.3.jpg';
 import snk3 from './assets/images/products/6.1.png';
@@ -30,8 +22,6 @@ import it from './assets/images/products/8.png';
 import it2 from './assets/images/products/8.1.jpg';
 import ita from './assets/images/products/9.png';
 import ita2 from './assets/images/products/9.2.jpg';
-import itac from './assets/images/products/11.png';
-import itac2 from './assets/images/products/11.1.jpg';
 import tomr from './assets/images/products/10.png';
 import tomr2 from './assets/images/products/10.1.jpg';
 import mon from './assets/images/products/13.png';
@@ -40,21 +30,10 @@ import mon3 from './assets/images/products/13.2.jpg';
 import co from './assets/images/products/14.png';
 import co2 from './assets/images/products/14.1.png';
 import co3 from './assets/images/products/14.2.png';
-import sp from './assets/images/products/16.png';
-import sp2 from './assets/images/products/16.1.jpg';
-import ck from './assets/images/products/17.png';
-import ck2 from './assets/images/products/17.1.jpg';
 import lv from './assets/images/products/18.png';
 import lv2 from './assets/images/products/18.2.png';
 import lv3 from './assets/images/products/18.1.png';
-import ktm from './assets/images/products/19.png';
-import ktm2 from './assets/images/products/19.1.jpg';
-import ktm3 from './assets/images/products/19.2.jpg';
-import rym from './assets/images/products/20.png';
-import ckn from './assets/images/products/21.png';
 import itach from './assets/images/products/22.png';
-import pum from './assets/images/products/23.png';
-import spd from './assets/images/products/24.png';
 import chom from './assets/images/products/25.png';
 import chom2 from './assets/images/products/26.png';
 import chom3 from './assets/images/products/26.1.png';
@@ -71,8 +50,6 @@ import nas3 from './assets/images/products/34.2.png';
 import tommygris from './assets/images/products/35.png';
 import tommyce from './assets/images/products/36.png';
 import ameri from './assets/images/products/37.png';
-import gap from './assets/images/products/38.png';
-import adia from './assets/images/products/39.png';
 import nike from './assets/images/products/40.png';
 import rojo from './assets/images/products/41.png';
 import rojo2 from './assets/images/products/41.1.png';
@@ -144,17 +121,6 @@ const initialState = {
       stock: true,
     },
     {
-      id: 6,
-      name: 'Sudadera Puma',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Mostaza',
-      images: [pu, pu2, pu3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: false,
-    },
-    {
       id: 7,
       name: 'Sudadera De Itachi ',
       price: 15,
@@ -176,28 +142,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 9,
-      name: 'Sudadera Itachi 3',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [itac, itac, itac2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
-    {
-      id: 10,
-      name: 'Tommy Hilfiger Roja',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [tomr, tomr2, tomr],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: false,
-    },
+    
     {
       id: 11,
       name: 'Sudadera Monster',
@@ -220,17 +165,6 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 13,
-      name: 'Sudadera Spiderman',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [sp, sp, sp2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
     
     {
       id: 15,
@@ -243,17 +177,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 16,
-      name: 'Sudadera KTM',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ktm, ktm2, ktm3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
+
 
     {
       id: 19,
@@ -281,7 +205,7 @@ const initialState = {
     },
     {
       id: 23,
-      name: 'Sudadera Nasa ',
+      name: 'Sudadera Nasa Negra',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Negro',
       images: [nas, nas2, nas3],
@@ -323,39 +247,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    {
-      id: 27,
-      name: 'Sudadera GAP',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [gap, gap, gap],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
-    {
-      id: 28,
-      name: 'Sudadera Adidas Amarilla',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [adia, adia, adia],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
-    {
-      id: 29,
-      name: 'Sudadera NIKE',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [nike, nike, nike],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
-    },
+
     {
       id: 30,
       name: 'Sudadera The Coutere',
