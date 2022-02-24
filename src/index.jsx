@@ -22,8 +22,6 @@ import it from './assets/images/products/8.png';
 import it2 from './assets/images/products/8.1.jpg';
 import ita from './assets/images/products/9.png';
 import ita2 from './assets/images/products/9.2.jpg';
-import tomr from './assets/images/products/10.png';
-import tomr2 from './assets/images/products/10.1.jpg';
 import mon from './assets/images/products/13.png';
 import mon2 from './assets/images/products/13.3.jpg';
 import mon3 from './assets/images/products/13.2.jpg';
@@ -50,7 +48,6 @@ import nas3 from './assets/images/products/34.2.png';
 import tommygris from './assets/images/products/35.png';
 import tommyce from './assets/images/products/36.png';
 import ameri from './assets/images/products/37.png';
-import nike from './assets/images/products/40.png';
 import rojo from './assets/images/products/41.png';
 import rojo2 from './assets/images/products/41.1.png';
 import redbull from './assets/images/products/42.png';
@@ -96,7 +93,6 @@ const initialState = {
     },
   ],
   products: [
-
     {
       id: 3,
       name: 'Sudadera de Kakashi',
@@ -142,7 +138,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    
+
     {
       id: 11,
       name: 'Sudadera Monster',
@@ -165,7 +161,7 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-    
+
     {
       id: 15,
       name: 'Sudadera Levi',
@@ -177,7 +173,6 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-
 
     {
       id: 19,
@@ -191,7 +186,6 @@ const initialState = {
       stock: true,
     },
 
-   
     {
       id: 22,
       name: 'Sudadera Levi a Color',
