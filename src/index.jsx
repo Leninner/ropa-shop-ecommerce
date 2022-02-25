@@ -22,8 +22,6 @@ import it from './assets/images/products/8.png';
 import it2 from './assets/images/products/8.1.jpg';
 import ita from './assets/images/products/9.png';
 import ita2 from './assets/images/products/9.2.jpg';
-import tomr from './assets/images/products/10.png';
-import tomr2 from './assets/images/products/10.1.jpg';
 import mon from './assets/images/products/13.png';
 import mon2 from './assets/images/products/13.3.jpg';
 import mon3 from './assets/images/products/13.2.jpg';
