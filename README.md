@@ -9,10 +9,6 @@
     <a href="https://ropa-shop.vercel.app/">
       Site
     </a>
-    <span> | </span>
-    <a href="https://github.com/Leninner/shoppingify-list">
-      Solution
-    </a>
   </h3>
 </div>
 
