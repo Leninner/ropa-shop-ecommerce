@@ -1,16 +1,16 @@
-import React from 'react';
-import { connect } from 'react-redux';
 import { addItemToCart, deleteItemsFromCart } from '../actions';
+import { useDispatch, useSelector } from 'react-redux';
 
-const ToggleCart = (props) => {
-  const { product, cart } = props;
+const ToggleCart = ({ product }) => {
+  const dispatch = useDispatch();
+  const { cart } = useSelector((state) => state);
 
   const toggleCart = (item) => {
     if (product.cantidad > 0) {
       if (!cart.includes(item)) {
-        props.addItemToCart(item);
+        dispatch(addItemToCart(item));
       } else {
-        props.deleteItemsFromCart(item.id);
+        dispatch(deleteItemsFromCart(item.id));
       }
     } else {
       alert('Elije una cantidad de productos mayor a 0 antes de continuar');
@@ -42,15 +42,4 @@ const ToggleCart = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    cart: state.cart,
-  };
-};
-
-const mapDispatchToProps = {
-  addItemToCart,
-  deleteItemsFromCart,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(ToggleCart);
+export default ToggleCart;

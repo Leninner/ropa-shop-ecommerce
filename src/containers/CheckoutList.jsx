@@ -1,5 +1,5 @@
 import React from 'react';
-import CardCheckout from '../components/CardCheckout';
+import { CardCheckout } from '../components/CardCheckout';
 import { connect } from 'react-redux';
 import '../assets/styles/containers/CheckoutList.scss';
 import Form from '../components/Form';

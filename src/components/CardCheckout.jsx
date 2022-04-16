@@ -1,14 +1,15 @@
 import React from 'react';
 import '../assets/styles/components/CardCheckout.scss';
 import { MdRemoveShoppingCart } from 'react-icons/md';
-import { connect } from 'react-redux';
-import { deleteItemsFromCart } from '../actions';
+import * as CardCheckoutActions from '../actions';
+import { useDispatch } from 'react-redux';
 
-const CardCheckout = (props) => {
-  const { name, description, price, cantidad, talla, images, id } = props;
+export const CardCheckout = ({ name, description, price, cantidad, talla, images, id }) => {
+  const dispatch = useDispatch();
+  const { deleteItemsFromCart } = CardCheckoutActions;
 
   const handleDelete = (id) => {
-    props.deleteItemsFromCart(id);
+    dispatch(deleteItemsFromCart(id));
   };
 
   return (
@@ -41,9 +42,3 @@ const CardCheckout = (props) => {
     </div>
   );
 };
-
-const mapDispatchToProps = {
-  deleteItemsFromCart,
-};
-
-export default connect(null, mapDispatchToProps)(CardCheckout);

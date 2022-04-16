@@ -2,13 +2,14 @@ import React from 'react';
 import CardItem from '../components/CardItem';
 import classNames from 'classnames';
 import '../assets/styles/containers/ProductList.scss';
-import { connect } from 'react-redux';
 import Categories from '../components/Categories';
+import { useSelector } from 'react-redux';
 
-const ProductList = ({ allItems, setModal, modal, products, bestSellers, byCategory }) => {
+export const ProductList = ({ allItems, setModal, modal }) => {
   const productListClass = classNames('product-list', {
     allItems,
   });
+  const { products, bestSellers, byCategory } = useSelector((state) => state);
 
   return (
     <section className={productListClass} id='allProducts'>
@@ -46,13 +47,3 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers, byCateg
     </section>
   );
 };
-
-const mapStateToProps = (state) => {
-  return {
-    products: state.products,
-    bestSellers: state.bestSellers,
-    byCategory: state.byCategory,
-  };
-};
-
-export default connect(mapStateToProps, null)(ProductList);

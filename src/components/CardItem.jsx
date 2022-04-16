@@ -1,14 +1,12 @@
 import React from 'react';
 import '../assets/styles/components/CardItem.scss';
-import { connect } from 'react-redux';
 import classNames from 'classnames';
 import Options from './Options';
 import ToggleCart from './ToggleCart';
 import { useNearScreen } from '../hooks/useNearScreen';
 import { useState } from 'react';
 
-const CardItem = (props) => {
-  const { product, bestSellers } = props;
+const CardItem = ({ product, bestSellers }) => {
   const { stock } = product;
   const [show, ref] = useNearScreen();
   const [slideRun, setSlide] = useState(false);
@@ -57,10 +55,4 @@ const CardItem = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    cart: state.cart,
-  };
-};
-
-export default connect(mapStateToProps, null)(CardItem);
+export default CardItem;

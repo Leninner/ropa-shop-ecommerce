@@ -1,17 +1,14 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { aumentarCantidad, añadirTalla } from '../actions';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Options = (props) => {
-  const { cart, product } = props;
+  const dispatch = useDispatch();
+  const { cart } = useSelector((state) => state);
+  const { product } = props;
 
-  const handleCantidad = (product, e) => {
-    props.aumentarCantidad(product);
-  };
-
-  const handleAddTalla = (product, e) => {
-    props.añadirTalla(product);
-  };
+  const handleCantidad = (product) => dispatch(aumentarCantidad(product));
+  const handleAddTalla = (product) => dispatch(añadirTalla(product));
 
   return (
     <>
@@ -38,15 +35,4 @@ const Options = (props) => {
   );
 };
 
-const mapStatetoProps = (state) => {
-  return {
-    cart: state.cart,
-  };
-};
-
-const mapDispatchToProps = {
-  aumentarCantidad,
-  añadirTalla,
-};
-
-export default connect(mapStatetoProps, mapDispatchToProps)(Options);
+export default Options;

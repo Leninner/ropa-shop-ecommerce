@@ -1,14 +1,14 @@
 import React from 'react';
 import '../assets/styles/components/OrderItem.scss';
 import { deleteItemsFromCart } from '../actions';
-import { connect } from 'react-redux';
 import { MdOutlineRemoveShoppingCart } from 'react-icons/md';
+import { useDispatch } from 'react-redux';
 
-const OrderItem = (props) => {
-  const { images, name, price, cantidad, talla } = props;
+const OrderItem = ({ images, name, price, cantidad, talla, id }) => {
+  const dispatch = useDispatch();
 
   const handleDelete = () => {
-    props.deleteItemsFromCart(props.id);
+    dispatch(deleteItemsFromCart(id));
   };
 
   return (
@@ -16,14 +16,17 @@ const OrderItem = (props) => {
       <figure>
         <img src={images[0]} alt={name} />
       </figure>
+
       <div className='resumen'>
         <p>{name}</p>
+
         <div>
           <p>${price}</p>
           <p>{cantidad}</p>
           <p>{talla}</p>
         </div>
       </div>
+
       <MdOutlineRemoveShoppingCart
         className='delete'
         size={25}
@@ -35,14 +38,4 @@ const OrderItem = (props) => {
   );
 };
 
-const mapDispatchToProps = {
-  deleteItemsFromCart,
-};
-
-const mapStateToProps = (state) => {
-  return {
-    cart: state.cart,
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(OrderItem);
+export default OrderItem;

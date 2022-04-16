@@ -1,15 +1,15 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import '../assets/styles/components/Form.scss';
 import { Formik } from 'formik';
 import { useNavigate } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { AppContext } from '../context';
 
-const Form = (props) => {
+const Form = () => {
+  const navigate = useNavigate();
   const { total } = useContext(AppContext);
   const [submitForm, setSubmitForm] = useState(false);
-  const navigate = useNavigate();
-  const { cart } = props;
+  const { cart } = useSelector((state) => state);
 
   let encodeText = '¡Hola! Mi pedido es el siguiente: \n\n';
 
@@ -64,7 +64,8 @@ const Form = (props) => {
         nombre: '',
         email: '',
         ciudad: '',
-      }}>
+      }}
+    >
       {({ handleSubmit, errors, touched, values, handleChange, handleBlur }) => (
         <form className='formulario' onSubmit={handleSubmit}>
           <div>
@@ -80,6 +81,7 @@ const Form = (props) => {
             />
             {errors.nombre && touched.nombre && <div className='error'>{errors.nombre}</div>}
           </div>
+
           <div>
             <label htmlFor='email'>Email: </label>
             <input
@@ -93,6 +95,7 @@ const Form = (props) => {
             />
             {errors.email && touched.email && <div className='error'>{errors.email}</div>}
           </div>
+
           <div>
             <label htmlFor='ciudad'>Ciudad: </label>
             <input
@@ -116,10 +119,4 @@ const Form = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    cart: state.cart,
-  };
-};
-
-export default connect(mapStateToProps, null)(Form);
+export default Form;

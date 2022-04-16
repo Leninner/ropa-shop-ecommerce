@@ -1,16 +1,14 @@
-import React from 'react';
 import '../assets/styles/components/MenuOptions.scss';
 import close from '../assets/images/icons/icon_close.png';
-import { connect } from 'react-redux';
 import { getCategory } from '../actions';
+import { useDispatch } from 'react-redux';
 
-const MenuOptions = (props) => {
-  const { handleClick } = props;
+const MenuOptions = ({ handleClick }) => {
+  const dispatch = useDispatch();
 
-  const handleCategorie = (e) => {
+  const handleCategory = (e) => {
     const categories = e.target.outerText.toLowerCase();
-    console.log(categories);
-    props.getCategory(categories);
+    dispatch(getCategory(categories));
   };
 
   return (
@@ -23,13 +21,13 @@ const MenuOptions = (props) => {
               <span>Facebook</span>
             </a>
           </div>
-          <div className='menu-options__container--item' onClick={handleCategorie}>
+          <div className='menu-options__container--item' onClick={handleCategory}>
             <span>Sudaderas</span>
           </div>
-          <div className='menu-options__container--item' onClick={handleCategorie}>
+          <div className='menu-options__container--item' onClick={handleCategory}>
             <span>Camisetas</span>
           </div>
-          <div className='menu-options__container--item' onClick={handleCategorie}>
+          <div className='menu-options__container--item' onClick={handleCategory}>
             <span>Pantalones</span>
           </div>
         </nav>
@@ -38,8 +36,4 @@ const MenuOptions = (props) => {
   );
 };
 
-const mapDispatchToProps = {
-  getCategory,
-};
-
-export default connect(null, mapDispatchToProps)(MenuOptions);
+export default MenuOptions;
