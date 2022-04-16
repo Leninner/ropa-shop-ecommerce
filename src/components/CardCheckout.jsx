@@ -4,7 +4,7 @@ import { MdRemoveShoppingCart } from 'react-icons/md';
 import * as CardCheckoutActions from '../actions';
 import { useDispatch } from 'react-redux';
 
-export const CardCheckout = ({ name, description, price, cantidad, talla, images, id }) => {
+export const CardCheckout = ({ name, description, price, cantidad, talla, images, id, tallas }) => {
   const dispatch = useDispatch();
   const { deleteItemsFromCart } = CardCheckoutActions;
   const handleDelete = (id) => dispatch(deleteItemsFromCart(id));
@@ -27,7 +27,7 @@ export const CardCheckout = ({ name, description, price, cantidad, talla, images
 
           <p>
             <span>Cantidad: </span>
-            {cantidad}
+            {tallas[talla].cantidad}
           </p>
 
           <p>

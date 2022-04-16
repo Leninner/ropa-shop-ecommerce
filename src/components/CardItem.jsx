@@ -6,10 +6,12 @@ import ToggleCart from './ToggleCart';
 import { useNearScreen } from '../hooks/useNearScreen';
 import { useState } from 'react';
 
-const CardItem = ({ product, bestSellers }) => {
+export const CardItem = ({ product, bestSellers }) => {
   const { stock } = product;
   const [show, ref] = useNearScreen();
   const [slideRun, setSlide] = useState(false);
+  const [currentTalla, setCurrentTalla] = useState(Object.keys(product.tallas)[0]);
+  const [currentCantidad, setCurrentCantidad] = useState(1);
 
   const handleSetSlide = () => {
     setSlide(!slideRun);
@@ -39,20 +41,19 @@ const CardItem = ({ product, bestSellers }) => {
               })}
             </ul>
           </div>
+
           <h2>{product.name}</h2>
 
-          {stock ? (
-            <>
-              <Options product={product} />
-              <ToggleCart product={product} />
-            </>
-          ) : (
-            <span className='isStock'>Agotado</span>
-          )}
+          <Options
+            product={product}
+            currentTalla={currentTalla}
+            setCurrentTalla={setCurrentTalla}
+            currentCantidad={currentCantidad}
+            setCurrentCantidad={setCurrentCantidad}
+          />
+          <ToggleCart product={product} currentTalla={currentTalla} currentCantidad={currentCantidad} />
         </>
       )}
     </div>
   );
 };
-
-export default CardItem;

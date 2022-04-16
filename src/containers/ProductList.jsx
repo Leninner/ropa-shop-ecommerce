@@ -1,5 +1,5 @@
 import React from 'react';
-import CardItem from '../components/CardItem';
+import { CardItem } from '../components/CardItem';
 import classNames from 'classnames';
 import '../assets/styles/containers/ProductList.scss';
 import Categories from '../components/Categories';
@@ -16,6 +16,7 @@ export const ProductList = ({ allItems, setModal, modal }) => {
       {modal ? (
         <>
           <p className='feedback'>Pasa el mouse por encima para ver más fotos</p>
+
           <div className='container__productList'>
             {bestSellers.map((product) => {
               return <CardItem key={product.id} product={product} bestSellers />;

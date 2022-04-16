@@ -1,38 +1,49 @@
-import React from 'react';
-import { aumentarCantidad, añadirTalla } from '../actions';
-import { useDispatch, useSelector } from 'react-redux';
+import { Fragment, useRef } from 'react';
+import { memo } from 'react';
+import { useDispatch } from 'react-redux';
+import { incrementQuantity } from '../actions';
 
-const Options = (props) => {
+const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
+  const selectRef = useRef(currentTalla);
   const dispatch = useDispatch();
-  const { cart } = useSelector((state) => state);
-  const { product } = props;
+  const handleSelect = () => setCurrentTalla(selectRef.current.value);
+  const handleCantidad = (e) => {
+    dispatch(incrementQuantity({ id: product.id, currentTalla, currentCantidad: e.target.value }));
+  };
 
-  const handleCantidad = (product) => dispatch(aumentarCantidad(product));
-  const handleAddTalla = (product) => dispatch(añadirTalla(product));
+  console.log(currentTalla);
 
   return (
     <>
-      {!cart.includes(product) && (
-        <div className='options'>
-          <select name='tallas' id='tallas' onChange={(e) => handleAddTalla({ ...product, talla: e.target.value })}>
-            <option value='S'>S</option>
-            <option value='M'>M</option>
-            <option value='L'>L</option>
-          </select>
+      <div className='options'>
+        <select
+          name='tallas'
+          id='tallas'
+          // onChange={(e) => handleToggleTalla({ ...product, talla: e.target.value })}
+          onChange={handleSelect}
+          ref={selectRef}
+        >
+          {Object.entries(product.tallas).map(([talla, { stock }], index) => {
+            return (
+              <Fragment key={index}>
+                {stock > 0 ? (
+                  <option value={talla}>{talla}</option>
+                ) : (
+                  <option value={talla} disabled>
+                    {talla}
+                  </option>
+                )}
+              </Fragment>
+            );
+          })}
+        </select>
 
-          <div className='contenedor__cantidad'>
-            <input
-              type='number'
-              min='1'
-              max='100'
-              placeholder={product.cantidad}
-              onChange={(e) => handleCantidad({ ...product, cantidad: parseInt(e.target.value) })}
-            />
-          </div>
+        <div className='contenedor__cantidad'>
+          <input type='number' placeholder='1' onChange={handleCantidad} />
         </div>
-      )}
+      </div>
     </>
   );
-};
+});
 
 export default Options;
