@@ -31,7 +31,7 @@ export const reducer = (state, action) => {
               ...product.tallas,
               [currentTalla]: {
                 ...product.tallas[currentTalla],
-                stock: product.tallas[currentTalla].stock - currentCantidad,
+                stock: product.tallas[currentTalla].stock - Number(currentCantidad),
               },
             },
           };
@@ -47,7 +47,7 @@ export const reducer = (state, action) => {
               ...product.tallas,
               [currentTalla]: {
                 ...product.tallas[currentTalla],
-                stock: product.tallas[currentTalla].stock - currentCantidad,
+                stock: product.tallas[currentTalla].stock - Number(currentCantidad),
               },
             },
           };
@@ -98,49 +98,50 @@ export const reducer = (state, action) => {
     };
   }
 
+  if (type === DELETE_ITEMS_FROM_CART) {
+    const { id, talla } = payload;
+
+    return {
+      ...state,
+      cart: state.cart.filter((item) => item.id !== id || item.talla !== talla),
+      products: state.products.map((product) => {
+        if (product.id === id) {
+          return {
+            ...product,
+            tallas: {
+              ...product.tallas,
+              [talla]: {
+                ...product.tallas[talla],
+                cantidad: 1,
+                stock: Number(product.tallas[talla].stock) + Number(product.tallas[talla].cantidad),
+              },
+            },
+          };
+        }
+
+        return product;
+      }),
+      bestSellers: state.bestSellers.map((item) => {
+        if (item.id === id) {
+          return {
+            ...item,
+            tallas: {
+              ...item.tallas,
+              [talla]: {
+                ...item.tallas[talla],
+                cantidad: 1,
+                stock: Number(item.tallas[talla].stock) + Number(item.tallas[talla].cantidad),
+              },
+            },
+          };
+        }
+
+        return item;
+      }),
+    };
+  }
+
   switch (action.type) {
-    case DELETE_ITEMS_FROM_CART:
-      const { id, currentTalla } = payload;
-
-      return {
-        ...state,
-        cart: state.cart.filter((item) => item.id !== id && item.talla !== currentTalla),
-        products: state.products.map((product) => {
-          if (product.id === id) {
-            return {
-              ...product,
-              tallas: {
-                ...product.tallas,
-                [currentTalla]: {
-                  ...product.tallas[currentTalla],
-                  cantidad: 0,
-                  stock: Number(product.tallas[currentTalla].stock) + Number(product.tallas[currentTalla].cantidad),
-                },
-              },
-            };
-          }
-
-          return product;
-        }),
-        bestSellers: state.bestSellers.map((item) => {
-          if (item.id === id) {
-            return {
-              ...item,
-              tallas: {
-                ...item.tallas,
-                [currentTalla]: {
-                  ...item.tallas[currentTalla],
-                  cantidad: 0,
-                  stock: Number(item.tallas[currentTalla].stock) + Number(item.tallas[currentTalla].cantidad),
-                },
-              },
-            };
-          }
-
-          return item;
-        }),
-      };
-
     case GET_CATEGORY:
       if (action.payload === 'todos') {
         return {

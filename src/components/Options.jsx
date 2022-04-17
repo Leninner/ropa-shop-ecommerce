@@ -7,22 +7,16 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
   const selectRef = useRef(currentTalla);
   const dispatch = useDispatch();
   const handleSelect = () => setCurrentTalla(selectRef.current.value);
-  const handleCantidad = (e) => {
+
+  const handleCantidad = (e) =>
     dispatch(incrementQuantity({ id: product.id, currentTalla, currentCantidad: e.target.value }));
-  };
 
   console.log(currentTalla);
 
   return (
     <>
       <div className='options'>
-        <select
-          name='tallas'
-          id='tallas'
-          // onChange={(e) => handleToggleTalla({ ...product, talla: e.target.value })}
-          onChange={handleSelect}
-          ref={selectRef}
-        >
+        <select name='tallas' id='tallas' onChange={handleSelect} ref={selectRef}>
           {Object.entries(product.tallas).map(([talla, { stock }], index) => {
             return (
               <Fragment key={index}>

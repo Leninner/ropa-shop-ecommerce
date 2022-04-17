@@ -79,15 +79,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 0,
+          cantidad: 1,
         },
         M: {
           stock: 15,
-          cantidad: 0,
+          cantidad: 1,
         },
         L: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 1,
         },
       },
       category: 'sudaderas',
@@ -103,15 +103,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 0,
+          cantidad: 1,
         },
         M: {
           stock: 15,
-          cantidad: 0,
+          cantidad: 1,
         },
         L: {
           stock: 15,
-          cantidad: 0,
+          cantidad: 1,
         },
       },
       category: 'sudaderas',

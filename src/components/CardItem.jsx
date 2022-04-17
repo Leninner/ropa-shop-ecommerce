@@ -6,8 +6,7 @@ import ToggleCart from './ToggleCart';
 import { useNearScreen } from '../hooks/useNearScreen';
 import { useState } from 'react';
 
-export const CardItem = ({ product, bestSellers }) => {
-  const { stock } = product;
+export const CardItem = ({ product }) => {
   const [show, ref] = useNearScreen();
   const [slideRun, setSlide] = useState(false);
   const [currentTalla, setCurrentTalla] = useState(Object.keys(product.tallas)[0]);
@@ -17,17 +16,12 @@ export const CardItem = ({ product, bestSellers }) => {
     setSlide(!slideRun);
   };
 
-  const cardItem = classNames('card-item', {
-    bestSellers,
-    stock: !stock,
-  });
-
   const cardItemSlide = classNames('slide', {
     slideRun,
   });
 
   return (
-    <div className={cardItem} ref={ref}>
+    <div className={'card-item'} ref={ref}>
       {show && (
         <>
           <div className={cardItemSlide} onMouseEnter={handleSetSlide} onMouseLeave={handleSetSlide}>

@@ -10,8 +10,14 @@ const ToggleCart = ({ product, currentTalla }) => {
       dispatch(deleteItemsFromCart({ id: item.id, currentTalla }));
     }
 
+    console.log(item);
+    const { id, images, name, price } = item;
+
     const itemToAdd = {
-      ...item,
+      id,
+      images,
+      name,
+      price,
       talla: currentTalla,
     };
 
