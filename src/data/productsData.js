@@ -1,6 +1,9 @@
 // En esta sección se importan las imágenes de los productos
 
 import hoddie from '../assets/images/products/12.png';
+import ka1 from '../assets/images/products/4.1.png';
+import ka2 from '../assets/images/products/4.jpg';
+import ka3 from '../assets/images/products/4.2.png';
 import nw2 from '../assets/images/products/12.1.png';
 import akatsuki from '../assets/images/products/2.1.png';
 import akatsuki1 from '../assets/images/products/2.jpg';
@@ -8,9 +11,6 @@ import akatsuki2 from '../assets/images/products/2.2.png';
 import nasa from '../assets/images/products/15.png';
 import nasa2 from '../assets/images/products/15.8.png';
 import nasa3 from '../assets/images/products/15.6.png';
-import ka1 from '../assets/images/products/4.1.png';
-import ka2 from '../assets/images/products/4.jpg';
-import ka3 from '../assets/images/products/4.2.png';
 import snk from '../assets/images/products/6.png';
 import snk2 from '../assets/images/products/6.3.jpg';
 import snk3 from '../assets/images/products/6.1.png';
@@ -54,356 +54,733 @@ import chicag from '../assets/images/products/100.png';
  * @description Este es el estado global de la tienda
  * @instructions La forma que debe tener la información de cada producto es la siguiente:
  * {
-      id: id del producto,
-      name: "nombre del producto entre comillas",
-      price: precio del producto,
-      description: 'Descripción del producto entre comillas',
-      images: [imágenes, del, producto],
-      cantidad: cantidad de productos disponibles,
-      talla: 'S, M, L, XL, XXL',
-      categorie: 'sudaderas | chompas | camisetas | pantalones',
-      stock: stock del producto => true | false,
+      id: createUniqueID()01,
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [hoddie, hoddie, nw2],
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
  */
+
+const createUniqueID = () => Math.random().toString(36).substr(2, 9);
 
 export const productsData = {
   byCategory: [],
   cart: [],
   bestSellers: [
     {
-      id: 501,
+      id: createUniqueID(),
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [hoddie, hoddie, nw2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 502,
+      id: createUniqueID(),
       name: 'Sudadera Akatsuki',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [akatsuki, akatsuki1, akatsuki2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 503,
+      id: createUniqueID(),
       name: 'Sudadera Nasa',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [nasa, nasa2, nasa3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
   ],
   products: [
     {
-      id: 3,
+      id: createUniqueID(),
+      name: 'Sudadera de Kakashi',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [ka1, ka2, ka3],
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 15,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
       name: 'Sudadera de Kakashi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [ka1, ka2, ka3],
       cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
-
     {
-      id: 5,
+      id: createUniqueID(),
       name: 'Sudadera De SNK',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
       images: [snk, snk2, snk3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 7,
+      id: createUniqueID(),
       name: 'Sudadera De Itachi ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [it, it, it2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 8,
+      id: createUniqueID(),
       name: 'Sudadera De Itachi 2',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [ita, ita, ita2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
 
     {
-      id: 11,
+      id: createUniqueID(),
       name: 'Sudadera Monster',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [mon, mon2, mon3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 12,
+      id: createUniqueID(),
       name: 'Sudadera Cobra Cai',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [co, co2, co3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
 
     {
-      id: 15,
+      id: createUniqueID(),
       name: 'Sudadera Levi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [lv, lv2, lv3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
 
     {
-      id: 19,
+      id: createUniqueID(),
       name: 'Sudadera Itachi 3',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [itach, itach, itach],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
 
     {
-      id: 22,
+      id: createUniqueID(),
       name: 'Sudadera Levi a Color',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [lev, lev, lev],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 23,
+      id: createUniqueID(),
       name: 'Sudadera Nasa Negra',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Negro',
       images: [nas, nas2, nas3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 24,
+      id: createUniqueID(),
       name: 'Tommy Hilfiger Gris',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [tommygris, tommygris, tommygris],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 25,
+      id: createUniqueID(),
       name: 'Tommy Hilfiger Celeste',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [tommyce, tommyce, tommyce],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 26,
+      id: createUniqueID(),
       name: 'Sudadera American Eagle ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [ameri, ameri, ameri],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
 
     {
-      id: 30,
+      id: createUniqueID(),
       name: 'Sudadera The Coutere',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [rojo, rojo, rojo2],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 31,
+      id: createUniqueID(),
       name: 'Sudadera RedBull',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [redbull, redbull, redbull],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
     {
-      id: 32,
+      id: createUniqueID(),
       name: 'Tommy Hilfiger Negra',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [tommyne, tommyne, tommyne],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'sudaderas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
 
     //pantalon//
     {
-      id: 50,
+      id: createUniqueID(),
       name: 'Pantalones',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [hoddie, hoddie, hoddie],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'pantalones',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'pantalones',
     },
 
     //camiseta//
 
     {
-      id: 100,
+      id: createUniqueID(),
       name: 'Camiseta Chicago Bulls ',
       price: 7,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chicag, chicag, chicag],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'camisetas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'camisetas',
     },
 
     //Chompas//
 
     {
-      id: 150,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom, chom, chom],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
     {
-      id: 151,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom2, chom2, chom3],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
     {
-      id: 152,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom4, chom4, chom4],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
     {
-      id: 153,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom5, chom5, chom5],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
     {
-      id: 154,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom6, chom6, chom6],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
     {
-      id: 155,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom7, chom7, chom7],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
     {
-      id: 156,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom8, chom8, chom8],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
     {
-      id: 157,
+      id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [chom9, chom9, chom9],
-      cantidad: 1,
-      talla: 'S',
-      categorie: 'chompas',
-      stock: true,
+
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 20,
+          cantidad: 1,
+        },
+      },
+      category: 'chompas',
     },
   ],
 };

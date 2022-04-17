@@ -1,0 +1,47 @@
+.contenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5em 0 1.5em;
+  align-items: center;
+
+  .contenedor__price {
+    color: black;
+
+    h5 {
+      font-size: 12px;
+      font-weight: normal;
+      color: #979696;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+button {
+  border: none;
+  margin: 0px 5px;
+  cursor: pointer;
+  background-color: white;
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+    .contenedor__price {
+      margin-bottom: 0.5em;
+    }
+  }
+}

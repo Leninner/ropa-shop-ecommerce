@@ -14,13 +14,6 @@ export const deleteItemsFromCart = (payload) => {
   };
 };
 
-export const aumentarCantidad = (payload) => {
-  return {
-    type: AUMENTAR_CANTIDAD,
-    payload,
-  };
-};
-
 export const añadirTalla = (payload) => {
   return {
     type: AÑADIR_TALLA,
@@ -31,6 +24,13 @@ export const añadirTalla = (payload) => {
 export const getCategory = (payload) => {
   return {
     type: GET_CATEGORY,
+    payload,
+  };
+};
+
+export const incrementQuantity = (payload) => {
+  return {
+    type: AUMENTAR_CANTIDAD,
     payload,
   };
 };
