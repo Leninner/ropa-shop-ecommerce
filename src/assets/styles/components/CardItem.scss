@@ -105,16 +105,19 @@
   }
   20% {
     margin-left: 0;
+    transform: scale(1.1);
   }
   25% {
     margin-left: -100%;
+    transform: scale(1.1);
   }
   45% {
     margin-left: -100%;
+    transform: scale(1.3);
   }
-
   50% {
     margin-left: -200%;
+    transform: scale(1.3);
   }
   70% {
     margin-left: -200%;

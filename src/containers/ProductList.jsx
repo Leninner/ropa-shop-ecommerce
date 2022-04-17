@@ -15,7 +15,11 @@ export const ProductList = ({ allItems, setModal, modal }) => {
     <section className={productListClass} id='allProducts'>
       {modal ? (
         <>
-          <p className='feedback'>Pasa el mouse por encima para ver más fotos</p>
+          <p className='feedback'>
+            {window.innerWidth > 768
+              ? 'Pasa el mouse por encima para ver más fotos'
+              : 'Da click a una imagen para ver más fotos'}
+          </p>
 
           <div className='container__productList'>
             {bestSellers.map((product) => {
@@ -23,7 +27,7 @@ export const ProductList = ({ allItems, setModal, modal }) => {
             })}
           </div>
           <button className='product-list_button' onClick={setModal}>
-            View All Products
+            Ver más productos
           </button>
         </>
       ) : (
