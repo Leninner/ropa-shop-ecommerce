@@ -7,6 +7,12 @@
   padding: 0;
 }
 
+body {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
 }
