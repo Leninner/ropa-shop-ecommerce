@@ -54,24 +54,37 @@ import nw2 from '../assets/images/products/12.1.png';
  * @description Este es el estado global de la tienda
  * @instructions La forma que debe tener la información de cada producto es la siguiente:
  * {
-      id: id del producto,
-      name: "nombre del producto entre comillas",
-      price: precio del producto,
-      description: 'Descripción del producto entre comillas',
-      images: [imágenes, del, producto],
-      cantidad: cantidad de productos disponibles,
-      talla: 'S, M, L, XL, XXL',
-      categorie: 'sudaderas | chompas | camisetas | pantalones',
-      stock: stock del producto => true | false,
+      id: createUniqueID()01,
+      name: 'Sudadera New York',
+      price: 15,
+      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      images: [hoddie, hoddie, nw2],
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
     },
  */
+
+const createUniqueID = () => Math.random().toString(36).substr(2, 9);
 
 export const productsData = {
   byCategory: [],
   cart: [],
   bestSellers: [
     {
-      id: 501,
+      id: createUniqueID(),
       name: 'Sudadera New York',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -95,7 +108,7 @@ export const productsData = {
   ],
   products: [
     {
-      id: 3,
+      id: createUniqueID(),
       name: 'Sudadera de Kakashi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -121,7 +134,7 @@ export const productsData = {
 
 // bestSellers: [
 //     {
-//       id: 501,
+//       id: createUniqueID(),
 //       name: 'Sudadera New York',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -132,7 +145,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 502,
+//       id: createUniqueID(),
 //       name: 'Sudadera Akatsuki',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -143,7 +156,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 503,
+//       id: createUniqueID(),
 //       name: 'Sudadera Nasa',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -156,8 +169,7 @@ export const productsData = {
 //   ],
 //   products: [
 //     {
-//       id: 3,
-//       name: 'Sudadera de Kakashi',
+//       id: createUniqueID()//       name: 'Sudadera de Kakashi',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
 //       images: [ka1, ka2, ka3],
@@ -168,8 +180,7 @@ export const productsData = {
 //     },
 
 //     {
-//       id: 5,
-//       name: 'Sudadera De SNK',
+//       id: createUniqueID()//       name: 'Sudadera De SNK',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
 //       images: [snk, snk2, snk3],
@@ -179,8 +190,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 7,
-//       name: 'Sudadera De Itachi ',
+//       id: createUniqueID()//       name: 'Sudadera De Itachi ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
 //       images: [it, it, it2],
@@ -190,8 +200,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 8,
-//       name: 'Sudadera De Itachi 2',
+//       id: createUniqueID()//       name: 'Sudadera De Itachi 2',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
 //       images: [ita, ita, ita2],
@@ -202,7 +211,7 @@ export const productsData = {
 //     },
 
 //     {
-//       id: 11,
+//       id: createUniqueID()
 //       name: 'Sudadera Monster',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -213,7 +222,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 12,
+//       id: createUniqueID()
 //       name: 'Sudadera Cobra Cai',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -225,7 +234,7 @@ export const productsData = {
 //     },
 
 //     {
-//       id: 15,
+//       id: createUniqueID()
 //       name: 'Sudadera Levi',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -237,7 +246,7 @@ export const productsData = {
 //     },
 
 //     {
-//       id: 19,
+//       id: createUniqueID()
 //       name: 'Sudadera Itachi 3',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -249,7 +258,7 @@ export const productsData = {
 //     },
 
 //     {
-//       id: 22,
+//       id: createUniqueID()
 //       name: 'Sudadera Levi a Color',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -260,7 +269,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 23,
+//       id: createUniqueID()
 //       name: 'Sudadera Nasa Negra',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Negro',
@@ -271,7 +280,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 24,
+//       id: createUniqueID()
 //       name: 'Tommy Hilfiger Gris',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -282,7 +291,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 25,
+//       id: createUniqueID()
 //       name: 'Tommy Hilfiger Celeste',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -293,7 +302,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 26,
+//       id: createUniqueID()
 //       name: 'Sudadera American Eagle ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -305,7 +314,7 @@ export const productsData = {
 //     },
 
 //     {
-//       id: 30,
+//       id: createUniqueID()
 //       name: 'Sudadera The Coutere',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -316,7 +325,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 31,
+//       id: createUniqueID()
 //       name: 'Sudadera RedBull',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -327,7 +336,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 32,
+//       id: createUniqueID()
 //       name: 'Tommy Hilfiger Negra',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -340,7 +349,7 @@ export const productsData = {
 
 //     //pantalon//
 //     {
-//       id: 50,
+//       id: createUniqueID()
 //       name: 'Pantalones',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -354,7 +363,7 @@ export const productsData = {
 //     //camiseta//
 
 //     {
-//       id: 100,
+//       id: createUniqueID(),
 //       name: 'Camiseta Chicago Bulls ',
 //       price: 7,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -368,7 +377,7 @@ export const productsData = {
 //     //Chompas//
 
 //     {
-//       id: 150,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -379,7 +388,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 151,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -390,7 +399,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 152,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -401,7 +410,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 153,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -412,7 +421,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 154,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -423,7 +432,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 155,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -434,7 +443,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 156,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -445,7 +454,7 @@ export const productsData = {
 //       stock: true,
 //     },
 //     {
-//       id: 157,
+//       id: createUniqueID(),
 //       name: 'Chompa Colombiana ',
 //       price: 15,
 //       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',

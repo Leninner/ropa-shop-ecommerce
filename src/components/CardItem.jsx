@@ -1,4 +1,3 @@
-import React from 'react';
 import '../assets/styles/components/CardItem.scss';
 import classNames from 'classnames';
 import Options from './Options';
@@ -21,7 +20,7 @@ export const CardItem = ({ product }) => {
   });
 
   return (
-    <div className={'card-item'} ref={ref}>
+    <div className='card-item' ref={ref}>
       {show && (
         <>
           <div className={cardItemSlide} onMouseEnter={handleSetSlide} onMouseLeave={handleSetSlide}>

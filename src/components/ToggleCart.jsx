@@ -1,5 +1,6 @@
 import { addItemToCart, deleteItemsFromCart } from '../actions';
 import { useDispatch } from 'react-redux';
+import '../assets/styles/components/ToggleCart.scss';
 
 const ToggleCart = ({ product, currentTalla }) => {
   const dispatch = useDispatch();
@@ -31,27 +32,25 @@ const ToggleCart = ({ product, currentTalla }) => {
   };
 
   return (
-    <>
-      <div className='contenedor'>
-        <div className='contenedor__price'>
-          <h5>Precio</h5>
-          <p>$ {product.price}</p>
-        </div>
-
-        <button>
-          <figure onClick={() => toggleCart(product)}>
-            <img
-              src={
-                product.tallas[currentTalla].stock === 0
-                  ? 'https://img.icons8.com/ios-glyphs/50/000000/minus.png'
-                  : 'https://img.icons8.com/material-rounded/24/000000/plus--v2.png'
-              }
-              alt='carrito'
-            />
-          </figure>
-        </button>
+    <div className='contenedor'>
+      <div className='contenedor__price'>
+        <h5>Precio</h5>
+        <p>$ {product.price}</p>
       </div>
-    </>
+
+      <button>
+        <figure onClick={() => toggleCart(product)}>
+          <img
+            src={
+              product.tallas[currentTalla].stock === 0
+                ? 'https://img.icons8.com/ios-glyphs/50/000000/minus.png'
+                : 'https://img.icons8.com/material-rounded/24/000000/plus--v2.png'
+            }
+            alt='carrito'
+          />
+        </figure>
+      </button>
+    </div>
   );
 };
 
