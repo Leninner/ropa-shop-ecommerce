@@ -255,29 +255,7 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
-    {
-      id: createUniqueID(),
-      name: 'HOODIE AZUL',
-      description:
-        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [az, az2, az3],
-      price: 15,
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
+    
     {
       id: createUniqueID(),
       name: 'HOODIE GAP',
