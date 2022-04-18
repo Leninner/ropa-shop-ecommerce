@@ -1,27 +1,33 @@
 import React from 'react';
-import CardItem from '../components/CardItem';
+import { CardItem } from '../components/CardItem';
 import classNames from 'classnames';
 import '../assets/styles/containers/ProductList.scss';
-import { connect } from 'react-redux';
 import Categories from '../components/Categories';
+import { useSelector } from 'react-redux';
 
-const ProductList = ({ allItems, setModal, modal, products, bestSellers, byCategory }) => {
+export const ProductList = ({ allItems, setModal, modal }) => {
   const productListClass = classNames('product-list', {
     allItems,
   });
+  const { products, bestSellers, byCategory } = useSelector((state) => state);
 
   return (
     <section className={productListClass} id='allProducts'>
       {modal ? (
         <>
-          <p className='feedback'>Pasa el mouse por encima para ver más fotos</p>
+          <p className='feedback'>
+            {window.innerWidth > 768
+              ? 'Pasa el mouse por encima para ver más fotos'
+              : 'Da click a una imagen para ver más fotos'}
+          </p>
+
           <div className='container__productList'>
             {bestSellers.map((product) => {
               return <CardItem key={product.id} product={product} bestSellers />;
             })}
           </div>
           <button className='product-list_button' onClick={setModal}>
-            View All Products
+            Ver más productos
           </button>
         </>
       ) : (
@@ -46,13 +52,3 @@ const ProductList = ({ allItems, setModal, modal, products, bestSellers, byCateg
     </section>
   );
 };
-
-const mapStateToProps = (state) => {
-  return {
-    products: state.products,
-    bestSellers: state.bestSellers,
-    byCategory: state.byCategory,
-  };
-};
-
-export default connect(mapStateToProps, null)(ProductList);

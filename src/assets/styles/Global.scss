@@ -7,6 +7,12 @@
   padding: 0;
 }
 
+body {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
 }
@@ -26,8 +32,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: #797979;
-  border-radius: 20px;
-  border: 2px solid #f1f2f3;
+  border: 2px solid transparent;
 }
 
 ::-webkit-scrollbar-track {

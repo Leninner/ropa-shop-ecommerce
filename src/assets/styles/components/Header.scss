@@ -1,5 +1,5 @@
 .header {
-  padding: 0px 30px;
+  padding: 40px 30px;
   display: flex;
   height: 50px;
   align-items: center;
@@ -20,24 +20,28 @@
 
   section {
     img {
-      width: 100px;
+      width: 150px;
     }
   }
 
   .nav-main {
     display: flex;
+
     img {
       margin: 10px;
+      width: 35px;
+      height: 100%;
     }
+
     div {
-      width: 16px;
-      height: 16px;
-      background-color: black;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(255, 0, 0);
       border-radius: 50%;
-      font-size: 10px;
+      font-size: 13px;
       font-weight: bold;
       position: absolute;
-      top: 2px;
+      top: 5px;
       color: white;
       right: 30px;
       display: flex;

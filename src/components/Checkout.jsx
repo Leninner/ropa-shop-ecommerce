@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import '../assets/styles/components/Checkout.scss';
 import { AppContext } from '../context';
 import { Link } from 'react-router-dom';
@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom';
 const Checkout = ({ sumaTotal }) => {
   const { total, setTotal, toggleMenu, setToggleMenu } = useContext(AppContext);
 
-  const handleMenu = () => {
-    setToggleMenu(!toggleMenu);
-  };
+  const handleMenu = () => setToggleMenu(!toggleMenu);
 
   useEffect(() => {
     setTotal(sumaTotal);
@@ -21,6 +19,7 @@ const Checkout = ({ sumaTotal }) => {
         <h4>Total</h4>
         <p className='checkout__price'>${total}</p>
       </div>
+
       <button className='checkout__button'>
         <Link to='/checkout' onClick={handleMenu}>
           Compra por Whatsapp!

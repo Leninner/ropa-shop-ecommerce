@@ -9,6 +9,7 @@ const PageNotFound = () => {
       <div className='page-not-found'>
         <h1>404</h1>
         <h2>Página no encontrada</h2>
+
         <Link to='/'>
           <button>Volver al inicio</button>
         </Link>

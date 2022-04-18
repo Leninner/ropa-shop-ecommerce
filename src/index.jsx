@@ -4,6 +4,9 @@ import { App } from './routes/App';
 import { Provider } from 'react-redux';
 import { createStore, compose } from 'redux';
 import { reducer } from './reducers';
+import bad1 from './assets/images/products/bad1.jpeg';
+import bad2 from './assets/images/products/bad2.jpeg';
+import bad3 from './assets/images/products/bad3.jpeg';
 import akatsuki from './assets/images/products/2.1.png';
 import akatsuki1 from './assets/images/products/2.jpg';
 import akatsuki2 from './assets/images/products/2.2.png';
@@ -56,7 +59,17 @@ const initialState = {
   byCategory: [],
   cart: [],
   bestSellers: [
-
+    {
+      id: 501,
+      name: 'HOODIE BAD BUNNY',
+      price: 15,
+      description: 'Hoodie de BAD BUNNY, 98% poliester 8% algodon, talla americana',
+      images: [bad1, bad2, bad3],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
     {
       id: 502,
       name: 'Sudadera Akatsuki',
@@ -386,8 +399,7 @@ const initialState = {
 
 //conect redux and redux dev tools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-const AppStore = createStore(reducer, initialState, composeEnhancers());
+const AppStore = createStore(reducer, productsData, composeEnhancers());
 
 ReactDOM.render(
   <Provider store={AppStore}>
