@@ -24,7 +24,7 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
                 <option value={talla}>{talla}</option>
               ) : (
                 <option value={talla} disabled>
-                  {talla}
+                  {talla} (Agotado)
                 </option>
               )}
             </Fragment>

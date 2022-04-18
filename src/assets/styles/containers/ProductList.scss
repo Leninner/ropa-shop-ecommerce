@@ -2,39 +2,16 @@
 
 .product-list {
   width: 100%;
-  padding: 30px;
   position: relative;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .container__productList {
-    white-space: nowrap;
-    margin: 20px 0px;
-    overflow: scroll;
-    padding-bottom: 10px;
-    overflow-y: hidden;
-  }
-
-  .product-list_button {
-    width: 260px;
-    height: 47px;
-    background-color: $black;
-    color: white;
-    text-align: center;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-}
-
-.allItems {
-  width: 100%;
-  padding: 30px;
-  text-align: center;
-  word-wrap: prewrap;
-
-  .container__allProducts {
-    margin: 70px 0px;
-    padding-bottom: 70px;
-    overflow-y: hidden;
+    width: 100%;
+    max-width: 1281px;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
   }
 }
