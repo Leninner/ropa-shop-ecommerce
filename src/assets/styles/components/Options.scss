@@ -2,9 +2,8 @@
 
 .options {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   width: 100%;
   margin: 5px 0;
 
@@ -17,7 +16,7 @@
     font-size: 16px;
     font-weight: 400;
     color: #444;
-    padding: 0.4em 1.4em 0.3em 0.8em;
+    padding: 0.2em 1.4em 0.2em 0.8em;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0;
@@ -50,8 +49,8 @@
       font-weight: normal;
 
       &:disabled {
-        color: rgb(7, 7, 7);
-        background-color: #888;
+        color: rgb(8, 8, 8);
+        background-color: rgb(192, 192, 192);
       }
     }
   }
@@ -115,7 +114,6 @@
         border: none;
         border: 2px solid rgb(12, 12, 12);
         border-radius: 10px;
-        padding: 10px;
       }
     }
   }

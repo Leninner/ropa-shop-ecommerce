@@ -3,7 +3,6 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding: 0 0.5em 0 1.5em;
   align-items: center;
 
   .contenedor__price {
@@ -23,25 +22,11 @@
 
 button {
   border: none;
-  margin: 0px 5px;
   cursor: pointer;
   background-color: white;
 
   img {
     width: 30px;
     height: 30px;
-    margin-right: 5px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contenedor {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-
-    .contenedor__price {
-      margin-bottom: 0.5em;
-    }
   }
 }
