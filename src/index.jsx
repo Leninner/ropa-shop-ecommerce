@@ -167,7 +167,29 @@ const initialState = {
       stock: true,
     },
     {
+      id: 9,
+      name: 'HOODIE GAP',
+      price: 15,
+      description: 'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [gap, gap2, gap3],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
       id: 10,
+      name: 'HOODIE ',
+      price: 15,
+      description: 'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [jes, jes2, jes3],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 17,
       name: 'Sudadera De SNK',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
@@ -179,7 +201,7 @@ const initialState = {
     },
 
     {
-      id: 11,
+      id: 18,
       name: 'Sudadera Monster',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -190,7 +212,7 @@ const initialState = {
       stock: true,
     },
     {
-      id: 12,
+      id: 19,
       name: 'Sudadera Cobra Cai',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -202,7 +224,7 @@ const initialState = {
     },
 
     {
-      id: 15,
+      id: 20,
       name: 'Sudadera Levi',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
@@ -214,7 +236,7 @@ const initialState = {
     },
 
     {
-      id: 19,
+      id: 21,
       name: 'Sudadera Itachi 3',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
