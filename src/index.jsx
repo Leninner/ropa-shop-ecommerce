@@ -7,6 +7,27 @@ import { reducer } from './reducers';
 import bad1 from './assets/images/products/bad1.jpeg';
 import bad2 from './assets/images/products/bad2.jpeg';
 import bad3 from './assets/images/products/bad3.jpeg';
+import ama from './assets/images/products/ama1.jpeg';
+import ama2 from './assets/images/products/ama2.jpeg';
+import ama3 from './assets/images/products/ama3.jpeg';
+import az from './assets/images/products/azu1.jpeg';
+import az2 from './assets/images/products/azu2.jpeg';
+import az3 from './assets/images/products/azu3.jpeg';
+import ba from './assets/images/products/bal1.jpeg';
+import ba2 from './assets/images/products/bal2.jpeg';
+import ba3 from './assets/images/products/bal3.jpeg';
+import gap from './assets/images/products/gap1.jpeg';
+import gap2 from './assets/images/products/gap2.jpeg';
+import gap3 from './assets/images/products/gap3.jpeg';
+import jes from './assets/images/products/jes1.jpeg';
+import jes2 from './assets/images/products/jes2.jpeg';
+import jes3 from './assets/images/products/jes3.jpeg';
+import mad1 from './assets/images/products/mad1.jpeg';
+import mad2 from './assets/images/products/mad2.jpeg';
+import mad3 from './assets/images/products/mad3.jpeg';
+import under from './assets/images/products/uner1.jpeg';
+import under from './assets/images/products/under2.jpeg';
+
 import akatsuki from './assets/images/products/2.1.png';
 import akatsuki1 from './assets/images/products/2.jpg';
 import akatsuki2 from './assets/images/products/2.2.png';
@@ -101,7 +122,19 @@ const initialState = {
       categorie: 'sudaderas',
       stock: true,
     },
-
+    {
+      id: 5,
+      name: 'HOODIE',
+      price: 15,
+      description: 'Hoodie talla americana  98% poliéster y 8% algodón',
+                    '📦Entregas 100% seguras',
+                    '🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [ama, ama2, ama3],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
     {
       id: 5,
       name: 'Sudadera De SNK',
