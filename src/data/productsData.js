@@ -1,10 +1,8 @@
 // En esta sección se importan las imágenes de los productos
 
-import hoddie from '../assets/images/products/12.png';
 import ka1 from '../assets/images/products/4.1.png';
 import ka2 from '../assets/images/products/4.jpg';
 import ka3 from '../assets/images/products/4.2.png';
-import nw2 from '../assets/images/products/12.1.png';
 import akatsuki from '../assets/images/products/2.1.png';
 import akatsuki1 from '../assets/images/products/2.jpg';
 import akatsuki2 from '../assets/images/products/2.2.png';
@@ -14,20 +12,9 @@ import nasa3 from '../assets/images/products/15.6.png';
 import snk from '../assets/images/products/6.png';
 import snk2 from '../assets/images/products/6.3.jpg';
 import snk3 from '../assets/images/products/6.1.png';
-import it from '../assets/images/products/8.png';
-import it2 from '../assets/images/products/8.1.jpg';
-import ita from '../assets/images/products/9.png';
-import ita2 from '../assets/images/products/9.2.jpg';
 import mon from '../assets/images/products/13.png';
 import mon2 from '../assets/images/products/13.3.jpg';
 import mon3 from '../assets/images/products/13.2.jpg';
-import co from '../assets/images/products/14.png';
-import co2 from '../assets/images/products/14.1.png';
-import co3 from '../assets/images/products/14.2.png';
-import lv from '../assets/images/products/18.png';
-import lv2 from '../assets/images/products/18.2.png';
-import lv3 from '../assets/images/products/18.1.png';
-import itach from '../assets/images/products/22.png';
 import chom from '../assets/images/products/25.png';
 import chom2 from '../assets/images/products/26.png';
 import chom3 from '../assets/images/products/26.1.png';
@@ -38,17 +25,35 @@ import chom7 from '../assets/images/products/30.png';
 import chom8 from '../assets/images/products/31.9.png';
 import chom9 from '../assets/images/products/31.png';
 import lev from '../assets/images/products/33.png';
-import nas from '../assets/images/products/34.png';
-import nas2 from '../assets/images/products/34.1.png';
-import nas3 from '../assets/images/products/34.2.png';
-import tommygris from '../assets/images/products/35.png';
-import tommyce from '../assets/images/products/36.png';
 import ameri from '../assets/images/products/37.png';
 import rojo from '../assets/images/products/41.png';
 import rojo2 from '../assets/images/products/41.1.png';
 import redbull from '../assets/images/products/42.png';
 import tommyne from '../assets/images/products/43.png';
 import chicag from '../assets/images/products/100.png';
+import bad1 from '../assets/images/products/bad1.jpeg';
+import bad2 from '../assets/images/products/bad2.jpeg';
+import bad3 from '../assets/images/products/bad3.jpeg';
+import ama from '../assets/images/products/ama1.jpeg';
+import ama2 from '../assets/images/products/ama2.jpeg';
+import ama3 from '../assets/images/products/ama3.jpeg';
+import az from '../assets/images/products/azu1.jpeg';
+import az2 from '../assets/images/products/azu2.jpeg';
+import az3 from '../assets/images/products/azu3.jpeg';
+import ba from '../assets/images/products/bal1.jpeg';
+import ba2 from '../assets/images/products/bal2.jpeg';
+import ba3 from '../assets/images/products/bal3.jpeg';
+import gap from '../assets/images/products/gap1.jpeg';
+import gap2 from '../assets/images/products/gap2.jpeg';
+import gap3 from '../assets/images/products/gap3.jpeg';
+import jes from '../assets/images/products/jes1.jpeg';
+import jes2 from '../assets/images/products/jes2.jpeg';
+import jes3 from '../assets/images/products/jes3.jpeg';
+import mad1 from '../assets/images/products/mad1.jpeg';
+import mad2 from '../assets/images/products/mad2.jpeg';
+import mad3 from '../assets/images/products/mad3.jpeg';
+import under from '../assets/images/products/under1.jpeg';
+import under2 from '../assets/images/products/under2.jpeg';
 
 /**
  * @description Este es el estado global de la tienda
@@ -85,10 +90,10 @@ export const productsData = {
   bestSellers: [
     {
       id: createUniqueID(),
-      name: 'Sudadera New York',
+      name: 'HOODIE BAD BUNNY',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, nw2],
+      description: 'Hoodie de BAD BUNNY, 98% poliester 8% algodon, talla americana',
+      images: [bad1, bad2, bad3],
       tallas: {
         S: {
           stock: 15,
@@ -175,11 +180,173 @@ export const productsData = {
     },
     {
       id: createUniqueID(),
-      name: 'Sudadera de Kakashi',
+      name: 'HOODIE',
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [ama, ama2, ama3],
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ka1, ka2, ka3],
-      cantidad: 1,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      price: 15,
+      name: 'HOODIE AZUL',
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [az, az2, az3],
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'HOODIE BALENCIAGA',
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [ba, ba2, ba3],
+      price: 15,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'HOODIE AZUL',
+      description:
+        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [az, az2, az3],
+      price: 15,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'HOODIE GAP',
+      description:
+        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [gap, gap2, gap3],
+      price: 15,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'HOODIE ',
+      description:
+        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [jes, jes2, jes3],
+      price: 15,
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'HOODIE MANDARINA',
+      price: 15,
+      description:
+        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [mad1, mad2, mad3],
+      tallas: {
+        S: {
+          stock: 15,
+          cantidad: 1,
+        },
+        M: {
+          stock: 15,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'HOODIE UNDER ARMOR',
+      description:
+        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [under, under2],
+      price: 15,
+
       tallas: {
         S: {
           stock: 15,
@@ -202,7 +369,6 @@ export const productsData = {
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
       images: [snk, snk2, snk3],
-
       tallas: {
         S: {
           stock: 15,
@@ -219,82 +385,12 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
-    {
-      id: createUniqueID(),
-      name: 'Sudadera De Itachi ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [it, it, it2],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Sudadera De Itachi 2',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [ita, ita, ita2],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-
     {
       id: createUniqueID(),
       name: 'Sudadera Monster',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [mon, mon2, mon3],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Sudadera Cobra Cai',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [co, co2, co3],
 
       tallas: {
         S: {
@@ -312,131 +408,12 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
-
-    {
-      id: createUniqueID(),
-      name: 'Sudadera Levi',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [lv, lv2, lv3],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-
-    {
-      id: createUniqueID(),
-      name: 'Sudadera Itachi 3',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [itach, itach, itach],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-
     {
       id: createUniqueID(),
       name: 'Sudadera Levi a Color',
       price: 15,
       description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
       images: [lev, lev, lev],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Sudadera Nasa Negra',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Negro',
-      images: [nas, nas2, nas3],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Tommy Hilfiger Gris',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [tommygris, tommygris, tommygris],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'sudaderas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Tommy Hilfiger Celeste',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [tommyce, tommyce, tommyce],
-
       tallas: {
         S: {
           stock: 15,
@@ -476,7 +453,6 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
-
     {
       id: createUniqueID(),
       name: 'Sudadera The Coutere',
@@ -548,29 +524,6 @@ export const productsData = {
     },
 
     //pantalon//
-    {
-      id: createUniqueID(),
-      name: 'Pantalones',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [hoddie, hoddie, hoddie],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'pantalones',
-    },
 
     //camiseta//
 
