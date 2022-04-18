@@ -34,7 +34,7 @@ const ToggleCart = ({ product, currentTalla }) => {
   return (
     <div className='contenedor'>
       <div className='contenedor__price'>
-        <h5>Precio</h5>
+        <span>Precio</span>
         <p>$ {product.price}</p>
       </div>
 

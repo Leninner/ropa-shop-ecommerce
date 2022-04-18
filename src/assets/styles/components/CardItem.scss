@@ -53,15 +53,15 @@
 }
 
 @media (max-width: 768px) {
-  .contenedor__price {
-    h5 {
-      margin-top: 10px;
-    }
-  }
-
   .card-item {
     width: 95%;
     height: 650px;
     margin: 25px 0;
+
+    .settings {
+      h2 {
+        font-size: 25px;
+      }
+    }
   }
 }

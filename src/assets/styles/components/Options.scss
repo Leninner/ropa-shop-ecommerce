@@ -67,38 +67,8 @@
   }
 }
 
-.bestSellers {
-  border: 1px solid rgb(158, 158, 158);
-}
-
-.stock {
-  border: 1px solid rgb(255, 0, 0);
-  box-shadow: none;
-
-  .slider {
-    ul {
-      li {
-        img {
-          filter: grayscale(100%);
-        }
-      }
-    }
-  }
-}
-
-.isStock {
-  color: rgb(158, 158, 158);
-  font-weight: 500;
-}
-
 @media (max-width: 768px) {
   .options {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
     margin-top: 10px;
 
     select {
@@ -109,11 +79,9 @@
 
     .contenedor__cantidad {
       input {
-        width: 60px;
-        text-align: center;
-        border: none;
-        border: 2px solid rgb(12, 12, 12);
-        border-radius: 10px;
+        padding: 1em 3px;
+        width: 150px;
+        font-size: 15px;
       }
     }
   }

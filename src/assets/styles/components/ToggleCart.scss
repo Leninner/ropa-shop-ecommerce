@@ -8,11 +8,12 @@
   .contenedor__price {
     color: black;
 
-    h5 {
+    span {
       font-size: 12px;
       font-weight: normal;
       color: #979696;
     }
+
     p {
       font-size: 20px;
       font-weight: 600;
@@ -28,5 +29,32 @@ button {
   img {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    .contenedor__price {
+      margin-bottom: 10px;
+
+      span {
+        display: none;
+      }
+
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
