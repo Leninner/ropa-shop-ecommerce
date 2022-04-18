@@ -9,10 +9,6 @@ export const ProductList = () => {
 
   return (
     <section className='product-list'>
-      <p className='feedback'>
-        {window.innerWidth > 768 ? 'Pasa el mouse por encima para ver más fotos' : 'Scroll a las fotos'}
-      </p>
-
       <div className='container__productList'>
         {bestSellers.map((product) => (
           <CardItem key={product.id} product={product} bestSellers />
