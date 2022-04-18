@@ -25,8 +25,8 @@ import jes3 from './assets/images/products/jes3.jpeg';
 import mad1 from './assets/images/products/mad1.jpeg';
 import mad2 from './assets/images/products/mad2.jpeg';
 import mad3 from './assets/images/products/mad3.jpeg';
-import under from './assets/images/products/uner1.jpeg';
-import under from './assets/images/products/under2.jpeg';
+import under from './assets/images/products/under1.jpeg';
+import under2 from './assets/images/products/under2.jpeg';
 
 import akatsuki from './assets/images/products/2.1.png';
 import akatsuki1 from './assets/images/products/2.jpg';
@@ -183,6 +183,28 @@ const initialState = {
       price: 15,
       description: 'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [jes, jes2, jes3],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 11,
+      name: 'HOODIE MANDARINA',
+      price: 15,
+      description: 'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [mad1, mad2, mad3],
+      cantidad: 1,
+      talla: 'S',
+      categorie: 'sudaderas',
+      stock: true,
+    },
+    {
+      id: 12,
+      name: 'HOODIE UNDER ARMOR',
+      price: 15,
+      description: 'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [under, under2],
       cantidad: 1,
       talla: 'S',
       categorie: 'sudaderas',
