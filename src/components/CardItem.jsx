@@ -36,6 +36,7 @@ export const CardItem = ({ product }) => {
 
           <div className='settings'>
             <h2>{product.name}</h2>
+
             <Options
               product={product}
               currentTalla={currentTalla}

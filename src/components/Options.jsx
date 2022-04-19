@@ -21,7 +21,9 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
           return (
             <Fragment key={index}>
               {stock > 0 ? (
-                <option value={talla}>{talla}</option>
+                <option value={talla}>
+                  {talla} ({stock} disponibles)
+                </option>
               ) : (
                 <option value={talla} disabled>
                   {talla} (Agotado)
