@@ -6,12 +6,7 @@ import { Layout } from '../containers/Layout';
 import { AppContext } from '../context';
 
 const Home = () => {
-  const [modal, setModal] = useState(false);
   const { setMenuOptions, setToggleMenu } = useContext(AppContext);
-
-  const handleModal = () => {
-    setModal(!modal);
-  };
 
   const handleClickMenuOptions = () => {
     setMenuOptions(false);
@@ -25,8 +20,7 @@ const Home = () => {
     >
       <div onClick={handleClickMenuOptions}>
         <MainModal />
-        <ProductList setModal={handleModal} modal />
-        {modal && <ProductList allItems />}
+        <ProductList />
         <Footer />
       </div>
     </Layout>
