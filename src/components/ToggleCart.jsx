@@ -12,13 +12,14 @@ const ToggleCart = ({ product, currentTalla }) => {
     }
 
     console.log(item);
-    const { id, images, name, price } = item;
+    const { id, images, name, price, description } = item;
 
     const itemToAdd = {
       id,
       images,
       name,
       price,
+      description,
       talla: currentTalla,
     };
 

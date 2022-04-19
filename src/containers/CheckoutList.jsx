@@ -1,36 +1,34 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { CardCheckout } from '../components/CardCheckout';
-import { connect } from 'react-redux';
 import '../assets/styles/containers/CheckoutList.scss';
 import Form from '../components/Form';
 import { useNavigate } from 'react-router-dom';
 import { Layout } from './Layout';
+import { useSelector } from 'react-redux';
 
-const CheckoutList = ({ cart }) => {
+const CheckoutList = () => {
   const navigate = useNavigate();
+  const { cart } = useSelector((state) => state);
+
+  useEffect(() => {
+    if (cart.length === 0) {
+      navigate('/');
+    }
+  }, [cart, navigate]);
 
   return (
     <Layout title='Carrito | Ropa Shop 😉' subtitle='Paga seguro en Whatsapp'>
       <div className='checkout-container'>
-        <h1>Este es tu Carrito de Compras</h1>
-        <div className='mm'>
-          <Form />
-          <div className='overflow--checkout'>
-            {cart.map((value) => (
-              <CardCheckout key={value.id} {...value} />
-            ))}
-            {!cart.length && navigate('/')}
-          </div>
+        <div className='checkout-cart'>
+          {cart.map((value) => (
+            <CardCheckout key={value.id} {...value} />
+          ))}
         </div>
+
+        <Form />
       </div>
     </Layout>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    cart: state.cart,
-  };
-};
-
-export default connect(mapStateToProps, null)(CheckoutList);
+export default CheckoutList;
