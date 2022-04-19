@@ -141,21 +141,14 @@ export const reducer = (state, action) => {
     };
   }
 
-  switch (action.type) {
-    case GET_CATEGORY:
-      if (action.payload === 'todos') {
-        return {
-          ...state,
-          byCategory: state.products,
-        };
-      }
+  if (type === GET_CATEGORY) {
+    const { category } = payload;
 
-      return {
-        ...state,
-        byCategory: state.products.filter((item) => item.categorie === action.payload),
-      };
-
-    default:
-      return state;
+    return {
+      ...state,
+      currentCategory: category,
+    };
   }
+
+  return state;
 };
