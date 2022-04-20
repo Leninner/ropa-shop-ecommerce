@@ -7,6 +7,10 @@ import { Layout } from './Layout';
 import { useSelector } from 'react-redux';
 
 const CheckoutList = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
   const { cart } = useSelector((state) => state);
 

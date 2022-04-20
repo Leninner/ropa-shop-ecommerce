@@ -11,3 +11,16 @@
     overflow: scroll;
   }
 }
+
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 0;
+    flex-direction: column-reverse;
+
+    .checkout-cart {
+      width: 100%;
+      height: auto;
+      overflow: scroll;
+    }
+  }
+}

@@ -39,22 +39,6 @@ export const reducer = (state, action) => {
 
         return product;
       }),
-      bestSellers: state.bestSellers.map((product) => {
-        if (product.id === itemToAdd.id) {
-          return {
-            ...product,
-            tallas: {
-              ...product.tallas,
-              [currentTalla]: {
-                ...product.tallas[currentTalla],
-                stock: product.tallas[currentTalla].stock - Number(currentCantidad),
-              },
-            },
-          };
-        }
-
-        return product;
-      }),
     };
   }
 
@@ -64,22 +48,6 @@ export const reducer = (state, action) => {
     return {
       ...state,
       products: state.products.map((product) => {
-        if (product.id === id) {
-          return {
-            ...product,
-            tallas: {
-              ...product.tallas,
-              [currentTalla]: {
-                ...product.tallas[currentTalla],
-                cantidad: Number(currentCantidad),
-              },
-            },
-          };
-        }
-
-        return product;
-      }),
-      bestSellers: state.bestSellers.map((product) => {
         if (product.id === id) {
           return {
             ...product,
@@ -120,23 +88,6 @@ export const reducer = (state, action) => {
         }
 
         return product;
-      }),
-      bestSellers: state.bestSellers.map((item) => {
-        if (item.id === id) {
-          return {
-            ...item,
-            tallas: {
-              ...item.tallas,
-              [talla]: {
-                ...item.tallas[talla],
-                cantidad: 1,
-                stock: Number(item.tallas[talla].stock) + Number(item.tallas[talla].cantidad),
-              },
-            },
-          };
-        }
-
-        return item;
       }),
     };
   }
