@@ -16,7 +16,7 @@ const MyOrders = () => {
         {cart.length > 0
           ? cart.map((item) => {
               totalPrice += item.price * item.cantidad;
-              return <OrderItem key={`${item.id}-${item.talla}`} {...item} />;
+              return <OrderItem key={`${item.id}-${item.selectedTalla}`} {...item} />;
             })
           : 'No hay productos en el carrito'}
       </div>

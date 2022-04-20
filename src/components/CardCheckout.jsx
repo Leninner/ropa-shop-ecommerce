@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 export const CardCheckout = ({ name, description, price, cantidad, talla, images, id }) => {
   const dispatch = useDispatch();
   const { deleteItemsFromCart } = CardCheckoutActions;
-  const handleDelete = (id) => dispatch(deleteItemsFromCart({ id, talla }));
+  const handleDelete = (id) => dispatch(deleteItemsFromCart({ id, currentTalla: talla }));
 
   return (
     <div className='card-checkout'>

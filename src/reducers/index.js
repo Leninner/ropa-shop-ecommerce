@@ -1,46 +1,7 @@
-import { ADD_TO_CART, DELETE_ITEMS_FROM_CART, GET_CATEGORY, AUMENTAR_CANTIDAD } from '../types';
+import { GET_CATEGORY, AUMENTAR_CANTIDAD } from '../types';
 
 export const reducer = (state, action) => {
   const { type, payload } = action;
-
-  if (type === ADD_TO_CART) {
-    const { currentTalla, itemToAdd, currentCantidad } = payload;
-    const updatedCart = [...state.cart];
-
-    const isAlreadyInCart = updatedCart.find((value) => value.id === itemToAdd.id && value.talla === currentTalla);
-
-    if (isAlreadyInCart) {
-      const index = updatedCart.findIndex((value) => value.id === itemToAdd.id && value.talla === currentTalla);
-      const newItem = { ...isAlreadyInCart };
-      newItem.cantidad += Number(currentCantidad);
-      updatedCart[index] = newItem;
-    } else {
-      const newItem = { ...itemToAdd };
-      newItem.cantidad = Number(currentCantidad);
-      updatedCart.push(newItem);
-    }
-
-    return {
-      ...state,
-      cart: updatedCart,
-      products: state.products.map((product) => {
-        if (product.id === itemToAdd.id) {
-          return {
-            ...product,
-            tallas: {
-              ...product.tallas,
-              [currentTalla]: {
-                ...product.tallas[currentTalla],
-                stock: product.tallas[currentTalla].stock - Number(currentCantidad),
-              },
-            },
-          };
-        }
-
-        return product;
-      }),
-    };
-  }
 
   if (type === AUMENTAR_CANTIDAD) {
     const { id, currentTalla, currentCantidad } = payload;
@@ -55,7 +16,7 @@ export const reducer = (state, action) => {
               ...product.tallas,
               [currentTalla]: {
                 ...product.tallas[currentTalla],
-                cantidad: Number(currentCantidad),
+                cantidad: Number(currentCantidad) + product.tallas[currentTalla].cantidad,
               },
             },
           };
@@ -66,22 +27,21 @@ export const reducer = (state, action) => {
     };
   }
 
-  if (type === DELETE_ITEMS_FROM_CART) {
-    const { id, talla } = payload;
+  if (type === 'DELETE_ITEMS_FROM_CART') {
+    const { item, currentTalla } = payload;
 
     return {
       ...state,
-      cart: state.cart.filter((item) => item.id !== id || item.talla !== talla),
+      cart: state.cart.filter((itemCart) => itemCart.id !== item.id || itemCart.selectedTalla !== currentTalla),
       products: state.products.map((product) => {
-        if (product.id === id) {
+        if (product.id === item.id) {
           return {
             ...product,
             tallas: {
               ...product.tallas,
-              [talla]: {
-                ...product.tallas[talla],
-                cantidad: 1,
-                stock: Number(product.tallas[talla].stock) + Number(product.tallas[talla].cantidad),
+              [currentTalla]: {
+                stock: Number(product.tallas[currentTalla].stock) + Number(product.tallas[currentTalla].cantidad),
+                cantidad: 0,
               },
             },
           };
@@ -98,6 +58,56 @@ export const reducer = (state, action) => {
     return {
       ...state,
       currentCategory: category,
+    };
+  }
+
+  if (type === 'TOGGLE_CART') {
+    const { item: product, currentTalla, currentCantidad } = payload;
+
+    const isAlreadyInCart = state.cart.find((value) => value.id === product.id && currentTalla === value.selectedTalla);
+    const updatedCart = [...state.cart];
+
+    const updatedProducts = [...state.products].map((value) => {
+      if (value.id === product.id) {
+        return {
+          ...value,
+          tallas: {
+            ...value.tallas,
+            [currentTalla]: {
+              cantidad: Number(currentCantidad) + value.tallas[currentTalla].cantidad,
+              stock: value.tallas[currentTalla].stock - Number(currentCantidad),
+            },
+          },
+        };
+      }
+
+      return value;
+    });
+
+    if (isAlreadyInCart) {
+      const index = updatedCart.findIndex((value) => value.id === product.id && value.tallas[currentTalla]);
+      const newItem = { ...isAlreadyInCart };
+      newItem.tallas[currentTalla].cantidad += Number(currentCantidad);
+      newItem.tallas[currentTalla].stock -= Number(currentCantidad);
+      updatedCart[index] = newItem;
+    } else {
+      const newItem = { ...product };
+      newItem.tallas = {
+        ...product.tallas,
+        [currentTalla]: {
+          cantidad: Number(currentCantidad),
+          stock: product.tallas[currentTalla].stock - Number(currentCantidad),
+        },
+      };
+      newItem.selectedTalla = currentTalla;
+
+      updatedCart.push(newItem);
+    }
+
+    return {
+      ...state,
+      cart: updatedCart,
+      products: updatedProducts,
     };
   }
 

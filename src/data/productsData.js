@@ -72,11 +72,11 @@ import chicag from '../assets/images/products/100.png';
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -99,15 +99,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -121,15 +121,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -143,15 +143,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -165,15 +165,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -188,15 +188,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -211,15 +211,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -234,15 +234,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -258,15 +258,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -281,15 +281,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -304,15 +304,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -328,15 +328,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -350,15 +350,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -373,15 +373,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -395,15 +395,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -418,15 +418,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -441,15 +441,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -464,15 +464,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -487,15 +487,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -515,15 +515,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'camisetas',
@@ -541,15 +541,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
@@ -564,15 +564,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
@@ -586,15 +586,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
@@ -608,15 +608,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
@@ -631,15 +631,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
@@ -654,15 +654,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
@@ -677,15 +677,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
@@ -700,15 +700,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 20,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',
