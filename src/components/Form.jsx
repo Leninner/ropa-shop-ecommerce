@@ -15,9 +15,11 @@ const Form = () => {
 
   cart.map(
     (value) =>
-      (encodeText += `- *${value.name.toUpperCase()}* \n   *Cantidad:* ${value.cantidad} \n   *Precio Unitario:* $${
-        value.price
-      } \n   *Precio Total:* $${value.price * value.cantidad}\n   *Talla:* ${value.talla}\n\n`)
+      (encodeText += `- *${value.name.toUpperCase()}* \n   *Cantidad:* ${
+        value.tallas[value.selectedTalla].cantidad
+      } \n   *Precio Unitario:* $${value.price} \n   *Precio Total:* $${
+        value.price * value.tallas[value.selectedTalla].cantidad
+      }\n   *Talla:* ${value.selectedTalla}\n\n`)
   );
 
   encodeText += `\n*Total a pagar: $${total}*\n\n---------------\nInformación de Contacto:\n\n`;
@@ -78,6 +80,7 @@ const Form = () => {
               value={values.nombre}
               onChange={handleChange}
               onBlur={handleBlur}
+              autoComplete='off'
             />
             {errors.nombre && touched.nombre && <div className='error'>{errors.nombre}</div>}
           </div>
@@ -87,11 +90,12 @@ const Form = () => {
             <input
               type='email'
               id='email'
-              placeholer='correo@correo.com'
+              placeholder='correo@correo.com'
               name='email'
               value={values.email}
               onChange={handleChange}
               onBlur={handleBlur}
+              autoComplete='off'
             />
             {errors.email && touched.email && <div className='error'>{errors.email}</div>}
           </div>
@@ -101,11 +105,12 @@ const Form = () => {
             <input
               type='text'
               id='ciudad'
-              placeholer='Latacunga'
+              placeholder='Latacunga'
               name='ciudad'
               value={values.ciudad}
               onChange={handleChange}
               onBlur={handleBlur}
+              autoComplete='off'
             />
             {errors.ciudad && touched.ciudad && <div className='error'>{errors.ciudad}</div>}
           </div>

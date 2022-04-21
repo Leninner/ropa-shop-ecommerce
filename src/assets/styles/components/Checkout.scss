@@ -31,26 +31,22 @@
   }
 
   .checkout__button {
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     font-size: 15px;
     font-weight: bold;
+    width: 100%;
     padding: 15px 35px;
-    border-radius: 25px;
+    border-radius: 5px;
     border: none;
     background-color: #25d366;
     transition: 0.3s;
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
+    color: white;
 
     &:hover {
-      text-decoration: underline;
+      background-color: #29c268;
     }
   }
 }
@@ -89,6 +85,7 @@
       width: auto;
       font-size: 20px;
       font-weight: bold;
+
       a {
         color: #fff;
         text-decoration: none;
