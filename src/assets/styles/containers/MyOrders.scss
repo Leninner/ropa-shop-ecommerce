@@ -1,13 +1,10 @@
 .MyOrder {
   width: 340px;
-  height: 100vh;
   position: fixed;
-  top: 50px;
+  top: 75px;
+  bottom: 0;
   background-color: white;
   right: 0;
-  border-bottom-left-radius: 25px;
-  border-left: 1px solid #6665658a;
-  border-bottom: 1px solid #6665658a;
 
   .MyOrder__title {
     width: 100%;
@@ -22,8 +19,8 @@
 
   .orders-container {
     width: 100%;
-    min-height: calc(100vh - 200px);
-    max-height: calc(100vh - 200px);
+    min-height: calc(100% - 160px);
+    max-height: calc(100% - 160px);
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 10px;
@@ -39,8 +36,6 @@
     top: 50px;
     background-color: white;
     right: 0;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 
     .MyOrder__title {
       width: 100%;

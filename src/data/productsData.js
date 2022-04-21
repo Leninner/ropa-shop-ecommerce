@@ -43,15 +43,8 @@ import snk3 from '../assets/images/products/6.1.png';
 import mon from '../assets/images/products/13.png';
 import mon2 from '../assets/images/products/13.3.jpg';
 import mon3 from '../assets/images/products/13.2.jpg';
-import chom from '../assets/images/products/25.png';
 import chom2 from '../assets/images/products/26.png';
 import chom3 from '../assets/images/products/26.1.png';
-import chom4 from '../assets/images/products/27.png';
-import chom5 from '../assets/images/products/28.png';
-import chom6 from '../assets/images/products/29.png';
-import chom7 from '../assets/images/products/30.png';
-import chom8 from '../assets/images/products/31.9.png';
-import chom9 from '../assets/images/products/31.png';
 import lev from '../assets/images/products/33.png';
 import ameri from '../assets/images/products/37.png';
 import rojo from '../assets/images/products/41.png';
@@ -67,7 +60,7 @@ import chicag from '../assets/images/products/100.png';
       id: createUniqueID()01,
       name: 'Sudadera New York',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [hoddie, hoddie, nw2],
       tallas: {
         S: {
@@ -76,23 +69,23 @@ import chicag from '../assets/images/products/100.png';
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
  */
 
 const createUniqueID = () => Math.random().toString(36).substr(2, 9);
 
 export const productsData = {
-  byCategory: [],
+  currentCategory: 'all',
   cart: [],
-  bestSellers: [
+  products: [
     {
       id: createUniqueID(),
       name: 'Hoodie Azul y Blanco',
@@ -126,7 +119,7 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
@@ -134,16 +127,16 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera Akatsuki',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [akatsuki, akatsuki1, akatsuki2],
       tallas: {
         S: {
@@ -159,13 +152,13 @@ export const productsData = {
           cantidad: 1,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera Nasa',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [nasa, nasa2, nasa3],
       tallas: {
         S: {
@@ -181,15 +174,13 @@ export const productsData = {
           cantidad: 1,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
-  ],
-  products: [
     {
       id: createUniqueID(),
       name: 'Sudadera de Kakashi',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [ka1, ka2, ka3],
       tallas: {
         S: {
@@ -202,10 +193,10 @@ export const productsData = {
         },
         L: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
@@ -225,10 +216,10 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
@@ -248,10 +239,10 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
@@ -271,10 +262,10 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
 
     {
@@ -295,10 +286,10 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
@@ -318,10 +309,10 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
@@ -341,10 +332,10 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
@@ -365,16 +356,16 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera De SNK',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad, Color Gris',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad, Color Gris',
       images: [snk, snk2, snk3],
       tallas: {
         S: {
@@ -387,17 +378,17 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera Monster',
       images: [mon, mon2, mon3],
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
 
       tallas: {
         S: {
@@ -410,16 +401,16 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera Levi a Color',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [lev, lev, lev],
       tallas: {
         S: {
@@ -432,16 +423,16 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera American Eagle ',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [ameri, ameri, ameri],
 
       tallas: {
@@ -455,16 +446,16 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera The Coutere',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [rojo, rojo, rojo2],
 
       tallas: {
@@ -478,16 +469,16 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Sudadera RedBull',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [redbull, redbull, redbull],
 
       tallas: {
@@ -501,16 +492,16 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
     {
       id: createUniqueID(),
       name: 'Tommy Hilfiger Negra',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [tommyne, tommyne, tommyne],
 
       tallas: {
@@ -524,10 +515,10 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
-      category: 'sudaderas',
+      category: 'hoodies',
     },
 
     //pantalon//
@@ -538,21 +529,21 @@ export const productsData = {
       id: createUniqueID(),
       name: 'Camiseta Chicago Bulls ',
       price: 7,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [chicag, chicag, chicag],
 
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'camisetas',
@@ -565,21 +556,21 @@ export const productsData = {
       id: createUniqueID(),
       name: 'Chompa Colombiana ',
       price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
+      description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [chom2, chom2, chom3],
 
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 15,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'chompas',

@@ -1,62 +1,7 @@
-import { ADD_TO_CART, DELETE_ITEMS_FROM_CART, GET_CATEGORY, AUMENTAR_CANTIDAD } from '../types';
+import { GET_CATEGORY, AUMENTAR_CANTIDAD } from '../types';
 
 export const reducer = (state, action) => {
   const { type, payload } = action;
-
-  if (type === ADD_TO_CART) {
-    const { currentTalla, itemToAdd, currentCantidad } = payload;
-    const updatedCart = [...state.cart];
-
-    const isAlreadyInCart = updatedCart.find((value) => value.id === itemToAdd.id && value.talla === currentTalla);
-
-    if (isAlreadyInCart) {
-      const index = updatedCart.findIndex((value) => value.id === itemToAdd.id && value.talla === currentTalla);
-      const newItem = { ...isAlreadyInCart };
-      newItem.cantidad += Number(currentCantidad);
-      updatedCart[index] = newItem;
-    } else {
-      const newItem = { ...itemToAdd };
-      newItem.cantidad = Number(currentCantidad);
-      updatedCart.push(newItem);
-    }
-
-    return {
-      ...state,
-      cart: updatedCart,
-      products: state.products.map((product) => {
-        if (product.id === itemToAdd.id) {
-          return {
-            ...product,
-            tallas: {
-              ...product.tallas,
-              [currentTalla]: {
-                ...product.tallas[currentTalla],
-                stock: product.tallas[currentTalla].stock - Number(currentCantidad),
-              },
-            },
-          };
-        }
-
-        return product;
-      }),
-      bestSellers: state.bestSellers.map((product) => {
-        if (product.id === itemToAdd.id) {
-          return {
-            ...product,
-            tallas: {
-              ...product.tallas,
-              [currentTalla]: {
-                ...product.tallas[currentTalla],
-                stock: product.tallas[currentTalla].stock - Number(currentCantidad),
-              },
-            },
-          };
-        }
-
-        return product;
-      }),
-    };
-  }
 
   if (type === AUMENTAR_CANTIDAD) {
     const { id, currentTalla, currentCantidad } = payload;
@@ -71,7 +16,7 @@ export const reducer = (state, action) => {
               ...product.tallas,
               [currentTalla]: {
                 ...product.tallas[currentTalla],
-                cantidad: Number(currentCantidad),
+                cantidad: Number(currentCantidad) + product.tallas[currentTalla].cantidad,
               },
             },
           };
@@ -79,15 +24,24 @@ export const reducer = (state, action) => {
 
         return product;
       }),
-      bestSellers: state.bestSellers.map((product) => {
-        if (product.id === id) {
+    };
+  }
+
+  if (type === 'DELETE_ITEMS_FROM_CART') {
+    const { item, currentTalla } = payload;
+
+    return {
+      ...state,
+      cart: state.cart.filter((itemCart) => itemCart.id !== item.id || itemCart.selectedTalla !== currentTalla),
+      products: state.products.map((product) => {
+        if (product.id === item.id) {
           return {
             ...product,
             tallas: {
               ...product.tallas,
               [currentTalla]: {
-                ...product.tallas[currentTalla],
-                cantidad: Number(currentCantidad),
+                stock: Number(product.tallas[currentTalla].stock) + Number(product.tallas[currentTalla].cantidad),
+                cantidad: 0,
               },
             },
           };
@@ -98,64 +52,64 @@ export const reducer = (state, action) => {
     };
   }
 
-  if (type === DELETE_ITEMS_FROM_CART) {
-    const { id, talla } = payload;
+  if (type === GET_CATEGORY) {
+    const { category } = payload;
 
     return {
       ...state,
-      cart: state.cart.filter((item) => item.id !== id || item.talla !== talla),
-      products: state.products.map((product) => {
-        if (product.id === id) {
-          return {
-            ...product,
-            tallas: {
-              ...product.tallas,
-              [talla]: {
-                ...product.tallas[talla],
-                cantidad: 1,
-                stock: Number(product.tallas[talla].stock) + Number(product.tallas[talla].cantidad),
-              },
-            },
-          };
-        }
-
-        return product;
-      }),
-      bestSellers: state.bestSellers.map((item) => {
-        if (item.id === id) {
-          return {
-            ...item,
-            tallas: {
-              ...item.tallas,
-              [talla]: {
-                ...item.tallas[talla],
-                cantidad: 1,
-                stock: Number(item.tallas[talla].stock) + Number(item.tallas[talla].cantidad),
-              },
-            },
-          };
-        }
-
-        return item;
-      }),
+      currentCategory: category,
     };
   }
 
-  switch (action.type) {
-    case GET_CATEGORY:
-      if (action.payload === 'todos') {
+  if (type === 'TOGGLE_CART') {
+    const { item: product, currentTalla, currentCantidad } = payload;
+
+    const isAlreadyInCart = state.cart.find((value) => value.id === product.id && currentTalla === value.selectedTalla);
+    const updatedCart = [...state.cart];
+
+    const updatedProducts = [...state.products].map((value) => {
+      if (value.id === product.id) {
         return {
-          ...state,
-          byCategory: state.products,
+          ...value,
+          tallas: {
+            ...value.tallas,
+            [currentTalla]: {
+              cantidad: Number(currentCantidad) + value.tallas[currentTalla].cantidad,
+              stock: value.tallas[currentTalla].stock - Number(currentCantidad),
+            },
+          },
         };
       }
 
-      return {
-        ...state,
-        byCategory: state.products.filter((item) => item.categorie === action.payload),
-      };
+      return value;
+    });
 
-    default:
-      return state;
+    if (isAlreadyInCart) {
+      const index = updatedCart.findIndex((value) => value.id === product.id && value.tallas[currentTalla]);
+      const newItem = { ...isAlreadyInCart };
+      newItem.tallas[currentTalla].cantidad += Number(currentCantidad);
+      newItem.tallas[currentTalla].stock -= Number(currentCantidad);
+      updatedCart[index] = newItem;
+    } else {
+      const newItem = { ...product };
+      newItem.tallas = {
+        ...product.tallas,
+        [currentTalla]: {
+          cantidad: Number(currentCantidad),
+          stock: product.tallas[currentTalla].stock - Number(currentCantidad),
+        },
+      };
+      newItem.selectedTalla = currentTalla;
+
+      updatedCart.push(newItem);
+    }
+
+    return {
+      ...state,
+      cart: updatedCart,
+      products: updatedProducts,
+    };
   }
+
+  return state;
 };

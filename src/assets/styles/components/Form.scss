@@ -5,7 +5,6 @@
   background: #fff;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: rgba(59, 58, 58, 0.16) 0px 1px 4px;
 }
 
 .formulario > div {
@@ -23,9 +22,9 @@
 .formulario input,
 .formulario textarea {
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid #b4b1b1;
-  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #b4b1b1;
+  font-size: 16px;
   padding: 10px;
   margin-bottom: 5px;
   color: #1f1f1f;
@@ -33,7 +32,6 @@
 
 .formulario input:focus {
   outline: none;
-  border: 1px solid #0085ff;
 }
 
 .formulario .error {
@@ -44,21 +42,19 @@
 
 .formulario button[type='submit'] {
   display: block;
-  background: rgb(0, 153, 255);
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  background: #a3a2a2;
+  font-weight: normal;
   border: none;
   cursor: pointer;
   width: 100%;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px 0;
   color: #fff;
   font-size: 16px;
   transition: 0.3s ease all;
 }
 
 .formulario button[type='submit']:hover {
-  background: rgb(0, 153, 255);
+  background: rgb(57, 57, 58);
 }
 
 .formulario .exito {

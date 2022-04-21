@@ -4,10 +4,17 @@ import { MdRemoveShoppingCart } from 'react-icons/md';
 import * as CardCheckoutActions from '../actions';
 import { useDispatch } from 'react-redux';
 
-export const CardCheckout = ({ name, description, price, cantidad, talla, images, id }) => {
+export const CardCheckout = ({ name, description, price, tallas, images, id, selectedTalla }) => {
   const dispatch = useDispatch();
   const { deleteItemsFromCart } = CardCheckoutActions;
-  const handleDelete = (id) => dispatch(deleteItemsFromCart({ id, talla }));
+
+  const item = {
+    name,
+    description,
+    id,
+  };
+
+  const handleDelete = () => dispatch(deleteItemsFromCart({ item, currentTalla: selectedTalla }));
 
   return (
     <div className='card-checkout'>
@@ -19,10 +26,10 @@ export const CardCheckout = ({ name, description, price, cantidad, talla, images
           <p className='description'>{description}</p>
 
           <p>
-            <span>Talla:</span> {talla}
+            <span>Talla:</span> {selectedTalla}
           </p>
           <p>
-            <span>Cantidad:</span> {cantidad}
+            <span>Cantidad:</span> {tallas[selectedTalla].cantidad}
           </p>
           <p>
             <span>Precio Unitario:</span> ${price}
@@ -30,9 +37,9 @@ export const CardCheckout = ({ name, description, price, cantidad, talla, images
         </div>
 
         <div className='resume'>
-          <p>${price * cantidad}</p>
+          <p>${price * tallas[selectedTalla].cantidad}</p>
           <span>|</span>
-          <MdRemoveShoppingCart size='30' onClick={() => handleDelete(id)} />
+          <MdRemoveShoppingCart size='30' onClick={handleDelete} />
         </div>
       </div>
     </div>

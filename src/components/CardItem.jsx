@@ -1,5 +1,4 @@
 import Options from './Options';
-import ToggleCart from './ToggleCart';
 import { useNearScreen } from '../hooks/useNearScreen';
 import { useState } from 'react';
 import Slider from 'react-slick';
@@ -10,7 +9,6 @@ import 'slick-carousel/slick/slick-theme.css';
 export const CardItem = ({ product }) => {
   const [show, ref] = useNearScreen();
   const [currentTalla, setCurrentTalla] = useState(Object.keys(product.tallas)[0]);
-  const [currentCantidad, setCurrentCantidad] = useState(1);
 
   const settings = {
     dots: true,
@@ -36,15 +34,8 @@ export const CardItem = ({ product }) => {
 
           <div className='settings'>
             <h2>{product.name}</h2>
-            <Options
-              product={product}
-              currentTalla={currentTalla}
-              setCurrentTalla={setCurrentTalla}
-              currentCantidad={currentCantidad}
-              setCurrentCantidad={setCurrentCantidad}
-            />
 
-            <ToggleCart product={product} currentTalla={currentTalla} currentCantidad={currentCantidad} />
+            <Options product={product} currentTalla={currentTalla} setCurrentTalla={setCurrentTalla} />
           </div>
         </>
       )}

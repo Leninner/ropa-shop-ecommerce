@@ -1,22 +1,28 @@
 import React from 'react';
 import { CardItem } from '../components/CardItem';
 import '../assets/styles/containers/ProductList.scss';
-// import Categories from '../components/Categories';
 import { useSelector } from 'react-redux';
+import { CategoriesFilter } from '../components/CategoriesFilter';
 
 export const ProductList = () => {
-  const { products, bestSellers } = useSelector((state) => state);
+  const { products, currentCategory } = useSelector((state) => state);
+
+  console.log(currentCategory);
+
+  const filteredProducts = products.filter(
+    (product) => currentCategory === 'all' || product.category === currentCategory
+  );
 
   return (
     <section className='product-list'>
-      <div className='container__productList'>
-        {bestSellers.map((product) => (
-          <CardItem key={product.id} product={product} bestSellers />
-        ))}
+      <CategoriesFilter />
 
-        {products.map((product) => (
-          <CardItem key={product.id} product={product} />
-        ))}
+      <div className='container__productList'>
+        {filteredProducts.length ? (
+          filteredProducts.map((product) => <CardItem key={product.id} product={product} />)
+        ) : (
+          <div className='any-product'>No hay productos</div>
+        )}
       </div>
     </section>
   );
