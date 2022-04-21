@@ -23,6 +23,10 @@ import mad2 from '../assets/images/products/mad2.jpeg';
 import mad3 from '../assets/images/products/mad3.jpeg';
 import under from '../assets/images/products/under1.jpeg';
 import under2 from '../assets/images/products/under2.jpeg';
+import azub1 from '../assets/images/products/50.jpeg';
+import azub2 from '../assets/images/products/51.jpeg';
+import azub3 from '../assets/images/products/52.jpeg';
+
 
 import akatsuki from '../assets/images/products/2.1.png';
 import akatsuki1 from '../assets/images/products/2.jpg';
@@ -91,6 +95,29 @@ export const productsData = {
   bestSellers: [
     {
       id: createUniqueID(),
+      name: 'Hoodie Azul y Blanco',
+      price: 15,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [azub1, azub2, azub3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 1,
+        },
+        M: {
+          stock: 1,
+          cantidad: 1,
+        },
+        L: {
+          stock: 0,
+          cantidad: 1,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
       name: 'Hoodie Bad Bunny',
       price: 15,
       description:
@@ -102,7 +129,7 @@ export const productsData = {
           cantidad: 1,
         },
         M: {
-          stock: 0,
+          stock: 1,
           cantidad: 1,
         },
         L: {
@@ -120,15 +147,15 @@ export const productsData = {
       images: [akatsuki, akatsuki1, akatsuki2],
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         L: {
-          stock: 0,
+          stock: 1,
           cantidad: 1,
         },
       },
@@ -142,15 +169,15 @@ export const productsData = {
       images: [nasa, nasa2, nasa3],
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         L: {
-          stock: 0,
+          stock: 1,
           cantidad: 1,
         },
       },
@@ -166,11 +193,11 @@ export const productsData = {
       images: [ka1, ka2, ka3],
       tallas: {
         S: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         L: {
@@ -189,11 +216,11 @@ export const productsData = {
       price: 15,
       tallas: {
         S: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -212,11 +239,11 @@ export const productsData = {
       images: [az, az2, az3],
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -235,11 +262,11 @@ export const productsData = {
       price: 15,
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -259,11 +286,11 @@ export const productsData = {
       price: 15,
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -282,11 +309,11 @@ export const productsData = {
       price: 15,
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -305,11 +332,11 @@ export const productsData = {
       images: [mad1, mad2, mad3],
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -329,11 +356,11 @@ export const productsData = {
 
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -351,11 +378,11 @@ export const productsData = {
       images: [snk, snk2, snk3],
       tallas: {
         S: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         L: {
@@ -374,11 +401,11 @@ export const productsData = {
 
       tallas: {
         S: {
-          stock: 15,
+          stock: 2,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         L: {
@@ -396,11 +423,11 @@ export const productsData = {
       images: [lev, lev, lev],
       tallas: {
         S: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         L: {
@@ -419,11 +446,11 @@ export const productsData = {
 
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -442,11 +469,11 @@ export const productsData = {
 
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -465,11 +492,11 @@ export const productsData = {
 
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -488,11 +515,11 @@ export const productsData = {
 
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 1,
         },
         M: {
-          stock: 15,
+          stock: 0,
           cantidad: 1,
         },
         L: {
@@ -533,29 +560,7 @@ export const productsData = {
 
     //Chompas//
 
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom, chom, chom],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'chompas',
-    },
+    
     {
       id: createUniqueID(),
       name: 'Chompa Colombiana ',
@@ -574,142 +579,6 @@ export const productsData = {
         },
         L: {
           stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'chompas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom4, chom4, chom4],
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'chompas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom5, chom5, chom5],
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'chompas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom6, chom6, chom6],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'chompas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom7, chom7, chom7],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'chompas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom8, chom8, chom8],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 0,
-          cantidad: 1,
-        },
-      },
-      category: 'chompas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'Sudaderas con capucha estilos únicos y de excelente calidad',
-      images: [chom9, chom9, chom9],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 1,
-        },
-        M: {
-          stock: 15,
-          cantidad: 1,
-        },
-        L: {
-          stock: 20,
           cantidad: 1,
         },
       },
