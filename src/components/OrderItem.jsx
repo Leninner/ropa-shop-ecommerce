@@ -4,10 +4,8 @@ import { deleteItemsFromCart } from '../actions';
 import { MdOutlineRemoveShoppingCart } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 
-const OrderItem = ({ images, name, price, selectedTalla, cantidad, id }) => {
+const OrderItem = ({ images, name, price, selectedTalla, id, tallas }) => {
   const dispatch = useDispatch();
-
-  console.log(selectedTalla);
 
   const item = {
     id,
@@ -29,7 +27,7 @@ const OrderItem = ({ images, name, price, selectedTalla, cantidad, id }) => {
 
         <div>
           <p>${price}</p>
-          <p>{cantidad}</p>
+          <p>{tallas[selectedTalla].cantidad}</p>
           <p>{selectedTalla}</p>
         </div>
       </div>

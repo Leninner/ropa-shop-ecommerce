@@ -26,7 +26,7 @@ export const CardCheckout = ({ name, description, price, tallas, images, id, sel
           <p className='description'>{description}</p>
 
           <p>
-            <span>Talla:</span> {tallas[selectedTalla]}
+            <span>Talla:</span> {selectedTalla}
           </p>
           <p>
             <span>Cantidad:</span> {tallas[selectedTalla].cantidad}
