@@ -43,8 +43,7 @@ import snk3 from '../assets/images/products/6.1.png';
 import mon from '../assets/images/products/13.png';
 import mon2 from '../assets/images/products/13.3.jpg';
 import mon3 from '../assets/images/products/13.2.jpg';
-import chom2 from '../assets/images/products/26.png';
-import chom3 from '../assets/images/products/26.1.png';
+
 import lev from '../assets/images/products/33.png';
 import ameri from '../assets/images/products/37.png';
 import rojo from '../assets/images/products/41.png';
@@ -92,19 +91,19 @@ export const productsData = {
       price: 15,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [azub1, azub2, azub3],
+      images: [azub1, azub2, azub2],
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'sudaderas',
@@ -123,7 +122,7 @@ export const productsData = {
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -141,15 +140,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -163,15 +162,15 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
       },
       category: 'hoodies',
@@ -185,11 +184,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 15,
@@ -208,11 +207,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -231,11 +230,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -254,11 +253,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -278,11 +277,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -301,11 +300,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -324,11 +323,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -348,11 +347,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -370,11 +369,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -393,11 +392,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 2,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -415,11 +414,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -438,11 +437,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -461,11 +460,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -484,11 +483,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -507,11 +506,11 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 1,
+          cantidad: 0,
         },
         M: {
           stock: 0,
-          cantidad: 1,
+          cantidad: 0,
         },
         L: {
           stock: 0,
@@ -547,33 +546,6 @@ export const productsData = {
         },
       },
       category: 'camisetas',
-    },
-
-    //Chompas//
-
-    
-    {
-      id: createUniqueID(),
-      name: 'Chompa Colombiana ',
-      price: 15,
-      description: 'hoodies con capucha estilos únicos y de excelente calidad',
-      images: [chom2, chom2, chom3],
-
-      tallas: {
-        S: {
-          stock: 15,
-          cantidad: 0,
-        },
-        M: {
-          stock: 15,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'chompas',
     },
   ],
 };
