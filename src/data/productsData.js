@@ -91,7 +91,7 @@ export const productsData = {
       price: 15,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [azub1, azub2, azub2],
+      images: [azub1, azub2, azub3],
       tallas: {
         S: {
           stock: 1,
