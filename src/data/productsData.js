@@ -25,7 +25,7 @@ import under from '../assets/images/products/under1.jpeg';
 import under2 from '../assets/images/products/under2.jpeg';
 import azub1 from '../assets/images/products/50.jpeg';
 import azub2 from '../assets/images/products/51.jpeg';
-import azub3 from '../assets/images/products/52.jpeg';
+import azub3 from '../assets/images/products/53.jpeg';
 
 
 import akatsuki from '../assets/images/products/2.1.png';
