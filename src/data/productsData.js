@@ -135,7 +135,7 @@ export const productsData = {
       images: [azub1, azub2, azub3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -158,7 +158,7 @@ export const productsData = {
       images: [balr, balr2, balr3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -181,7 +181,7 @@ export const productsData = {
       images: [bull, bull2, bull3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -204,7 +204,7 @@ export const productsData = {
       images: [cal, cal2, cal3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -227,7 +227,7 @@ export const productsData = {
       images: [nik, nik2, nik3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -250,7 +250,7 @@ export const productsData = {
       images: [pullb, pullb2, pullb3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
