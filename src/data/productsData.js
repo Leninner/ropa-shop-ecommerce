@@ -29,12 +29,9 @@ import azub3 from '../assets/images/products/53.jpeg';
 import balr from '../assets/images/products/balr.jpeg';
 import balr2 from '../assets/images/products/balr2.jpeg';
 import balr3 from '../assets/images/products/balr3.jpeg';
-import bull from '../assets/images/products/balls.jpeg';
-import bull2 from '../assets/images/products/balls2.jpeg';
-import bull3 from '../assets/images/products/balls3.jpeg';
-
-
-
+import bull from '../assets/images/products/bulls.jpeg';
+import bull2 from '../assets/images/products/bulls2.jpeg';
+import bull3 from '../assets/images/products/bulls3.jpeg';
 import akatsuki from '../assets/images/products/2.1.png';
 import akatsuki1 from '../assets/images/products/2.jpg';
 import akatsuki2 from '../assets/images/products/2.2.png';
@@ -50,7 +47,6 @@ import snk3 from '../assets/images/products/6.1.png';
 import mon from '../assets/images/products/13.png';
 import mon2 from '../assets/images/products/13.3.jpg';
 import mon3 from '../assets/images/products/13.2.jpg';
-
 import lev from '../assets/images/products/33.png';
 import ameri from '../assets/images/products/37.png';
 import rojo from '../assets/images/products/41.png';
@@ -92,7 +88,7 @@ export const productsData = {
   currentCategory: 'all',
   cart: [],
   products: [
-     {
+    {
       id: createUniqueID(),
       name: 'Hoodie Bad Bunny',
       price: 15,
