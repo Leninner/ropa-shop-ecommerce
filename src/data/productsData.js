@@ -198,7 +198,7 @@ export const productsData = {
           cantidad: 0,
         },
         L: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
       },
@@ -220,7 +220,7 @@ export const productsData = {
           cantidad: 0,
         },
         L: {
-          stock: 15,
+          stock: 1,
           cantidad: 0,
         },
       },
