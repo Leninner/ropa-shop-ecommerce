@@ -32,6 +32,18 @@ import balr3 from '../assets/images/products/balr3.jpeg';
 import bull from '../assets/images/products/balls.jpeg';
 import bull2 from '../assets/images/products/balls2.jpeg';
 import bull3 from '../assets/images/products/balls3.jpeg';
+import cal from '../assets/images/products/cal.jpeg';
+import cal2 from '../assets/images/products/cal2.jpeg';
+import cal3 from '../assets/images/products/cal3.jpeg';
+import nik from '../assets/images/products/nik.jpeg';
+import nik2 from '../assets/images/products/nik2.jpeg';
+import nik3 from '../assets/images/products/nik3.jpeg';
+import pullb from '../assets/images/products/pull.jpeg';
+import pullb2 from '../assets/images/products/pull2.jpeg';
+import pullb3 from '../assets/images/products/pull3.jpeg';
+
+
+
 
 
 
@@ -184,6 +196,76 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
+    {
+      id: createUniqueID(),
+      name: 'Hoodie Calvin Klein',
+      price: 15,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [cal, cal2, cal3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Hoodie Nike',
+      price: 15,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [nik, nik2, nik3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Hoodie Pull and Bear',
+      price: 15,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [pull, pull2, pull3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'sudaderas',
+    },
+    
     {
       id: createUniqueID(),
       name: 'Sudadera Akatsuki',
