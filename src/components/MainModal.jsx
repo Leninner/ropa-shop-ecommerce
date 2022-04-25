@@ -2,7 +2,7 @@ import Slider from 'react-slick';
 import '../assets/styles/components/MainModal.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import portada1 from '../assets/images/mainView/portada-r1.png';
+import portada from '../assets/images/mainView/portada.png';
 
 export const MainModal = () => {
   const settings = {
@@ -22,7 +22,7 @@ export const MainModal = () => {
     <section className='mainModal'>
       <Slider {...settings} className='mainModal__slider'>
         <div>
-          <img className='mainModal__img' src={portada1} alt='img' />
+          <img className='mainModal__img' src={portada} alt='img' />
         </div>
         <div>
           <img className='mainModal__img' src={somePhoto} alt='img' />
