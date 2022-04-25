@@ -62,7 +62,6 @@ import snk3 from '../assets/images/products/6.1.png';
 import mon from '../assets/images/products/13.png';
 import mon2 from '../assets/images/products/13.3.jpg';
 import mon3 from '../assets/images/products/13.2.jpg';
-
 import lev from '../assets/images/products/33.png';
 import ameri from '../assets/images/products/37.png';
 import rojo from '../assets/images/products/41.png';
@@ -104,7 +103,7 @@ export const productsData = {
   currentCategory: 'all',
   cart: [],
   products: [
-     {
+    {
       id: createUniqueID(),
       name: 'Hoodie Bad Bunny',
       price: 15,

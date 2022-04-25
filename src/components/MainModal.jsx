@@ -24,21 +24,6 @@ export const MainModal = () => {
         <div>
           <img className='mainModal__img' src={portada} alt='img' />
         </div>
-        <div>
-          <img className='mainModal__img' src={somePhoto} alt='img' />
-        </div>
-        <div>
-          <img className='mainModal__img' src={somePhoto} alt='img' />
-        </div>
-        <div>
-          <img className='mainModal__img' src={somePhoto} alt='img' />
-        </div>
-        <div>
-          <img className='mainModal__img' src={somePhoto} alt='img' />
-        </div>
-        <div>
-          <img className='mainModal__img' src={somePhoto} alt='img' />
-        </div>
       </Slider>
     </section>
   );
