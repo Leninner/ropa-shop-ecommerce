@@ -321,7 +321,7 @@ export const productsData = {
     },
     {
       id: createUniqueID(),
-      name: 'HOODIE ',
+      name: 'HOODIE JESUS ',
       description:
         'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [jes, jes2, jes3],
@@ -557,16 +557,16 @@ export const productsData = {
       id: createUniqueID(),
       name: 'Camiseta Chicago Bulls ',
       price: 7,
-      description: 'hoodies con capucha estilos únicos y de excelente calidad',
+      description: 'camiseta de excelente calidad',
       images: [chicag, chicag, chicag],
 
       tallas: {
         S: {
-          stock: 15,
+          stock: 1,
           cantidad: 0,
         },
         M: {
-          stock: 15,
+          stock: 1,
           cantidad: 0,
         },
         L: {
