@@ -29,8 +29,9 @@ import azub3 from '../assets/images/products/53.jpeg';
 import balr from '../assets/images/products/balr.jpeg';
 import balr2 from '../assets/images/products/balr2.jpeg';
 import balr3 from '../assets/images/products/balr3.jpeg';
-
-
+import bull from '../assets/images/products/balls.jpeg';
+import bull2 from '../assets/images/products/balls2.jpeg';
+import bull3 from '../assets/images/products/balls3.jpeg';
 
 
 
@@ -144,6 +145,29 @@ export const productsData = {
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [balr, balr2, balr3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Hoodie Bulls 23',
+      price: 15,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [bull, bull2, bull3],
       tallas: {
         S: {
           stock: 1,
