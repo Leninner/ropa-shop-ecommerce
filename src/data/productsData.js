@@ -29,9 +29,9 @@ import azub3 from '../assets/images/products/53.jpeg';
 import balr from '../assets/images/products/balr.jpeg';
 import balr2 from '../assets/images/products/balr2.jpeg';
 import balr3 from '../assets/images/products/balr3.jpeg';
-import bull from '../assets/images/products/balls.jpeg';
-import bull2 from '../assets/images/products/balls2.jpeg';
-import bull3 from '../assets/images/products/balls3.jpeg';
+import bull from '../assets/images/products/bulls.jpeg';
+import bull2 from '../assets/images/products/bulls2.jpeg';
+import bull3 from '../assets/images/products/bulls3.jpeg';
 import cal from '../assets/images/products/cal.jpeg';
 import cal2 from '../assets/images/products/cal2.jpeg';
 import cal3 from '../assets/images/products/cal3.jpeg';
@@ -247,7 +247,7 @@ export const productsData = {
       price: 15,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [pull, pull2, pull3],
+      images: [pullb, pullb2, pullb3],
       tallas: {
         S: {
           stock: 1,
