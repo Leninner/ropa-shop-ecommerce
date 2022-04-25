@@ -26,6 +26,12 @@ import under2 from '../assets/images/products/under2.jpeg';
 import azub1 from '../assets/images/products/50.jpeg';
 import azub2 from '../assets/images/products/51.jpeg';
 import azub3 from '../assets/images/products/53.jpeg';
+import balr from '../assets/images/products/balr.jpeg';
+import balr2 from '../assets/images/products/balr2.jpeg';
+import balr3 from '../assets/images/products/balr3.jpeg';
+
+
+
 
 
 import akatsuki from '../assets/images/products/2.1.png';
@@ -85,6 +91,29 @@ export const productsData = {
   currentCategory: 'all',
   cart: [],
   products: [
+     {
+      id: createUniqueID(),
+      name: 'Hoodie Bad Bunny',
+      price: 15,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [bad1, bad2, bad3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'hoodies',
+    },
     {
       id: createUniqueID(),
       name: 'Hoodie Azul y Blanco',
@@ -110,11 +139,11 @@ export const productsData = {
     },
     {
       id: createUniqueID(),
-      name: 'Hoodie Bad Bunny',
+      name: 'Hoodie Balenciaga Rojo y Blanco ',
       price: 15,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [bad1, bad2, bad3],
+      images: [balr, balr2, balr3],
       tallas: {
         S: {
           stock: 1,
@@ -129,7 +158,7 @@ export const productsData = {
           cantidad: 0,
         },
       },
-      category: 'hoodies',
+      category: 'sudaderas',
     },
     {
       id: createUniqueID(),
