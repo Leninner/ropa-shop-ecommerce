@@ -2,7 +2,7 @@ import Slider from 'react-slick';
 import '../assets/styles/components/MainModal.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import portada from '../assets/images/mainView/portada1.jpg';
+import portada from '../assets/images/mainView/portadar1.png';
 
 export const MainModal = () => {
   const settings = {
