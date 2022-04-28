@@ -3,7 +3,7 @@ import '../assets/styles/components/MainModal.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import portada from '../assets/images/mainView/portadar1.png';
-import portada2 from '../assets/images/mainView/portadar2.png';
+import portada2 from '../assets/images/mainView/portada2.png';
 
 
 export const MainModal = () => {
