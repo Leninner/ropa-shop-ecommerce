@@ -8,7 +8,11 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export const CardItem = ({ product }) => {
   const [show, ref] = useNearScreen();
-  const [currentTalla, setCurrentTalla] = useState(Object.keys(product.tallas)[0]);
+  // const [currentTalla, setCurrentTalla] = useState(Object.keys(product.tallas)[0]);
+  const [currentTalla, setCurrentTalla] = useState(() => {
+    const foundedWithStock = Object.keys(product.tallas).find((talla) => product.tallas[talla].stock > 0);
+    return foundedWithStock;
+  });
 
   const settings = {
     dots: true,
