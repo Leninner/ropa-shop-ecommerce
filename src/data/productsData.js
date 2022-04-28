@@ -32,6 +32,21 @@ import balr3 from '../assets/images/products/balr3.jpeg';
 import bull from '../assets/images/products/bulls.jpeg';
 import bull2 from '../assets/images/products/bulls2.jpeg';
 import bull3 from '../assets/images/products/bulls3.jpeg';
+import cal from '../assets/images/products/cal.jpeg';
+import cal2 from '../assets/images/products/cal2.jpeg';
+import cal3 from '../assets/images/products/cal3.jpeg';
+import nik from '../assets/images/products/nik.jpeg';
+import nik2 from '../assets/images/products/nik2.jpeg';
+import nik3 from '../assets/images/products/nik3.jpeg';
+import pullb from '../assets/images/products/pull.jpeg';
+import pullb2 from '../assets/images/products/pull2.jpeg';
+import pullb3 from '../assets/images/products/pull3.jpeg';
+
+
+
+
+
+
 import akatsuki from '../assets/images/products/2.1.png';
 import akatsuki1 from '../assets/images/products/2.jpg';
 import akatsuki2 from '../assets/images/products/2.2.png';
@@ -91,7 +106,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Bad Bunny',
-      price: 15,
+      price: 20,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [bad1, bad2, bad3],
@@ -114,13 +129,13 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Azul y Blanco',
-      price: 15,
+      price: 20,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [azub1, azub2, azub3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -137,13 +152,13 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Balenciaga Rojo y Blanco ',
-      price: 15,
+      price: 20,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [balr, balr2, balr3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -160,13 +175,13 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Bulls 23',
-      price: 15,
+      price: 20,
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [bull, bull2, bull3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -180,6 +195,76 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
+    {
+      id: createUniqueID(),
+      name: 'Hoodie Calvin Klein',
+      price: 20,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [cal, cal2, cal3],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Hoodie Nike',
+      price: 20,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [nik, nik2, nik3],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'sudaderas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Hoodie Pull and Bear',
+      price: 20,
+      description:
+        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [pullb, pullb2, pullb3],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'sudaderas',
+    },
+    
     {
       id: createUniqueID(),
       name: 'Sudadera Akatsuki',
@@ -252,7 +337,7 @@ export const productsData = {
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [ama, ama2, ama3],
-      price: 15,
+      price: 20,
       tallas: {
         S: {
           stock: 0,
@@ -271,7 +356,7 @@ export const productsData = {
     },
     {
       id: createUniqueID(),
-      price: 15,
+      price: 20,
       name: 'HOODIE AZUL',
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
@@ -298,7 +383,7 @@ export const productsData = {
       description:
         'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [ba, ba2, ba3],
-      price: 15,
+      price: 20,
       tallas: {
         S: {
           stock: 1,
@@ -322,7 +407,7 @@ export const productsData = {
       description:
         'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [gap, gap2, gap3],
-      price: 15,
+      price: 20,
       tallas: {
         S: {
           stock: 1,
@@ -345,7 +430,7 @@ export const productsData = {
       description:
         'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [jes, jes2, jes3],
-      price: 15,
+      price: 20,
       tallas: {
         S: {
           stock: 1,
@@ -365,7 +450,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'HOODIE MANDARINA',
-      price: 15,
+      price: 20,
       description:
         'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [mad1, mad2, mad3],
@@ -391,7 +476,7 @@ export const productsData = {
       description:
         'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [under, under2],
-      price: 15,
+      price: 20,
 
       tallas: {
         S: {
