@@ -1,4 +1,4 @@
-<h1 align="center">Ropa Shop Ecommerce 😎</h1>
+<h1 align="center">Ropa Shop Ecommerce</h1>
 
 <div align="center">
    Ecommerce for the entrepreneurship of a great friend
