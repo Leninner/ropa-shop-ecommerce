@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { MainModal } from '../components/MainModal';
 import { ProductList } from '../containers/ProductList';
 import { Footer } from '../components/Footer';
