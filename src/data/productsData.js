@@ -108,7 +108,7 @@ export const productsData = {
       name: 'Hoodie Bad Bunny',
       price: 20,
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [bad1, bad2, bad3],
       tallas: {
         S: {
@@ -131,7 +131,7 @@ export const productsData = {
       name: 'Hoodie Azul y Blanco',
       price: 20,
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [azub1, azub2, azub3],
       tallas: {
         S: {
@@ -154,7 +154,7 @@ export const productsData = {
       name: 'Hoodie Balenciaga Rojo y Blanco ',
       price: 20,
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [balr, balr2, balr3],
       tallas: {
         S: {
@@ -177,7 +177,7 @@ export const productsData = {
       name: 'Hoodie Bulls 23',
       price: 20,
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [bull, bull2, bull3],
       tallas: {
         S: {
@@ -200,7 +200,7 @@ export const productsData = {
       name: 'Hoodie Calvin Klein',
       price: 20,
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [cal, cal2, cal3],
       tallas: {
         S: {
@@ -223,7 +223,7 @@ export const productsData = {
       name: 'Hoodie Nike',
       price: 20,
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [nik, nik2, nik3],
       tallas: {
         S: {
@@ -246,7 +246,7 @@ export const productsData = {
       name: 'Hoodie Pull and Bear',
       price: 20,
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [pullb, pullb2, pullb3],
       tallas: {
         S: {
@@ -335,7 +335,7 @@ export const productsData = {
       id: createUniqueID(),
       name: 'HOODIE',
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [ama, ama2, ama3],
       price: 20,
       tallas: {
@@ -359,7 +359,7 @@ export const productsData = {
       price: 20,
       name: 'HOODIE AZUL',
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [az, az2, az3],
       tallas: {
         S: {
@@ -381,7 +381,7 @@ export const productsData = {
       id: createUniqueID(),
       name: 'HOODIE BALENCIAGA',
       description:
-        'Hoodie talla americana 98% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [ba, ba2, ba3],
       price: 20,
       tallas: {
@@ -405,7 +405,7 @@ export const productsData = {
       id: createUniqueID(),
       name: 'HOODIE GAP',
       description:
-        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [gap, gap2, gap3],
       price: 20,
       tallas: {
@@ -428,7 +428,7 @@ export const productsData = {
       id: createUniqueID(),
       name: 'HOODIE JESUS ',
       description:
-        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [jes, jes2, jes3],
       price: 20,
       tallas: {
@@ -452,7 +452,7 @@ export const productsData = {
       name: 'HOODIE MANDARINA',
       price: 20,
       description:
-        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [mad1, mad2, mad3],
       tallas: {
         S: {
@@ -474,7 +474,7 @@ export const productsData = {
       id: createUniqueID(),
       name: 'HOODIE UNDER ARMOR',
       description:
-        'Hoodie talla americana ,98% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [under, under2],
       price: 20,
 
