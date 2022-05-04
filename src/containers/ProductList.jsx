@@ -10,7 +10,9 @@ export const ProductList = () => {
   console.log(currentCategory);
 
   const filteredProducts = products.filter(
-    (product) => currentCategory === 'all' || product.category === currentCategory
+    (product) =>
+      (currentCategory === 'all' || product.category === currentCategory) &&
+      Object.entries(product.tallas).some(([, { stock }]) => stock > 0)
   );
 
   return (

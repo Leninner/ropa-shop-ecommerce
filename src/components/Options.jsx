@@ -11,7 +11,7 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
   const [currentCantidad, setCurrentCantidad] = useState(1);
   const handleChange = (e) => setCurrentCantidad(e.target.value);
 
-  console.log(product.tallas);
+  // console.log({talla: product.tallas, currentTalla: currentTalla, product});
 
   const toggleCart = (item) => {
     item.tallas[currentTalla].stock > 0

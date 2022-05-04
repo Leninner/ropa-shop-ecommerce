@@ -42,11 +42,6 @@ import pullb from '../assets/images/products/pull.jpeg';
 import pullb2 from '../assets/images/products/pull2.jpeg';
 import pullb3 from '../assets/images/products/pull3.jpeg';
 
-
-
-
-
-
 import akatsuki from '../assets/images/products/2.1.png';
 import akatsuki1 from '../assets/images/products/2.jpg';
 import akatsuki2 from '../assets/images/products/2.2.png';
@@ -264,7 +259,7 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
-    
+
     {
       id: createUniqueID(),
       name: 'Sudadera Akatsuki',
