@@ -263,7 +263,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera Akatsuki',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [akatsuki, akatsuki1, akatsuki2],
       tallas: {
@@ -285,7 +285,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera Nasa',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [nasa, nasa2, nasa3],
       tallas: {
@@ -307,7 +307,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera de Kakashi',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [ka1, ka2, ka3],
       tallas: {
@@ -492,7 +492,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera De SNK',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad, Color Gris',
       images: [snk, snk2, snk3],
       tallas: {
@@ -515,7 +515,7 @@ export const productsData = {
       id: createUniqueID(),
       name: 'Sudadera Monster',
       images: [mon, mon2, mon3],
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
 
       tallas: {
@@ -537,7 +537,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera Levi a Color',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [lev, lev, lev],
       tallas: {
@@ -559,7 +559,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera American Eagle ',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [ameri, ameri, ameri],
 
@@ -582,7 +582,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera The Coutere',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [rojo, rojo, rojo2],
 
@@ -605,7 +605,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Sudadera RedBull',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [redbull, redbull, redbull],
 
@@ -628,7 +628,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Tommy Hilfiger Negra',
-      price: 15,
+      price: 18,
       description: 'hoodies con capucha estilos únicos y de excelente calidad',
       images: [tommyne, tommyne, tommyne],
 
