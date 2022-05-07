@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import portada from '../assets/images/mainView/portadar1.png';
 import portada2 from '../assets/images/mainView/portada2.png';
+import portada3 from '../assets/images/mainView/TALLAS.png';
 
 
 export const MainModal = () => {
@@ -28,6 +29,9 @@ export const MainModal = () => {
         </div>
         <div>
           <img className='mainModal__img' src={portada2} alt='img' />
+        </div>
+        <div>
+          <img className='mainModal__img' src={portada3} alt='img' />
         </div>
       </Slider>
     </section>
