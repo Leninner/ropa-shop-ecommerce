@@ -249,11 +249,11 @@ export const productsData = {
           cantidad: 0,
         },
         M: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         L: {
-          stock: 0,
+          stock: 1,
           cantidad: 0,
         },
       },
