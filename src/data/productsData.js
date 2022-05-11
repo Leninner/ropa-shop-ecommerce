@@ -263,7 +263,7 @@ export const productsData = {
     },
     {
       id: createUniqueID(),
-      price:20,
+      price: 20,
       name: 'HOODIE AZUL',
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
