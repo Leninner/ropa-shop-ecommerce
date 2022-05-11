@@ -4,8 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import portada from '../assets/images/mainView/portadar1.png';
 import portada2 from '../assets/images/mainView/portada2.png';
-import portada3 from '../assets/images/mainView/tallas.png';
-
+import portada3 from '../assets/images/mainView/TALLAS.png';
 
 export const MainModal = () => {
   const settings = {
@@ -36,5 +35,4 @@ export const MainModal = () => {
       </Slider>
     </section>
   );
-  
 };
