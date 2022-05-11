@@ -42,28 +42,7 @@ import pullb from '../assets/images/products/pull.jpeg';
 import pullb2 from '../assets/images/products/pull2.jpeg';
 import pullb3 from '../assets/images/products/pull3.jpeg';
 
-import akatsuki from '../assets/images/products/2.1.png';
-import akatsuki1 from '../assets/images/products/2.jpg';
-import akatsuki2 from '../assets/images/products/2.2.png';
-import nasa from '../assets/images/products/15.png';
-import nasa2 from '../assets/images/products/15.8.png';
-import nasa3 from '../assets/images/products/15.6.png';
-import ka1 from '../assets/images/products/4.1.png';
-import ka2 from '../assets/images/products/4.jpg';
-import ka3 from '../assets/images/products/4.2.png';
-import snk from '../assets/images/products/6.png';
-import snk2 from '../assets/images/products/6.3.jpg';
-import snk3 from '../assets/images/products/6.1.png';
-import mon from '../assets/images/products/13.png';
-import mon2 from '../assets/images/products/13.3.jpg';
-import mon3 from '../assets/images/products/13.2.jpg';
-import lev from '../assets/images/products/33.png';
-import ameri from '../assets/images/products/37.png';
-import rojo from '../assets/images/products/41.png';
-import rojo2 from '../assets/images/products/41.1.png';
-import redbull from '../assets/images/products/42.png';
-import tommyne from '../assets/images/products/43.png';
-import chicag from '../assets/images/products/100.png';
+
 
 /**
  * @description Este es el estado global de la tienda
@@ -265,7 +244,7 @@ export const productsData = {
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [ama, ama2, ama3],
-      price:20,
+      price: 20,
       tallas: {
         S: {
           stock: 0,
