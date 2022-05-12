@@ -42,8 +42,6 @@ import pullb from '../assets/images/products/pull.jpeg';
 import pullb2 from '../assets/images/products/pull2.jpeg';
 import pullb3 from '../assets/images/products/pull3.jpeg';
 
-
-
 /**
  * @description Este es el estado global de la tienda
  * @instructions La forma que debe tener la información de cada producto es la siguiente:
@@ -403,31 +401,5 @@ export const productsData = {
     },
 
     //pantalon//
-
-    //camiseta//
-
-    {
-      id: createUniqueID(),
-      name: 'Camiseta Chicago Bulls ',
-      price: 7,
-      description: 'camiseta de excelente calidad',
-      images: [chicag, chicag, chicag],
-
-      tallas: {
-        S: {
-          stock: 1,
-          cantidad: 0,
-        },
-        M: {
-          stock: 1,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'camisetas',
-    },
   ],
 };
