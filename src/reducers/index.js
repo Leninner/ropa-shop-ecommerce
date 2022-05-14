@@ -32,7 +32,9 @@ export const reducer = (state, action) => {
 
     return {
       ...state,
-      cart: state.cart.filter((itemCart) => itemCart.id !== item.id || itemCart.selectedTalla !== currentTalla),
+      cart: state.cart.filter(
+        (itemCart) => itemCart.id !== item.id || itemCart.selectedTalla !== currentTalla
+      ),
       products: state.products.map((product) => {
         if (product.id === item.id) {
           return {
@@ -40,7 +42,9 @@ export const reducer = (state, action) => {
             tallas: {
               ...product.tallas,
               [currentTalla]: {
-                stock: Number(product.tallas[currentTalla].stock) + Number(product.tallas[currentTalla].cantidad),
+                stock:
+                  Number(product.tallas[currentTalla].stock) +
+                  Number(product.tallas[currentTalla].cantidad),
                 cantidad: 0,
               },
             },
@@ -64,7 +68,9 @@ export const reducer = (state, action) => {
   if (type === 'TOGGLE_CART') {
     const { item: product, currentTalla, currentCantidad } = payload;
 
-    const isAlreadyInCart = state.cart.find((value) => value.id === product.id && currentTalla === value.selectedTalla);
+    const isAlreadyInCart = state.cart.find(
+      (value) => value.id === product.id && currentTalla === value.selectedTalla
+    );
     const updatedCart = [...state.cart];
 
     const updatedProducts = [...state.products].map((value) => {
@@ -85,7 +91,9 @@ export const reducer = (state, action) => {
     });
 
     if (isAlreadyInCart) {
-      const index = updatedCart.findIndex((value) => value.id === product.id && value.tallas[currentTalla]);
+      const index = updatedCart.findIndex(
+        (value) => value.id === product.id && value.tallas[currentTalla]
+      );
       const newItem = { ...isAlreadyInCart };
       newItem.tallas[currentTalla].cantidad += Number(currentCantidad);
       newItem.tallas[currentTalla].stock -= Number(currentCantidad);
