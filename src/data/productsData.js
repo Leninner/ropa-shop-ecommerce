@@ -88,7 +88,7 @@ export const productsData = {
           cantidad: 0,
         },
         M: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         L: {
