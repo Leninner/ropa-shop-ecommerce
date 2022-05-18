@@ -100,29 +100,6 @@ export const productsData = {
     },
     {
       id: createUniqueID(),
-      name: 'Hoodie Azul y Blanco',
-      price: 20,
-      description:
-        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [azub1, azub2, azub3],
-      tallas: {
-        S: {
-          stock: 0,
-          cantidad: 0,
-        },
-        M: {
-          stock: 1,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'sudaderas',
-    },
-    {
-      id: createUniqueID(),
       name: 'Hoodie Balenciaga Rojo y Blanco ',
       price: 20,
       description:
