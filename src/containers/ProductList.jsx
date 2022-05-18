@@ -5,14 +5,19 @@ import { useSelector } from 'react-redux';
 import { CategoriesFilter } from '../components/CategoriesFilter';
 
 export const ProductList = () => {
-  const { products, currentCategory } = useSelector((state) => state);
+  const state = useSelector((state) => state);
 
-  console.log(currentCategory);
+  const { products, currentCategory, cart } = state;
 
   const filteredProducts = products.filter(
     (product) =>
-      (currentCategory === 'all' || product.category === currentCategory) &&
-      Object.entries(product.tallas).some(([, { stock }]) => stock > 0)
+      ((currentCategory === 'all' || product.category === currentCategory) &&
+        Object.entries(product.tallas).some(([, { stock }]) => stock > 0)) ||
+      Object.entries(products).some((product) => {
+        const cartIncludes = { id: product[1].id };
+
+        return cart.some(({ id }) => id === cartIncludes.id);
+      })
   );
 
   return (

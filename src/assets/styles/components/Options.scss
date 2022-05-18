@@ -95,16 +95,21 @@
       font-weight: 600;
     }
   }
-}
 
-button {
-  border: none;
-  cursor: pointer;
-  background-color: white;
+  button {
+    border: 1px solid rgb(223, 221, 221);
+    border-radius: 5px;
+    padding: 0.4em 1.4em;
+    background-color: #2b5b38;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 
-  img {
-    width: 30px;
-    height: 30px;
+    &:disabled {
+      background-color: #979696;
+      color: rgb(14, 14, 14);
+      cursor: default;
+    }
   }
 }
 
@@ -139,16 +144,9 @@ button {
         font-size: 25px;
       }
     }
-  }
 
-  button {
-    border: none;
-    cursor: pointer;
-    background-color: white;
-
-    img {
-      width: 30px;
-      height: 30px;
+    button {
+      border: 1px solid red;
     }
   }
 }

@@ -2,8 +2,6 @@ import { Fragment, useRef, memo, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import '../assets/styles/components/Options.scss';
 
-// FIXME: Solve this problem. Necesitamos una función corta que nos permita actualizar el estado de la cantidad de un producto en una talla específica
-
 const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
   const selectRef = useRef(currentTalla);
   const dispatch = useDispatch();
@@ -72,17 +70,8 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
           <p>$ {product.price}</p>
         </div>
 
-        <button type='submit'>
-          <figure>
-            <img
-              src={
-                product.tallas[currentTalla].stock === 0
-                  ? 'https://img.icons8.com/ios-glyphs/50/000000/minus.png'
-                  : 'https://img.icons8.com/material-rounded/24/000000/plus--v2.png'
-              }
-              alt='carrito'
-            />
-          </figure>
+        <button type='submit' disabled={product.tallas[currentTalla].stock === 0}>
+          Comprar
         </button>
       </div>
     </form>
