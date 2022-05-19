@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
 import MenuOptions from '../components/MenuOptions';
 import MyOrders from '../containers/MyOrders';
-import modal from '../assets/images/icons/icon_menu.svg';
 import carrito from '../assets/images/icons/icon_shopping_cart.svg';
 import { useSelector } from 'react-redux';
 import { AppContext } from '../context';
@@ -23,10 +22,6 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <nav className='nav-categories' onClick={handleClickMenuOptions}>
-        <img src={modal} alt='modal' />
-      </nav>
-
       <section>
         <Link to='/'>
           <img src={logo} alt='logo' />
