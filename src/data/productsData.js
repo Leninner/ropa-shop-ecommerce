@@ -352,31 +352,7 @@ export const productsData = {
       },
       category: 'hoodies',
     },
-    {
-      id: createUniqueID(),
-      name: 'HOODIE UNDER ARMOR',
-      description:
-        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [under, under2],
-      price: 20,
-
-      tallas: {
-        S: {
-          stock: 1,
-          cantidad: 0,
-        },
-        M: {
-          stock: 0,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'hoodies',
-    },
-
+   
     //pantalon//
   ],
 };
