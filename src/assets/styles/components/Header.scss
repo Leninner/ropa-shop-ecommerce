@@ -15,12 +15,6 @@
   z-index: 10;
   background-color: white;
 
-  .nav-categories {
-    img {
-      width: 30px;
-    }
-  }
-
   section {
     img {
       width: 150px;
@@ -32,8 +26,7 @@
 
     img {
       margin: 10px;
-      width: 35px;
-      height: 100%;
+      width: 30px;
     }
 
     div {
@@ -54,8 +47,13 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 786px) {
   .header {
-    padding: 0 15px;
+    padding: 5px 15px;
+    height: auto;
+  }
+
+  .nav-main {
+    position: sticky;
   }
 }

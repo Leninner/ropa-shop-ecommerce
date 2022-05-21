@@ -1,5 +1,5 @@
 .categories-filter-container {
-  padding: 40px 0;
+  padding: 20px 0;
   width: 100%;
   border-bottom: 1px solid #c7c7c7;
   text-align: center;
@@ -33,5 +33,12 @@
     margin: 0 30px;
     color: rgb(204, 204, 204);
     cursor: default;
+  }
+
+  @media screen and (max-width: 768px) {
+    overflow: scroll;
+    justify-content: left;
+    padding: 40px;
+    top: 60px;
   }
 }
