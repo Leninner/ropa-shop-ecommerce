@@ -21,11 +21,6 @@ import jes3 from '../assets/images/products/jes3.jpeg';
 import mad1 from '../assets/images/products/mad1.jpeg';
 import mad2 from '../assets/images/products/mad2.jpeg';
 import mad3 from '../assets/images/products/mad3.jpeg';
-import under from '../assets/images/products/under1.jpeg';
-import under2 from '../assets/images/products/under2.jpeg';
-import azub1 from '../assets/images/products/50.jpeg';
-import azub2 from '../assets/images/products/51.jpeg';
-import azub3 from '../assets/images/products/53.jpeg';
 import balr from '../assets/images/products/balr.jpeg';
 import balr2 from '../assets/images/products/balr2.jpeg';
 import balr3 from '../assets/images/products/balr3.jpeg';
@@ -41,6 +36,12 @@ import nik3 from '../assets/images/products/nik3.jpeg';
 import pullb from '../assets/images/products/pull.jpeg';
 import pullb2 from '../assets/images/products/pull2.jpeg';
 import pullb3 from '../assets/images/products/pull3.jpeg';
+import spi from '../assets/images/products/spd1.jpeg';
+import spi2 from '../assets/images/products/spd2.jpeg';
+import spi3 from '../assets/images/products/spd3.jpeg';
+
+
+
 
 /**
  * @description Este es el estado global de la tienda
@@ -313,6 +314,29 @@ export const productsData = {
         'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [jes, jes2, jes3],
       price: 20,
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'hoodies',
+    },
+    {
+      id: createUniqueID(),
+      name: 'HOODIE SPIDER-MAN',
+      price: 20,
+      description:
+        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
+      images: [spi, spi2, spi3],
       tallas: {
         S: {
           stock: 1,
