@@ -293,7 +293,7 @@ export const productsData = {
       price: 20,
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
