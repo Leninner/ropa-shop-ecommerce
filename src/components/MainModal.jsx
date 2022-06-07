@@ -29,9 +29,7 @@ export const MainModal = () => {
         <div>
           <img className='mainModal__img' src={portada2} alt='img' />
         </div>
-        <div>
-          <img className='mainModal__img' src={portada3} alt='img' />
-        </div>
+        
       </Slider>
     </section>
   );
