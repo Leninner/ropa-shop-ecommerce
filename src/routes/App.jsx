@@ -1,11 +1,11 @@
-import React, { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../assets/styles/Global.scss';
 import { AppContext } from '../context';
 import { useSumaTotal } from '../hooks/useSumaTotal';
-const Home = React.lazy(() => import('../pages/Home'));
-const CheckoutList = React.lazy(() => import('../containers/CheckoutList'));
-const PageNotFound = React.lazy(() => import('../pages/PageNotFound'));
+const Home = lazy(() => import('../pages/Home'));
+const CheckoutList = lazy(() => import('../containers/CheckoutList'));
+const PageNotFound = lazy(() => import('../pages/PageNotFound'));
 
 const App = () => {
   const initialState = useSumaTotal();

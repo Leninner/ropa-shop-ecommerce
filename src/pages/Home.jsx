@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { MainModal } from '../components/MainModal';
 import { ProductList } from '../containers/ProductList';
-import { Footer } from '../components/Footer';
 import { Layout } from '../containers/Layout';
 import { AppContext } from '../context';
 
@@ -21,7 +20,6 @@ const Home = () => {
       <div onClick={handleClickMenuOptions}>
         <MainModal />
         <ProductList />
-        <Footer />
       </div>
     </Layout>
   );
