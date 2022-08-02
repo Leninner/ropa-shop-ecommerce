@@ -1,6 +1,5 @@
-import React from 'react';
 import OrderItem from '../components/OrderItem';
-import '../assets/styles/containers/MyOrders.scss';
+import '../styles/containers/MyOrders.scss';
 import Checkout from '../components/Checkout';
 import { useSelector } from 'react-redux';
 

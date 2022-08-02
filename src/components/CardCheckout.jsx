@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/CardCheckout.scss';
+import '../styles/components/CardCheckout.scss';
 import { MdRemoveShoppingCart } from 'react-icons/md';
 import * as CardCheckoutActions from '../actions';
 import { useDispatch } from 'react-redux';

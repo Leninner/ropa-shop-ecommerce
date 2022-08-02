@@ -1,4 +1,4 @@
-import '../assets/styles/components/Categories.scss';
+import '../styles/components/Categories.scss';
 import { getCategory } from '../actions';
 import { useDispatch } from 'react-redux';
 

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { MainModal } from '../components/MainModal';
 import { ProductList } from '../containers/ProductList';
 import { Layout } from '../containers/Layout';

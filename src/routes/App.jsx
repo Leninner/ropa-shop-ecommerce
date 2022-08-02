@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import '../assets/styles/Global.scss';
+import '../styles/Global.scss';
 import { AppContext } from '../context';
 import { useSumaTotal } from '../hooks/useSumaTotal';
 const Home = lazy(() => import('../pages/Home'));

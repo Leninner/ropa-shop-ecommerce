@@ -1,5 +1,4 @@
-import React from 'react';
-import '../assets/styles/components/OrderItem.scss';
+import '../styles/components/OrderItem.scss';
 import { deleteItemsFromCart } from '../actions';
 import { MdOutlineRemoveShoppingCart } from 'react-icons/md';
 import { useDispatch } from 'react-redux';

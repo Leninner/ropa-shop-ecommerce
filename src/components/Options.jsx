@@ -1,6 +1,6 @@
 import { Fragment, useRef, memo, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import '../assets/styles/components/Options.scss';
+import '../styles/components/Options.scss';
 
 const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
   const selectRef = useRef(currentTalla);

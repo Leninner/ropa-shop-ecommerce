@@ -1,4 +1,4 @@
-import '../assets/styles/components/CategoriesFilter.scss';
+import '../styles/components/CategoriesFilter.scss';
 import { useDispatch } from 'react-redux';
 import * as shopActions from '../actions';
 import classNames from 'classnames';

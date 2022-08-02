@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import logo from '../assets/images/logos/logo.png';
 import { Link } from 'react-router-dom';
-import '../assets/styles/components/Header.scss';
+import '../styles/components/Header.scss';
 import MenuOptions from '../components/MenuOptions';
 import MyOrders from '../containers/MyOrders';
 import carrito from '../assets/images/icons/icon_shopping_cart.svg';
