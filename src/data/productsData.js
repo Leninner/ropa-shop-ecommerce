@@ -41,6 +41,8 @@ import spi2 from '../assets/images/products/spd2.jpeg';
 import spi3 from '../assets/images/products/spd3.jpeg';
 
 
+import C3 from '../assets/images/products/C3.jpg';
+
 
 
 /**
@@ -377,6 +379,32 @@ export const productsData = {
       category: 'hoodies',
     },
    
-    //pantalon//
+    //camisetas//
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Blanca',
+      price: 20,
+      description:
+      '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'chompas',
+    },
+
+
+
   ],
 };
