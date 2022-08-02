@@ -383,7 +383,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Camiseta Blanca',
-      price: 20,
+      price: 10,
       description:
       '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
       images: [C3],
