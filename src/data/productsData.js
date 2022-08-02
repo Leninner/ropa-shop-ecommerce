@@ -1,5 +1,4 @@
 // En esta sección se importan las imágenes de los productos
-
 import bad1 from '../assets/images/products/bad1.jpeg';
 import bad2 from '../assets/images/products/bad2.jpeg';
 import bad3 from '../assets/images/products/bad3.jpeg';
@@ -54,7 +53,7 @@ import C3 from '../assets/images/products/C3.jpg';
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1
+          cantidad: 0
         },
         M: {
           stock: 15,
@@ -398,7 +397,7 @@ export const productsData = {
           cantidad: 0,
         },
       },
-      category: 'chompas',
+      category: 'camisetas',
     },
   ],
 };

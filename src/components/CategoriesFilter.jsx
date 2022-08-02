@@ -30,8 +30,8 @@ export const CategoriesFilter = () => {
         Hoodies
       </p>
       <span>|</span>
-      <p onClick={() => handleSelectCategory('chompas')} className={categoryClass('chompas')}>
-        Chompas
+      <p onClick={() => handleSelectCategory('camisetas')} className={categoryClass('camisetas')}>
+        Camisetas
       </p>
       <span>|</span>
       <p onClick={() => handleSelectCategory('pantalones')} className={categoryClass('pantalones')}>
