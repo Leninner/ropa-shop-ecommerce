@@ -40,10 +40,7 @@ import spi from '../assets/images/products/spd1.jpeg';
 import spi2 from '../assets/images/products/spd2.jpeg';
 import spi3 from '../assets/images/products/spd3.jpeg';
 
-
 import C3 from '../assets/images/products/C3.jpg';
-
-
 
 /**
  * @description Este es el estado global de la tienda
@@ -378,14 +375,14 @@ export const productsData = {
       },
       category: 'hoodies',
     },
-   
+
     //camisetas//
     {
       id: createUniqueID(),
       name: 'Camiseta Blanca',
       price: 10,
       description:
-      '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
       images: [C3],
       tallas: {
         S: {
@@ -403,8 +400,5 @@ export const productsData = {
       },
       category: 'chompas',
     },
-
-
-
   ],
 };

@@ -37,7 +37,6 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
       className='options'
       onSubmit={(e) => {
         e.preventDefault();
-        console.log('Hi');
         toggleCart(product);
       }}
     >
@@ -70,7 +69,7 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
           <p>$ {product.price}</p>
         </div>
 
-        <button type='submit' disabled={product.tallas[currentTalla].stock === 0}>
+        <button type='submit' disabled={product.tallas[currentTalla]?.stock === 0}>
           Comprar
         </button>
       </div>
