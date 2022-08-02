@@ -1,0 +1,44 @@
+.categories-filter-container {
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #c7c7c7;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: sticky;
+  top: 75px;
+  max-height: 75px;
+  background-color: white;
+  z-index: 1;
+
+  .categories-filter__item {
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid white;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  .categories-filter__item--active {
+    color: #000;
+    border-bottom: 1px solid rgb(102, 102, 102);
+  }
+
+  span {
+    margin: 0 30px;
+    color: rgb(204, 204, 204);
+    cursor: default;
+  }
+
+  @media screen and (max-width: 768px) {
+    overflow: scroll;
+    justify-content: left;
+    padding: 40px;
+    top: 60px;
+  }
+}
