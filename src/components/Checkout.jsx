@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react';
-import '../assets/styles/components/Checkout.scss';
+import '../styles/components/Checkout.scss';
 import { AppContext } from '../context';
 import { Link } from 'react-router-dom';
 

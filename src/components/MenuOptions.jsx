@@ -1,4 +1,4 @@
-import '../assets/styles/components/MenuOptions.scss';
+import '../styles/components/MenuOptions.scss';
 import close from '../assets/images/icons/icon_close.png';
 import { getCategory } from '../actions';
 import { useDispatch } from 'react-redux';
@@ -17,7 +17,11 @@ const MenuOptions = ({ handleClick }) => {
         <img src={close} alt='imagen' />
         <nav>
           <div className='menu-options__container--item main'>
-            <a href='https://www.facebook.com/Ropa-Shop-105112035254774' target='_blank' rel='noreferrer'>
+            <a
+              href='https://www.facebook.com/Ropa-Shop-105112035254774'
+              target='_blank'
+              rel='noreferrer'
+            >
               <span>Facebook</span>
             </a>
           </div>

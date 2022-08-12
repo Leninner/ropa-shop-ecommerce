@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import '../assets/styles/components/Form.scss';
+import '../styles/components/Form.scss';
 import { Formik } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';

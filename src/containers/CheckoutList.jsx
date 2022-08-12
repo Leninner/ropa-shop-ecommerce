@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { CardCheckout } from '../components/CardCheckout';
-import '../assets/styles/containers/CheckoutList.scss';
+import '../styles/containers/CheckoutList.scss';
 import Form from '../components/Form';
 import { useNavigate } from 'react-router-dom';
 import { Layout } from './Layout';

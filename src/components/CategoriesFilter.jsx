@@ -1,4 +1,4 @@
-import '../assets/styles/components/CategoriesFilter.scss';
+import '../styles/components/CategoriesFilter.scss';
 import { useDispatch } from 'react-redux';
 import * as shopActions from '../actions';
 import classNames from 'classnames';
@@ -31,7 +31,7 @@ export const CategoriesFilter = () => {
       </p>
       <span>|</span>
       <p onClick={() => handleSelectCategory('camisetas')} className={categoryClass('camisetas')}>
-        Chompas
+        Camisetas
       </p>
       <span>|</span>
       <p onClick={() => handleSelectCategory('pantalones')} className={categoryClass('pantalones')}>

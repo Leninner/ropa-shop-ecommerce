@@ -1,5 +1,4 @@
 // En esta sección se importan las imágenes de los productos
-
 import bad1 from '../assets/images/products/bad1.jpeg';
 import bad2 from '../assets/images/products/bad2.jpeg';
 import bad3 from '../assets/images/products/bad3.jpeg';
@@ -45,8 +44,6 @@ import C1 from '../assets/images/products/C1.jpg';
 import C2 from '../assets/images/products/C2.jpg';
 import C3 from '../assets/images/products/C3.jpg';
 
-
-
 /**
  * @description Este es el estado global de la tienda
  * @instructions La forma que debe tener la información de cada producto es la siguiente:
@@ -59,7 +56,7 @@ import C3 from '../assets/images/products/C3.jpg';
       tallas: {
         S: {
           stock: 15,
-          cantidad: 1
+          cantidad: 0
         },
         M: {
           stock: 15,
@@ -380,31 +377,8 @@ export const productsData = {
       },
       category: 'hoodies',
     },
-   
+
     //camisetas//
-    {
-      id: createUniqueID(),
-      name: 'Camiseta Blanca',
-      price: 10,
-      description:
-      '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
-      images: [C3],
-      tallas: {
-        S: {
-          stock: 1,
-          cantidad: 0,
-        },
-        M: {
-          stock: 1,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'camisetas',
-    },
     {
       id: createUniqueID(),
       name: 'Camiseta Just do it',
@@ -428,5 +402,52 @@ export const productsData = {
       },
       category: 'camisetas',
     },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Just do it',
+      price: 10,
+      description:
+      '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C2],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Blanca',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C3],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    
   ],
 };

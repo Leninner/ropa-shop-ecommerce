@@ -1,6 +1,5 @@
-import React from 'react';
 import { CardItem } from '../components/CardItem';
-import '../assets/styles/containers/ProductList.scss';
+import '../styles/containers/ProductList.scss';
 import { useSelector } from 'react-redux';
 import { CategoriesFilter } from '../components/CategoriesFilter';
 
