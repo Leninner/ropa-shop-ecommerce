@@ -43,6 +43,14 @@ import spi3 from '../assets/images/products/spd3.jpeg';
 import C1 from '../assets/images/products/C1.jpg';
 import C2 from '../assets/images/products/C2.jpg';
 import C3 from '../assets/images/products/C3.jpg';
+import C4 from '../assets/images/products/C4.jpg';
+import C5 from '../assets/images/products/C5.jpeg';
+import C6 from '../assets/images/products/C6.jpeg';
+import C7 from '../assets/images/products/C7.jpeg';
+import C8 from '../assets/images/products/C8.jpeg';
+import C9 from '../assets/images/products/C9.jpeg';
+import C10 from '../assets/images/products/C10.jpeg';
+import C11 from '../assets/images/products/C11.jpeg';
 
 /**
  * @description Este es el estado global de la tienda
@@ -448,6 +456,189 @@ export const productsData = {
       },
       category: 'camisetas',
     },
-    
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Calvin Klein',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C4],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Adidas',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C5],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Boos',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C6],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C7],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta ',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C8],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Just do it',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C9],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Puma',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C10],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Just do it',
+      price: 10,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C11],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 1,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
   ],
 };
