@@ -41,6 +41,8 @@ import spi2 from '../assets/images/products/spd2.jpeg';
 import spi3 from '../assets/images/products/spd3.jpeg';
 
 
+import C1 from '../assets/images/products/C1.jpg';
+import C2 from '../assets/images/products/C2.jpg';
 import C3 from '../assets/images/products/C3.jpg';
 
 
@@ -393,7 +395,7 @@ export const productsData = {
           cantidad: 0,
         },
         M: {
-          stock: 0,
+          stock: 1,
           cantidad: 0,
         },
         L: {
@@ -403,8 +405,28 @@ export const productsData = {
       },
       category: 'chompas',
     },
-
-
-
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Just do it',
+      price: 10,
+      description:
+      '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C1],
+      tallas: {
+        S: {
+          stock: 1,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 0,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
   ],
 };
