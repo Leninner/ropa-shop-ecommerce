@@ -403,7 +403,7 @@ export const productsData = {
           cantidad: 0,
         },
       },
-      category: 'chompas',
+      category: 'camisetas',
     },
     {
       id: createUniqueID(),
