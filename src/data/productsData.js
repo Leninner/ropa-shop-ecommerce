@@ -847,7 +847,7 @@ export const productsData = {
       price: 8,
       description:
         '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
-      images: [C11],
+      images: [C21],
       tallas: {
         S: {
           stock: 0,
