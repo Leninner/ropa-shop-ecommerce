@@ -30,7 +30,13 @@ export const MainModal = () => {
           />
         </div>
 
-    
+        <div>
+          <img
+            className='main_Modal__img'
+            src='https://www.telasperu.com/wp-content/uploads/2015/02/foto1.jpg'
+            alt='img'
+          />
+        </div>
 
         <div>
           <img className='main_Modal__img' src={portada2} alt='img' />
