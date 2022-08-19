@@ -1,5 +1,4 @@
 import Slider from 'react-slick';
-import portada from '../assets/images/mainView/portadar1.png';
 import portada2 from '../assets/images/mainView/portada2.png';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
