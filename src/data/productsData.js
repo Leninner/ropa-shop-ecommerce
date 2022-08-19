@@ -41,8 +41,8 @@ import spi3 from '../assets/images/products/spd3.jpeg';
 
 
 import C1 from '../assets/images/products/C1.jpg';
-import C2 from '../assets/images/products/C2.jpg';
-import C3 from '../assets/images/products/C3.jpg';
+import C2 from '../assets/images/products/C2.jpeg';
+import C3 from '../assets/images/products/C3.jpeg';
 import C4 from '../assets/images/products/C4.jpg';
 import C5 from '../assets/images/products/C5.jpeg';
 import C6 from '../assets/images/products/C6.jpeg';
