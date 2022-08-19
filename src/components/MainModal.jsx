@@ -30,9 +30,7 @@ export const MainModal = () => {
           />
         </div>
 
-        <div>
-          <img className='main_Modal__img' src={portada} alt='img' />
-        </div>
+    
 
         <div>
           <img className='main_Modal__img' src={portada2} alt='img' />
