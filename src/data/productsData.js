@@ -62,7 +62,12 @@ import C18 from '../assets/images/products/C18.jpeg';
 import C19 from '../assets/images/products/C19.jpeg';
 import C20 from '../assets/images/products/C20.jpeg';
 import C21 from '../assets/images/products/C21.jpeg';
-
+import C22 from '../assets/images/products/C22.jpeg';
+import C23 from '../assets/images/products/C23.jpeg';
+import C24 from '../assets/images/products/C24.jpeg';
+import C25 from '../assets/images/products/C25.jpeg';
+import C26 from '../assets/images/products/C26.jpeg';
+import C27 from '../assets/images/products/C27.jpeg';
 
 
 
@@ -841,5 +846,145 @@ export const productsData = {
       },
       category: 'camisetas',
     },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta  ',
+      price: 8,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C22],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 1,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Zara ',
+      price: 8,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C23],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 1,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Pull & Baer  ',
+      price: 8,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C24],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 1,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Aero.NYC ',
+      price: 8,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C25],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 1,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Nike ',
+      price: 8,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C26],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 1,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+    {
+      id: createUniqueID(),
+      name: 'Camiseta Just do it ',
+      price: 8,
+      description:
+        '💥 Nueva camiseta, ✅En tallas S-M-L, 🏭Fabricada en algodón de excelente calidad, super resistente y cómoda, 🚛Envíos a todo el Ecuador',
+      images: [C27],
+      tallas: {
+        S: {
+          stock: 0,
+          cantidad: 0,
+        },
+        M: {
+          stock: 0,
+          cantidad: 0,
+        },
+        L: {
+          stock: 1,
+          cantidad: 0,
+        },
+      },
+      category: 'camisetas',
+    },
+
+
   ],
 };
