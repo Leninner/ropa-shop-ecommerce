@@ -108,7 +108,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Bad Bunny',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [bad1, bad2, bad3],
@@ -131,7 +131,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Balenciaga Rojo y Blanco ',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [balr, balr2, balr3],
@@ -154,7 +154,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Bulls 23',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [bull, bull2, bull3],
@@ -177,7 +177,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Calvin Klein',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [cal, cal2, cal3],
@@ -200,7 +200,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Nike',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [nik, nik2, nik3],
@@ -223,7 +223,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'Hoodie Pull and Bear',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [pullb, pullb2, pullb3],
@@ -249,7 +249,7 @@ export const productsData = {
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [ama, ama2, ama3],
-      price: 20,
+      price: 15,
       tallas: {
         S: {
           stock: 0,
@@ -268,7 +268,7 @@ export const productsData = {
     },
     {
       id: createUniqueID(),
-      price: 20,
+      price: 15,
       name: 'HOODIE AZUL',
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
@@ -295,7 +295,7 @@ export const productsData = {
       description:
         'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [ba, ba2, ba3],
-      price: 20,
+      price: 15,
       tallas: {
         S: {
           stock: 1,
@@ -319,7 +319,7 @@ export const productsData = {
       description:
         'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [gap, gap2, gap3],
-      price: 20,
+      price: 15,
       tallas: {
         S: {
           stock: 0,
@@ -342,7 +342,7 @@ export const productsData = {
       description:
         'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [jes, jes2, jes3],
-      price: 20,
+      price: 15,
       tallas: {
         S: {
           stock: 1,
@@ -362,7 +362,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'HOODIE SPIDER-MAN',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [spi, spi2, spi3],
@@ -385,7 +385,7 @@ export const productsData = {
     {
       id: createUniqueID(),
       name: 'HOODIE MANDARINA',
-      price: 20,
+      price: 15,
       description:
         'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
       images: [mad1, mad2, mad3],
