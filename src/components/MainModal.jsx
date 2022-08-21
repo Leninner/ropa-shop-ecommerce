@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 import portada2 from '../assets/images/mainView/portada2.png';
-import portada3 from '../assets/images/mainView/port3.jpg';
+import portada3 from '../assets/images/mainView/port3.gif';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import '../styles/components/MainModal.scss';
