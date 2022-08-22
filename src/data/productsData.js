@@ -174,29 +174,7 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
-    {
-      id: createUniqueID(),
-      name: 'Hoodie Calvin Klein',
-      price: 15,
-      description:
-        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [cal, cal2, cal3],
-      tallas: {
-        S: {
-          stock: 0,
-          cantidad: 0,
-        },
-        M: {
-          stock: 1,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'sudaderas',
-    },
+    
     {
       id: createUniqueID(),
       name: 'Hoodie Nike',

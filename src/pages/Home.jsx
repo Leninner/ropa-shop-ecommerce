@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <Layout
-      title='Home | Ropa Shop 🐱‍🚀'
+      title='Home | Ropa Shop '
       subtitle='Con la mejor calidad de nuestros artesanos ecuatorianos llega Ropa Shop'
     >
       <div onClick={handleClickMenuOptions}>
