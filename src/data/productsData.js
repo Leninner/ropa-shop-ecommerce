@@ -151,29 +151,6 @@ export const productsData = {
       },
       category: 'sudaderas',
     },
-    {
-      id: createUniqueID(),
-      name: 'Hoodie Bulls 23',
-      price: 15,
-      description:
-        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [bull, bull2, bull3],
-      tallas: {
-        S: {
-          stock: 0,
-          cantidad: 0,
-        },
-        M: {
-          stock: 1,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'sudaderas',
-    },
     
     {
       id: createUniqueID(),
@@ -267,76 +244,7 @@ export const productsData = {
       },
       category: 'hoodies',
     },
-    {
-      id: createUniqueID(),
-      name: 'HOODIE BALENCIAGA',
-      description:
-        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [ba, ba2, ba3],
-      price: 15,
-      tallas: {
-        S: {
-          stock: 1,
-          cantidad: 0,
-        },
-        M: {
-          stock: 0,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'hoodies',
-    },
-
-    {
-      id: createUniqueID(),
-      name: 'HOODIE GAP',
-      description:
-        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [gap, gap2, gap3],
-      price: 15,
-      tallas: {
-        S: {
-          stock: 0,
-          cantidad: 0,
-        },
-        M: {
-          stock: 0,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'hoodies',
-    },
-    {
-      id: createUniqueID(),
-      name: 'HOODIE JESUS ',
-      description:
-        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [jes, jes2, jes3],
-      price: 15,
-      tallas: {
-        S: {
-          stock: 1,
-          cantidad: 0,
-        },
-        M: {
-          stock: 0,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'hoodies',
-    },
+    
     {
       id: createUniqueID(),
       name: 'HOODIE SPIDER-MAN',
@@ -360,29 +268,7 @@ export const productsData = {
       },
       category: 'hoodies',
     },
-    {
-      id: createUniqueID(),
-      name: 'HOODIE MANDARINA',
-      price: 15,
-      description:
-        'Hoodie talla americana ,92% poliéster y 8% algodón, 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [mad1, mad2, mad3],
-      tallas: {
-        S: {
-          stock: 1,
-          cantidad: 0,
-        },
-        M: {
-          stock: 0,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'hoodies',
-    },
+    
 
     //camisetas//
     
@@ -395,7 +281,7 @@ export const productsData = {
       images: [C2],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -418,7 +304,7 @@ export const productsData = {
       images: [C3],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -465,7 +351,7 @@ export const productsData = {
       images: [C6],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
@@ -699,7 +585,7 @@ export const productsData = {
           cantidad: 0,
         },
         M: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         L: {
