@@ -2,9 +2,6 @@
 import bad1 from '../assets/images/products/bad1.jpeg'
 import bad2 from '../assets/images/products/bad2.jpeg'
 import bad3 from '../assets/images/products/bad3.jpeg'
-import ama from '../assets/images/products/ama1.jpeg'
-import ama2 from '../assets/images/products/ama2.jpeg'
-import ama3 from '../assets/images/products/ama3.jpeg'
 import az from '../assets/images/products/azu1.jpeg'
 import az2 from '../assets/images/products/azu2.jpeg'
 import az3 from '../assets/images/products/azu3.jpeg'
@@ -173,29 +170,6 @@ export const productsData = {
         }
       },
       category: 'sudaderas'
-    },
-    {
-      id: createUniqueID(),
-      name: 'HOODIE',
-      description:
-        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [ama, ama2, ama3],
-      price: 15,
-      tallas: {
-        S: {
-          stock: 0,
-          cantidad: 0
-        },
-        M: {
-          stock: 0,
-          cantidad: 0
-        },
-        L: {
-          stock: 0,
-          cantidad: 0
-        }
-      },
-      category: 'hoodies'
     },
     {
       id: createUniqueID(),
