@@ -1,20 +1,20 @@
-import Options from './Options';
-import { useNearScreen } from '../hooks/useNearScreen';
-import { useState } from 'react';
-import Slider from 'react-slick';
-import '../styles/components/CardItem.scss';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Options from './Options'
+import { useNearScreen } from '../hooks/useNearScreen'
+import { useState } from 'react'
+import Slider from 'react-slick'
+import '../styles/components/CardItem.scss'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 export const CardItem = ({ product }) => {
-  const [show, ref] = useNearScreen();
+  const [show, ref] = useNearScreen()
   // const [currentTalla, setCurrentTalla] = useState(Object.keys(product.tallas)[0]);
   const [currentTalla, setCurrentTalla] = useState(() => {
     const foundedWithStock = Object.keys(product.tallas).find(
       (talla) => product.tallas[talla].stock > 0
-    );
-    return foundedWithStock;
-  });
+    )
+    return foundedWithStock
+  })
 
   const settings = {
     dots: true,
@@ -23,8 +23,8 @@ export const CardItem = ({ product }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    arrows: false,
-  };
+    arrows: false
+  }
 
   return (
     <section className='card-item' ref={ref}>
@@ -50,5 +50,5 @@ export const CardItem = ({ product }) => {
         </>
       )}
     </section>
-  );
-};
+  )
+}

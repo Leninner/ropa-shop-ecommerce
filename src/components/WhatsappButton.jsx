@@ -1,4 +1,4 @@
-import '../styles/components/WhatsappButton.scss';
+import '../styles/components/WhatsappButton.scss'
 
 export const WhatsappButton = () => (
   <>
@@ -15,4 +15,4 @@ export const WhatsappButton = () => (
       <i className='fa fa-whatsapp my-float'></i>
     </a>
   </>
-);
+)

@@ -1,15 +1,15 @@
-import '../styles/components/MenuOptions.scss';
-import close from '../assets/images/icons/icon_close.png';
-import { getCategory } from '../actions';
-import { useDispatch } from 'react-redux';
+import '../styles/components/MenuOptions.scss'
+import close from '../assets/images/icons/icon_close.png'
+import { getCategory } from '../actions'
+import { useDispatch } from 'react-redux'
 
 const MenuOptions = ({ handleClick }) => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const handleCategory = (e) => {
-    const categories = e.target.outerText.toLowerCase();
-    dispatch(getCategory(categories));
-  };
+    const categories = e.target.outerText.toLowerCase()
+    dispatch(getCategory(categories))
+  }
 
   return (
     <section className='menu-options' onClick={handleClick}>
@@ -37,7 +37,7 @@ const MenuOptions = ({ handleClick }) => {
         </nav>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MenuOptions;
+export default MenuOptions

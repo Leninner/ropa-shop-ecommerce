@@ -1,8 +1,8 @@
-import Slider from 'react-slick';
-import portada3 from '../assets/images/mainView/port3.png';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
-import '../styles/components/MainModal.scss';
+import Slider from 'react-slick'
+import portada3 from '../assets/images/mainView/port3.png'
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
+import '../styles/components/MainModal.scss'
 
 export const MainModal = () => {
   const settings = {
@@ -15,20 +15,18 @@ export const MainModal = () => {
     autoplaySpeed: 2500,
     focusOnSelect: false,
     arrows: false,
-    pauseOnHover: false,
-  };
+    pauseOnHover: false
+  }
 
   return (
     <section className='main_Modal'>
       <Slider {...settings} className='main_Modal__slider'>
-       
+
         <div>
           <img className='main_Modal__img' src={portada3} alt='img' />
         </div>
 
-
-        
       </Slider>
     </section>
-  );
-};
+  )
+}

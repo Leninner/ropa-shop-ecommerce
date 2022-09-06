@@ -1,15 +1,15 @@
-import { useContext, useEffect } from 'react';
-import '../styles/components/Checkout.scss';
-import { AppContext } from '../context';
-import { Link } from 'react-router-dom';
+import { useContext, useEffect } from 'react'
+import '../styles/components/Checkout.scss'
+import { AppContext } from '../context'
+import { Link } from 'react-router-dom'
 
 const Checkout = ({ sumaTotal }) => {
-  const { total, setTotal, toggleMenu, setToggleMenu } = useContext(AppContext);
+  const { total, setTotal, toggleMenu, setToggleMenu } = useContext(AppContext)
 
-  const handleMenu = () => setToggleMenu(!toggleMenu);
+  const handleMenu = () => setToggleMenu(!toggleMenu)
 
   useEffect(() => {
-    setTotal(sumaTotal);
+    setTotal(sumaTotal)
     // eslint-disable-next-line
   }, [sumaTotal]);
 
@@ -26,13 +26,13 @@ const Checkout = ({ sumaTotal }) => {
         style={{
           textDecoration: 'none',
           color: '#fff',
-          width: '80%',
+          width: '80%'
         }}
       >
         <button className='checkout__button'>Compra por Whatsapp!</button>
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Checkout;
+export default Checkout
