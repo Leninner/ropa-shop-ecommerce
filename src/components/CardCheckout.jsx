@@ -1,20 +1,19 @@
-import React from 'react';
-import '../styles/components/CardCheckout.scss';
-import { MdRemoveShoppingCart } from 'react-icons/md';
-import * as CardCheckoutActions from '../actions';
-import { useDispatch } from 'react-redux';
+import '../styles/components/CardCheckout.scss'
+import { MdRemoveShoppingCart } from 'react-icons/md'
+import * as CardCheckoutActions from '../actions'
+import { useDispatch } from 'react-redux'
 
 export const CardCheckout = ({ name, description, price, tallas, images, id, selectedTalla }) => {
-  const dispatch = useDispatch();
-  const { deleteItemsFromCart } = CardCheckoutActions;
+  const dispatch = useDispatch()
+  const { deleteItemsFromCart } = CardCheckoutActions
 
   const item = {
     name,
     description,
-    id,
-  };
+    id
+  }
 
-  const handleDelete = () => dispatch(deleteItemsFromCart({ item, currentTalla: selectedTalla }));
+  const handleDelete = () => dispatch(deleteItemsFromCart({ item, currentTalla: selectedTalla }))
 
   return (
     <div className='card-checkout'>
@@ -43,5 +42,5 @@ export const CardCheckout = ({ name, description, price, tallas, images, id, sel
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

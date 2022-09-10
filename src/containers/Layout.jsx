@@ -1,6 +1,6 @@
-import Header from '../components/Header';
-import { WhatsappButton } from '../components/WhatsappButton';
-import { Helmet } from 'react-helmet';
+import Header from '../components/Header'
+import { WhatsappButton } from '../components/WhatsappButton'
+import { Helmet } from 'react-helmet'
 
 export const Layout = ({ children, title, subtitle }) => {
   return (
@@ -16,5 +16,5 @@ export const Layout = ({ children, title, subtitle }) => {
         <WhatsappButton />
       </div>
     </>
-  );
-};
+  )
+}

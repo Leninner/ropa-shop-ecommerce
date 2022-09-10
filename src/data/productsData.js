@@ -1,58 +1,49 @@
 // En esta sección se importan las imágenes de los productos
-import bad1 from '../assets/images/products/bad1.jpeg';
-import bad2 from '../assets/images/products/bad2.jpeg';
-import bad3 from '../assets/images/products/bad3.jpeg';
-import ama from '../assets/images/products/ama1.jpeg';
-import ama2 from '../assets/images/products/ama2.jpeg';
-import ama3 from '../assets/images/products/ama3.jpeg';
-import az from '../assets/images/products/azu1.jpeg';
-import az2 from '../assets/images/products/azu2.jpeg';
-import az3 from '../assets/images/products/azu3.jpeg';
-import balr from '../assets/images/products/balr.jpeg';
-import balr2 from '../assets/images/products/balr2.jpeg';
-import balr3 from '../assets/images/products/balr3.jpeg';
-import nik from '../assets/images/products/nik.jpeg';
-import nik2 from '../assets/images/products/nik2.jpeg';
-import nik3 from '../assets/images/products/nik3.jpeg';
-import pullb from '../assets/images/products/pull.jpeg';
-import pullb2 from '../assets/images/products/pull2.jpeg';
-import pullb3 from '../assets/images/products/pull3.jpeg';
-import spi from '../assets/images/products/spd1.jpeg';
-import spi2 from '../assets/images/products/spd2.jpeg';
-import spi3 from '../assets/images/products/spd3.jpeg';
+import bad1 from '../assets/images/products/bad1.jpeg'
+import bad2 from '../assets/images/products/bad2.jpeg'
+import bad3 from '../assets/images/products/bad3.jpeg'
+import az from '../assets/images/products/azu1.jpeg'
+import az2 from '../assets/images/products/azu2.jpeg'
+import az3 from '../assets/images/products/azu3.jpeg'
+import balr from '../assets/images/products/balr.jpeg'
+import balr2 from '../assets/images/products/balr2.jpeg'
+import balr3 from '../assets/images/products/balr3.jpeg'
+import nik from '../assets/images/products/nik.jpeg'
+import nik2 from '../assets/images/products/nik2.jpeg'
+import nik3 from '../assets/images/products/nik3.jpeg'
+import pullb from '../assets/images/products/pull.jpeg'
+import pullb2 from '../assets/images/products/pull2.jpeg'
+import pullb3 from '../assets/images/products/pull3.jpeg'
+import spi from '../assets/images/products/spd1.jpeg'
+import spi2 from '../assets/images/products/spd2.jpeg'
+import spi3 from '../assets/images/products/spd3.jpeg'
 
+import C2 from '../assets/images/products/C2.jpeg'
+import C3 from '../assets/images/products/C3.jpeg'
+import C5 from '../assets/images/products/C5.jpeg'
+import C6 from '../assets/images/products/C6.jpeg'
+import C7 from '../assets/images/products/C7.jpeg'
+import C8 from '../assets/images/products/C8.jpeg'
+import C9 from '../assets/images/products/C9.jpeg'
+import C10 from '../assets/images/products/C10.jpeg'
+import C11 from '../assets/images/products/C11.jpeg'
 
-
-import C2 from '../assets/images/products/C2.jpeg';
-import C3 from '../assets/images/products/C3.jpeg';
-import C5 from '../assets/images/products/C5.jpeg';
-import C6 from '../assets/images/products/C6.jpeg';
-import C7 from '../assets/images/products/C7.jpeg';
-import C8 from '../assets/images/products/C8.jpeg';
-import C9 from '../assets/images/products/C9.jpeg';
-import C10 from '../assets/images/products/C10.jpeg';
-import C11 from '../assets/images/products/C11.jpeg';
-
-
-import C12 from '../assets/images/products/C12.jpeg';
-import C13 from '../assets/images/products/C13.jpeg';
-import C14 from '../assets/images/products/C14.jpeg';
-import C15 from '../assets/images/products/C15.jpeg';
-import C16 from '../assets/images/products/C16.jpeg';
-import C17 from '../assets/images/products/C17.jpeg';
-import C18 from '../assets/images/products/C18.jpeg';
-import C19 from '../assets/images/products/C19.jpeg';
-import C20 from '../assets/images/products/C20.jpeg';
-import C21 from '../assets/images/products/C21.jpeg';
-import C22 from '../assets/images/products/C22.jpeg';
-import C23 from '../assets/images/products/C23.jpeg';
-import C24 from '../assets/images/products/C24.jpeg';
-import C25 from '../assets/images/products/C25.jpeg';
-import C26 from '../assets/images/products/C26.jpeg';
-import C27 from '../assets/images/products/C27.jpeg';
-
-
-
+import C12 from '../assets/images/products/C12.jpeg'
+import C13 from '../assets/images/products/C13.jpeg'
+import C14 from '../assets/images/products/C14.jpeg'
+import C15 from '../assets/images/products/C15.jpeg'
+import C16 from '../assets/images/products/C16.jpeg'
+import C17 from '../assets/images/products/C17.jpeg'
+import C18 from '../assets/images/products/C18.jpeg'
+import C19 from '../assets/images/products/C19.jpeg'
+import C20 from '../assets/images/products/C20.jpeg'
+import C21 from '../assets/images/products/C21.jpeg'
+import C22 from '../assets/images/products/C22.jpeg'
+import C23 from '../assets/images/products/C23.jpeg'
+import C24 from '../assets/images/products/C24.jpeg'
+import C25 from '../assets/images/products/C25.jpeg'
+import C26 from '../assets/images/products/C26.jpeg'
+import C27 from '../assets/images/products/C27.jpeg'
 
 /**
  * @description Este es el estado global de la tienda
@@ -81,7 +72,7 @@ import C27 from '../assets/images/products/C27.jpeg';
     },
  */
 
-const createUniqueID = () => Math.random().toString(36).substr(2, 9);
+const createUniqueID = () => Math.random().toString(36).substr(2, 9)
 
 export const productsData = {
   currentCategory: 'all',
@@ -97,18 +88,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'hoodies',
+      category: 'hoodies'
     },
     {
       id: createUniqueID(),
@@ -120,20 +111,20 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'sudaderas',
+      category: 'sudaderas'
     },
-    
+
     {
       id: createUniqueID(),
       name: 'Hoodie Nike',
@@ -144,18 +135,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'sudaderas',
+      category: 'sudaderas'
     },
     {
       id: createUniqueID(),
@@ -167,41 +158,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 1,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'sudaderas',
-    },
-    {
-      id: createUniqueID(),
-      name: 'HOODIE',
-      description:
-        'Hoodie talla americana 92% poliéster y 8% algodón 📦Entregas 100% seguras 🚚Envió gratis a nivel nacional (Servientrega)',
-      images: [ama, ama2, ama3],
-      price: 15,
-      tallas: {
-        S: {
-          stock: 0,
-          cantidad: 0,
-        },
-        M: {
-          stock: 0,
-          cantidad: 0,
-        },
-        L: {
-          stock: 0,
-          cantidad: 0,
-        },
-      },
-      category: 'hoodies',
+      category: 'sudaderas'
     },
     {
       id: createUniqueID(),
@@ -213,20 +181,20 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'hoodies',
+      category: 'hoodies'
     },
-    
+
     {
       id: createUniqueID(),
       name: 'HOODIE SPIDER-MAN',
@@ -237,23 +205,22 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'hoodies',
+      category: 'hoodies'
     },
-    
 
-    //camisetas//
-    
+    // camisetas//
+
     {
       id: createUniqueID(),
       name: 'Camiseta Just do it',
@@ -264,18 +231,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -287,20 +254,20 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
-  
+
     {
       id: createUniqueID(),
       name: 'Camiseta Adidas',
@@ -311,18 +278,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -334,18 +301,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -361,14 +328,14 @@ export const productsData = {
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -380,18 +347,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -403,18 +370,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -426,18 +393,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -449,18 +416,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -472,18 +439,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -495,18 +462,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -518,18 +485,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -541,18 +508,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -564,18 +531,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -587,18 +554,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -610,18 +577,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -633,18 +600,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -656,18 +623,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -679,18 +646,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 1,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 0,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -702,18 +669,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 1,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -725,18 +692,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 1,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -748,18 +715,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 1,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -771,18 +738,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 1,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -794,18 +761,18 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 1,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
+      category: 'camisetas'
     },
     {
       id: createUniqueID(),
@@ -817,20 +784,19 @@ export const productsData = {
       tallas: {
         S: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         M: {
           stock: 0,
-          cantidad: 0,
+          cantidad: 0
         },
         L: {
           stock: 1,
-          cantidad: 0,
-        },
+          cantidad: 0
+        }
       },
-      category: 'camisetas',
-    },
+      category: 'camisetas'
+    }
 
-
-  ],
-};
+  ]
+}

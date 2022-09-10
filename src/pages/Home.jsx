@@ -1,16 +1,16 @@
-import { useContext } from 'react';
-import { MainModal } from '../components/MainModal';
-import { ProductList } from '../containers/ProductList';
-import { Layout } from '../containers/Layout';
-import { AppContext } from '../context';
+import { useContext } from 'react'
+import { MainModal } from '../components/MainModal'
+import { ProductList } from '../containers/ProductList'
+import { Layout } from '../containers/Layout'
+import { AppContext } from '../context'
 
 const Home = () => {
-  const { setMenuOptions, setToggleMenu } = useContext(AppContext);
+  const { setMenuOptions, setToggleMenu } = useContext(AppContext)
 
   const handleClickMenuOptions = () => {
-    setMenuOptions(false);
-    setToggleMenu(false);
-  };
+    setMenuOptions(false)
+    setToggleMenu(false)
+  }
 
   return (
     <Layout
@@ -22,7 +22,7 @@ const Home = () => {
         <ProductList />
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -1,43 +1,41 @@
-import { Fragment, useRef, memo, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import '../styles/components/Options.scss';
+import { Fragment, useRef, memo, useState } from 'react'
+import { useDispatch } from 'react-redux'
+import '../styles/components/Options.scss'
 
 const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
-  const selectRef = useRef(currentTalla);
-  const dispatch = useDispatch();
-  const handleSelect = () => setCurrentTalla(selectRef.current.value);
-  const [currentCantidad, setCurrentCantidad] = useState(1);
-  const handleChange = (e) => setCurrentCantidad(e.target.value);
-
-  // console.log({talla: product.tallas, currentTalla: currentTalla, product});
+  const selectRef = useRef(currentTalla)
+  const dispatch = useDispatch()
+  const handleSelect = () => setCurrentTalla(selectRef.current.value)
+  const [currentCantidad, setCurrentCantidad] = useState(1)
+  const handleChange = (e) => setCurrentCantidad(e.target.value)
 
   const toggleCart = (item) => {
     item.tallas[currentTalla].stock > 0
       ? dispatch({
-          type: 'TOGGLE_CART',
-          payload: {
-            item,
-            currentCantidad,
-            currentTalla,
-          },
-        })
+        type: 'TOGGLE_CART',
+        payload: {
+          item,
+          currentCantidad,
+          currentTalla
+        }
+      })
       : dispatch({
-          type: 'DELETE_ITEMS_FROM_CART',
-          payload: {
-            item,
-            currentTalla,
-          },
-        });
+        type: 'DELETE_ITEMS_FROM_CART',
+        payload: {
+          item,
+          currentTalla
+        }
+      })
 
-    setCurrentCantidad(1);
-  };
+    setCurrentCantidad(1)
+  }
 
   return (
     <form
       className='options'
       onSubmit={(e) => {
-        e.preventDefault();
-        toggleCart(product);
+        e.preventDefault()
+        toggleCart(product)
       }}
     >
       <div className='tallas-container'>
@@ -45,17 +43,19 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
           {Object.entries(product.tallas).map(([talla, { stock }], index) => {
             return (
               <Fragment key={index}>
-                {stock > 0 ? (
+                {stock > 0
+                  ? (
                   <option value={talla}>
                     {talla} ({stock} disponibles)
                   </option>
-                ) : (
+                    )
+                  : (
                   <option value={talla} disabled>
                     {talla} (Agotado)
                   </option>
-                )}
+                    )}
               </Fragment>
-            );
+            )
           })}
         </select>
         <div className='contenedor__cantidad'>
@@ -74,7 +74,7 @@ const Options = memo(({ product, currentTalla, setCurrentTalla }) => {
         </button>
       </div>
     </form>
-  );
-});
+  )
+})
 
-export default Options;
+export default Options

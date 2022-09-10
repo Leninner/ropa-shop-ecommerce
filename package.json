@@ -24,13 +24,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "preupdate": "git commit -a -m '[UPDATE] files'",
-    "update": "git push"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "update": "git push",
+    "prepare": "husky install",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/ --fix"
   },
   "browserslist": {
     "production": [
@@ -45,6 +41,13 @@
     ]
   },
   "devDependencies": {
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.7",
+    "husky": "^8.0.0"
   }
 }

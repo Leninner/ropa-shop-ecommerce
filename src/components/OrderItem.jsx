@@ -1,19 +1,19 @@
-import '../styles/components/OrderItem.scss';
-import { deleteItemsFromCart } from '../actions';
-import { MdOutlineRemoveShoppingCart } from 'react-icons/md';
-import { useDispatch } from 'react-redux';
+import '../styles/components/OrderItem.scss'
+import { deleteItemsFromCart } from '../actions'
+import { MdOutlineRemoveShoppingCart } from 'react-icons/md'
+import { useDispatch } from 'react-redux'
 
 const OrderItem = ({ images, name, price, selectedTalla, id, tallas }) => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const item = {
     id,
     images,
     name,
-    price,
-  };
+    price
+  }
 
-  const handleDelete = () => dispatch(deleteItemsFromCart({ item, currentTalla: selectedTalla }));
+  const handleDelete = () => dispatch(deleteItemsFromCart({ item, currentTalla: selectedTalla }))
 
   return (
     <div className='OrderItem'>
@@ -33,7 +33,7 @@ const OrderItem = ({ images, name, price, selectedTalla, id, tallas }) => {
 
       <MdOutlineRemoveShoppingCart className='delete' size={25} onClick={handleDelete} />
     </div>
-  );
-};
+  )
+}
 
-export default OrderItem;
+export default OrderItem

@@ -1,14 +1,14 @@
-import '../styles/components/Categories.scss';
-import { getCategory } from '../actions';
-import { useDispatch } from 'react-redux';
+import '../styles/components/Categories.scss'
+import { getCategory } from '../actions'
+import { useDispatch } from 'react-redux'
 
 const Categories = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const handleCategory = (e) => {
-    const category = e.target.outerText;
-    dispatch(getCategory(category.toLowerCase()));
-  };
+    const category = e.target.outerText
+    dispatch(getCategory(category.toLowerCase()))
+  }
 
   return (
     <>
@@ -31,7 +31,7 @@ const Categories = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Categories;
+export default Categories

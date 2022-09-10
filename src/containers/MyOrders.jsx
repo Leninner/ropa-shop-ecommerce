@@ -1,11 +1,11 @@
-import OrderItem from '../components/OrderItem';
-import '../styles/containers/MyOrders.scss';
-import Checkout from '../components/Checkout';
-import { useSelector } from 'react-redux';
+import OrderItem from '../components/OrderItem'
+import '../styles/containers/MyOrders.scss'
+import Checkout from '../components/Checkout'
+import { useSelector } from 'react-redux'
 
 const MyOrders = () => {
-  let totalPrice = 0;
-  const { cart } = useSelector((state) => state);
+  let totalPrice = 0
+  const { cart } = useSelector((state) => state)
 
   return (
     <aside className='MyOrder'>
@@ -14,15 +14,15 @@ const MyOrders = () => {
       <div className='orders-container'>
         {cart.length > 0
           ? cart.map((item) => {
-              totalPrice += item.price * item.tallas[item.selectedTalla].cantidad;
-              return <OrderItem key={`${item.id}-${item.selectedTalla}`} {...item} />;
-            })
+            totalPrice += item.price * item.tallas[item.selectedTalla].cantidad
+            return <OrderItem key={`${item.id}-${item.selectedTalla}`} {...item} />
+          })
           : 'No hay productos en el carrito'}
       </div>
 
       {cart.length > 0 && <Checkout sumaTotal={totalPrice} />}
     </aside>
-  );
-};
+  )
+}
 
-export default MyOrders;
+export default MyOrders

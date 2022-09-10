@@ -1,7 +1,6 @@
-import React from 'react';
-import { Layout } from '../containers/Layout';
-import { Link } from 'react-router-dom';
-import '../styles/pages/PageNotFound.scss';
+import { Layout } from '../containers/Layout'
+import { Link } from 'react-router-dom'
+import '../styles/pages/PageNotFound.scss'
 
 const PageNotFound = () => {
   return (
@@ -15,7 +14,7 @@ const PageNotFound = () => {
         </Link>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default PageNotFound;
+export default PageNotFound
