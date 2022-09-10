@@ -356,7 +356,7 @@ export const productsData = {
       images: [C7],
       tallas: {
         S: {
-          stock: 1,
+          stock: 0,
           cantidad: 0,
         },
         M: {
